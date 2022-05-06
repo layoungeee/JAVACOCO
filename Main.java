@@ -1,10 +1,12 @@
-package frame;
+package frame2;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridLayout;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -18,16 +20,14 @@ import javax.swing.JScrollPane;
 
 public class Main extends JFrame {
 private static JMenuBar mb;
-private static JLabel lbl,logoLabel,imageLabel1,imageLabel2,imageLabel3
-,imageLabel01,newItemText,rcmdItemText;
+private static JLabel lbl,logoLabel,imageLabel1,imageLabel2,imageLabel3,newItemText;
 private static JMenu menu,menuCategory,menuSearch,menuMyPage,menuCart;
 private static JMenuItem menuItemLogIn,menuItemJoinUs,menuItemMyPage;
-private static ImageIcon logo,newitem1,newitem2,newitem3,rcmdItem;
+private static ImageIcon logo,newitem1,newitem2,newitem3;
 private static JFrame jf;
-private static JPanel container,newPanel,newPanel2;
+private static JPanel container,newPanel, newPanel2;
 
    public Main(String title, int width, int height) {
-	   
       jf = new JFrame();
       jf.setTitle(title);
       jf.setSize(width,height);
@@ -36,10 +36,9 @@ private static JPanel container,newPanel,newPanel2;
       jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
       jf.setVisible(true);
       
-      Container c = getContentPane();
-      
       JScrollPane sp = new JScrollPane(container,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
   												 JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+      jf.add(sp);
       JScrollBar scroll = new JScrollBar();
          
       jf.add(sp,BorderLayout.EAST);
@@ -52,51 +51,41 @@ private static JPanel container,newPanel,newPanel2;
 	   newPanel.setLocation(500, 300);
 	   newPanel.setVisible(true);
 	   
-	   newPanel2 = new JPanel();
-	   newPanel2.setLayout(new BorderLayout());
-	   newPanel2.setBackground(Color.pink);
-	   newPanel2.setSize(1000, 300);
-	   newPanel2.setLocation(500, 700);
-	   newPanel2.setVisible(true);
-	   
        container = new JPanel();
        container.setLayout(new FlowLayout());
        container.setBackground(Color.WHITE);
        
+       newPanel2 = new JPanel();
+       newPanel2.setLayout(new BorderLayout());
+	   newPanel2.setBackground(Color.yellow);
+	   newPanel2.setSize(1000, 300);
+	   newPanel2.setLocation(1000, 1000);
+	   newPanel2.setVisible(true);
+       
+       
+       
+       
        makeMenu();
        
-       jf.add(newPanel);
-       jf.add(newPanel2);
+       jf.add(newPanel, BorderLayout.CENTER);
        jf.add(container);
-       jf.setPreferredSize(new Dimension(1000,800));
+       jf.setPreferredSize(new Dimension(800,500));
        jf.setLocation(400, 200);
        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        jf.setVisible(true);
        jf.pack();
        
        
+       
+       //Container c = getContentPane();
+       //c.setLayout(new GridLayout(1,3));
+       
        newItem();
-       
-       rcmdItem();
-       
        
        }
    
 
-   private void rcmdItem() {
-	   rcmdItemText = new JLabel("추천 상품");
-	   rcmdItemText.setLayout(new BorderLayout());
-	   
-	   rcmdItem = new ImageIcon("images/pfs.png");
-       imageLabel01 = new JLabel(rcmdItem);
-       imageLabel01.setPreferredSize(new Dimension(200,200));
-            
-       newPanel2.add(rcmdItemText,BorderLayout.NORTH);
-       newPanel2.add(imageLabel01,BorderLayout.CENTER);
-}
-
-
-private void newItem() {
+   private void newItem() {
 	   newItemText = new JLabel("이번 달 신상품");
 	   newItemText.setLayout(new BorderLayout());
 	   
@@ -117,6 +106,7 @@ private void newItem() {
        newPanel.add(imageLabel2,BorderLayout.CENTER);
        newPanel.add(imageLabel3,BorderLayout.EAST);
 }
+  
 
 
    private static void makeMenu() {
@@ -130,20 +120,31 @@ private void newItem() {
       mb = new JMenuBar();
       mb.setLayout(new FlowLayout(FlowLayout.CENTER, 265, 20));
       mb.setBackground(Color.WHITE);
+
+      Font font = new Font("HY견명조", Font.BOLD, 25);
+      Font font2 = new Font("HY견명조", Font.PLAIN, 18);
+      menuCategory = new JMenu("category");
       
-       menuCategory = new JMenu("category");
-      
-       menuSearch = new JMenu("search");
-          
-       menuMyPage = new JMenu("MyPage");
-       menuItemLogIn = new JMenuItem("Log In");
-       menuMyPage.add(menuItemLogIn);
-       menuItemJoinUs = new JMenuItem("Join Us");
-       menuMyPage.add(menuItemJoinUs);
-       menuItemMyPage = new JMenuItem("My Page");
-       menuMyPage.add(menuItemMyPage);
-          
-       menuCart = new JMenu("cart");
+      menuCategory.setFont(font);
+     
+         
+      menuSearch = new JMenu("search");
+      menuSearch.setFont(font);
+         
+      menuMyPage = new JMenu("MyPage");
+      menuMyPage.setFont(font);
+      menuItemLogIn = new JMenuItem("Log In");
+      menuItemLogIn.setFont(font2);
+      menuMyPage.add(menuItemLogIn);
+      menuItemJoinUs = new JMenuItem("Join Us");
+      menuItemJoinUs.setFont(font2);
+      menuMyPage.add(menuItemJoinUs);
+      menuItemMyPage = new JMenuItem("My Page");
+      menuItemMyPage.setFont(font2);
+      menuMyPage.add(menuItemMyPage);
+         
+      menuCart = new JMenu("cart");
+      menuCart.setFont(font);
 
        mb.add(menuCategory);
        mb.add(menuSearch);
@@ -155,7 +156,7 @@ private void newItem() {
    }
    
    public static void main(String[] args) {
-      Main mp = new Main("JavaCoco",1000,1000);
+      Main mp = new Main("JavaCoco",500,500);
    }
 
 }
