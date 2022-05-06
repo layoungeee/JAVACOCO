@@ -43,10 +43,11 @@ private static JPanel container;
 		//		JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
        //jf.add(sp);
        JScrollBar scroll = new JScrollBar();
-       container.add(scroll,BorderLayout.EAST);
+       
        
        makeMenu();
        
+       jf.add(scroll,BorderLayout.EAST);
        jf.add(container);
        jf.setPreferredSize(new Dimension(800,500));
        jf.setLocation(400, 200);
