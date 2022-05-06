@@ -58,7 +58,7 @@ private static JPanel container,newPanel;
        
        jf.add(newPanel);
        jf.add(container);
-       jf.setPreferredSize(new Dimension(800,500));
+       jf.setPreferredSize(new Dimension(1000,800));
        jf.setLocation(400, 200);
        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        jf.setVisible(true);
@@ -134,7 +134,7 @@ private static JPanel container,newPanel;
    }
    
    public static void main(String[] args) {
-      Main mp = new Main("JavaCoco",500,500);
+      Main mp = new Main("JavaCoco",1000,1000);
    }
 
 }
