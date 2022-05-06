@@ -1,56 +1,77 @@
 package frame;
 
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
 
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
 
 public class Main extends JFrame {
-   private static JMenuBar mb;
-   private static JLabel lbl;
-   private static JMenu menu,menuCategory,menuSearch,menuMyPage,menuCart;
-   private static JMenuItem menuItemLogIn,menuItemJoinUs,menuItemMyPage;
+private static JMenuBar mb;
+private static JLabel lbl,imageLabel,imageLabel1,imageLabel2,imageLabel3;
+private static JMenu menu,menuCategory,menuSearch,menuMyPage,menuCart;
+private static JMenuItem menuItemLogIn,menuItemJoinUs,menuItemMyPage;
+private ImageIcon logo,newitem1,newitem2,newitem3;
+private JFrame jf;
+private JPanel container;
 
    public Main(String title, int width, int height) {
-      JFrame jf = new JFrame();
-      
+      jf = new JFrame();
       jf.setTitle(title);
       jf.setSize(width,height);
       jf.setLocationRelativeTo(this);
       jf.setLayout(new BorderLayout());
       jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
       jf.setVisible(true);
+      
 
-       JPanel container = new JPanel();
+       container = new JPanel();
        container.setLayout(new FlowLayout());
        container.setBackground(Color.WHITE);
        
-       
-       lbl = new JLabel("JAVA COCO");
-       lbl.setFont(new Font("Gramond", Font.BOLD, 100));
-       lbl.setHorizontalAlignment(JLabel.CENTER);
+       logo = new ImageIcon("images/javacoco.png");
+       imageLabel = new JLabel(logo);
+       imageLabel.setHorizontalAlignment(JLabel.CENTER);
+       //lbl = new JLabel("JAVA COCO");
+       //lbl.setFont(new Font("Gramond", Font.BOLD, 100));
+       //lbl.setHorizontalAlignment(JLabel.CENTER);
        
        
        makeMenu();
-
-       container.add(lbl);
-     
+      
+       container.add(imageLabel);
        container.add(mb);
        
-       
-
        jf.add(container);
        jf.setPreferredSize(new Dimension(800,500));
        jf.setLocation(400, 200);
        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        jf.setVisible(true);
        jf.pack();
+       
+       //Container c = getContentPane();
+       //c.setLayout(new GridLayout(1,3));
+       newitem1 = new ImageIcon("images/pf1.jpg");
+       imageLabel1 = new JLabel(newitem1);
+       newitem2 = new ImageIcon("images/pf2.jpg");
+       imageLabel2 = new JLabel(newitem2);
+       newitem3 = new ImageIcon("images/pf3.jpg");
+       imageLabel3 = new JLabel(newitem3);
+       
+       container.add(imageLabel1);
+       container.add(imageLabel2);
+       container.add(imageLabel3);
        
        }
 
