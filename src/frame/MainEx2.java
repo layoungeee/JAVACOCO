@@ -15,8 +15,8 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-public class Main extends JFrame{
-    public Main(String title, int width, int height) {
+public class MainEx2 extends JFrame{
+    public MainEx2(String title, int width, int height) {
          setTitle(title);
          setSize(width, height);
 //         setLocation(1800, 300);
@@ -33,20 +33,43 @@ public class Main extends JFrame{
     
     private void setScrollPanel() {
        JPanel panel = new JPanel();      
-        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+        panel.setPreferredSize(new Dimension(400, 1000));   // 패널에 사이즈 설정 
         panel.setBackground(Color.WHITE);
-        panel.setLayout(new FlowLayout());
+        panel.setLayout(new BorderLayout());
         
         JScrollPane sp = new JScrollPane(panel, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
          
         add(sp);
         
+        JPanel newPanel = new JPanel();
+       newPanel.setBackground(Color.yellow);
+       newPanel.setPreferredSize(new Dimension(100, 100));
+       newPanel.setLocation(500, 300);
+       JLabel newItemText = new JLabel("이번 달 신상품");
+       newItemText.setLayout(new BorderLayout());
+         
+       ImageIcon newitem1 = new ImageIcon("images/pf01.jpg");
+        JLabel imageLabel1 = new JLabel(newitem1);
+        imageLabel1.setPreferredSize(new Dimension(250,250));
+          
+        ImageIcon newitem2 = new ImageIcon("images/pf02.jpg");
+        JLabel imageLabel2 = new JLabel(newitem2);
+        imageLabel2.setPreferredSize(new Dimension(250,250));
+          
+        ImageIcon newitem3 = new ImageIcon("images/pf03.jpg");
+        JLabel imageLabel3 = new JLabel(newitem3);
+        imageLabel3.setPreferredSize(new Dimension(250,250));
+          
+        newPanel.add(newItemText,BorderLayout.NORTH);
+        newPanel.add(imageLabel1,BorderLayout.WEST);
+        newPanel.add(imageLabel2,BorderLayout.CENTER);
+        newPanel.add(imageLabel3,BorderLayout.EAST);
        
-      
+       
        
        JPanel container = new JPanel();
-       container.setLayout(new BorderLayout());
-       container.setBackground(Color.WHITE);
+       container.setLayout(new FlowLayout());
+        container.setBackground(Color.WHITE);
        
        ImageIcon logo = new ImageIcon("images/javacoco.png");
         JLabel logoLabel = new JLabel(logo);
@@ -56,7 +79,7 @@ public class Main extends JFrame{
          //lbl.setHorizontalAlignment(JLabel.CENTER);
          
          JMenuBar mb = new JMenuBar();
-         mb.setLayout(new FlowLayout(FlowLayout.CENTER, 235, 50));
+         mb.setLayout(new FlowLayout(FlowLayout.CENTER, 265, 20));
          mb.setBackground(Color.WHITE);
 
          Font font = new Font("HY견명조", Font.BOLD, 25);
@@ -89,47 +112,21 @@ public class Main extends JFrame{
           mb.add(menuMyPage);
           mb.add(menuCart);
           
-          container.add(logoLabel, BorderLayout.NORTH);
-          container.add(mb, BorderLayout.CENTER);
+          container.add(logoLabel);
+          container.add(mb);
           
-          
-          JPanel newPanel = new JPanel();
-          newPanel.setLayout(new BorderLayout());
-          newPanel.setBackground(Color.yellow);
-          newPanel.setPreferredSize(new Dimension(1000, 300));
-          newPanel.setLocation(500, 300);
-          
-          JLabel newItemText = new JLabel("이번 달 신상품");
-          newItemText.setLayout(new BorderLayout());
-          
-          ImageIcon newitem1 = new ImageIcon("images/pf01.jpg");
-          JLabel imageLabel1 = new JLabel(newitem1);
-          imageLabel1.setPreferredSize(new Dimension(300,300));
-          
-          ImageIcon newitem2 = new ImageIcon("images/pf02.jpg");
-          JLabel imageLabel2 = new JLabel(newitem2);
-          imageLabel2.setPreferredSize(new Dimension(300,300));
-          
-          ImageIcon newitem3 = new ImageIcon("images/pf03.jpg");
-          JLabel imageLabel3 = new JLabel(newitem3);
-          imageLabel3.setPreferredSize(new Dimension(300,300));
-          
-          newPanel.add(newItemText,BorderLayout.NORTH);
-          newPanel.add(imageLabel1,BorderLayout.WEST);
-          newPanel.add(imageLabel2,BorderLayout.CENTER);
-          newPanel.add(imageLabel3,BorderLayout.EAST);
-          
-         JPanel newPanel2 = new JPanel();
-         newPanel2.setLayout(new BorderLayout());
+  
+          JPanel newPanel2 = new JPanel();
+          newPanel2.setLayout(new BorderLayout());
          newPanel2.setBackground(Color.pink);
-         newPanel2.setPreferredSize(new Dimension(1000, 350));
-         newPanel2.setLocation(500, 1000);
+         newPanel2.setPreferredSize(new Dimension(1000, 300));
+         newPanel2.setLocation(500, 700);
          newPanel2.setVisible(true);
                 
          JLabel rcmdItemText = new JLabel("추천 상품");
          rcmdItemText.setLayout(new BorderLayout());
             
-         ImageIcon rcmdItem = new ImageIcon("images/pfs.PNG");
+         ImageIcon rcmdItem = new ImageIcon("images/향수추천.PNG");
          JLabel imageLabel01 = new JLabel(rcmdItem);
          imageLabel01.setPreferredSize(new Dimension(200,200));
                   
@@ -138,18 +135,18 @@ public class Main extends JFrame{
           
           
           
+          panel.add(newPanel, BorderLayout.CENTER);
           panel.add(container);
-          panel.add(newPanel);
-          panel.add(newPanel2);
+          panel.add(newPanel2, BorderLayout.SOUTH);
        
        
         setVisible(true);
     }
-   
+  
 
     public static void main(String[] args)
       {
-         new Main("JavaCoCo", 1000, 500);
+         new MainEx2("JavaCoCo", 500, 500);
 
       }
 
