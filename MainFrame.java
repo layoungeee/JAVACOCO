@@ -142,8 +142,15 @@ public class MainFrame extends JFrame{
          newPanel.setLocation(500, 300);
          newPanel.setVisible(true);
           
-         JLabel newItemText = new JLabel("이번 달 신상품");
+         Font font3 = new Font("HY견명조", Font.PLAIN, 20);
+         JLabel newItemText = new JLabel("NEW ITEM");
+         
+        
+         newItemText.setFont(font3);
          newItemText.setLayout(new BorderLayout());
+         newItemText.setHorizontalAlignment(JLabel.CENTER);
+
+
             
          ImageIcon newitem1 = new ImageIcon("images/pf01.jpg");
           JLabel imageLabel1 = new JLabel(newitem1);
@@ -177,8 +184,10 @@ public class MainFrame extends JFrame{
            newPanel2.setLocation(500, 700);
            newPanel2.setVisible(true);
                 
-           JLabel rcmdItemText = new JLabel("추천 상품");
+           JLabel rcmdItemText = new JLabel("BEST ITEM");
+           rcmdItemText.setFont(font3);
            rcmdItemText.setLayout(new BorderLayout());
+           rcmdItemText.setHorizontalAlignment(JLabel.CENTER);
             
            ImageIcon rcmdItem = new ImageIcon("images/향수추천.PNG");
            JLabel imageLabel01 = new JLabel(rcmdItem);
