@@ -176,11 +176,11 @@ public class BvlgariItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1800, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
 		    panel01.setBackground(Color.white);
 	        panel01.setLayout(new GridLayout(4,3));
 	        
-	        JLabel textLabel = new JLabel("     Bvlgari     ");
+	        JLabel textLabel = new JLabel("               Bvlgari               ");
 	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
@@ -194,7 +194,7 @@ public class BvlgariItems extends JFrame {
 	        panel01.add(item);
 	        
 	        }
-	        
+
 	        panel.add(textLabel);
 	        panel.add(panel01);
 	        

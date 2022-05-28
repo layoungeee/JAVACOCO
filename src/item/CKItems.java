@@ -30,7 +30,6 @@ public class CKItems extends JFrame {
 			new ImageIcon("itemImages/ck06.jpg"),
 			new ImageIcon("itemImages/ck07.jpg"),
 			new ImageIcon("itemImages/ck08.jpg"),
-			new ImageIcon("itemImages/ck09.jpg"),
 			};
 	
 	public CKItems(String title, int width, int height) {
@@ -172,16 +171,16 @@ public class CKItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1800, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
 		    panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        JLabel textLabel = new JLabel("     Calvin Klein     ");
+	        JLabel textLabel = new JLabel("               Calvin Klein               ");
 	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        
-	        for(int i=0; i<9; i++) {
+	        for(int i=0; i<8; i++) {
 	        	
 	        JButton item = new JButton(imgs[i]);
 	        item.setBorderPainted(false);

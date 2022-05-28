@@ -168,10 +168,13 @@ public class ChanelItems extends JFrame {
 	        mb.add(menuMyPage);
 	        mb.add(menuCart);
 	        
+	        
 	        container.add(logoLabel, BorderLayout.NORTH);
 	        container.add(mb, BorderLayout.CENTER);
 	        
-	        panel.add(container);
+	        JLabel textLabel = new JLabel("                          Chanel                          ");
+	        textLabel.setHorizontalAlignment(JLabel.CENTER);
+	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        
 	        
@@ -188,6 +191,8 @@ public class ChanelItems extends JFrame {
 	        chanel1.add(chanel01,BorderLayout.NORTH);
 	        chanel1.add(name1,BorderLayout.CENTER);
 	        chanel1.add(price1,BorderLayout.SOUTH);
+	        name1.setHorizontalAlignment(JLabel.CENTER);
+	        price1.setHorizontalAlignment(JLabel.CENTER);
 	        
 	        
 	        JPanel chanel2 = new JPanel();
@@ -198,11 +203,13 @@ public class ChanelItems extends JFrame {
 	        chanel02.setBorderPainted(false);
 	        chanel02.setContentAreaFilled(false);
 	        chanel02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("N°1 DE CHANEL 레드 까멜리아 향수 리바이탈라이징 프래그런스");
-	        JLabel price2 = new JLabel("123,000원");
+	        JLabel name2 = new JLabel("N°5 오 드 빠르펭");
+	        JLabel price2 = new JLabel("133,000원");
 	        chanel2.add(chanel02,BorderLayout.NORTH);
 	        chanel2.add(name2,BorderLayout.CENTER);
 	        chanel2.add(price2,BorderLayout.SOUTH);
+	        name2.setHorizontalAlignment(JLabel.CENTER);
+	        price2.setHorizontalAlignment(JLabel.CENTER);
 	        
 	        
 	        JPanel chanel3 = new JPanel();
@@ -218,6 +225,8 @@ public class ChanelItems extends JFrame {
 	        chanel3.add(chanel03,BorderLayout.NORTH);
 	        chanel3.add(name3,BorderLayout.CENTER);
 	        chanel3.add(price3,BorderLayout.SOUTH);
+	        name3.setHorizontalAlignment(JLabel.CENTER);
+	        price3.setHorizontalAlignment(JLabel.CENTER);
 	        
 	        
 	        JPanel chanel4 = new JPanel();
@@ -231,8 +240,10 @@ public class ChanelItems extends JFrame {
 	        JLabel name4 = new JLabel("블루드샤넬 빠르펭");
 	        JLabel price4 = new JLabel("113,100원");
 	        chanel4.add(chanel04,BorderLayout.NORTH);
-	        chanel4.add(name2,BorderLayout.CENTER);
-	        chanel4.add(price2,BorderLayout.SOUTH);
+	        chanel4.add(name4,BorderLayout.CENTER);
+	        chanel4.add(price4,BorderLayout.SOUTH);
+	        name4.setHorizontalAlignment(JLabel.CENTER);
+	        price4.setHorizontalAlignment(JLabel.CENTER);
 	        
 	        
 	        JPanel chanel5 = new JPanel();
@@ -248,6 +259,8 @@ public class ChanelItems extends JFrame {
 	        chanel5.add(chanel05,BorderLayout.NORTH);
 	        chanel5.add(name5,BorderLayout.CENTER);
 	        chanel5.add(price5,BorderLayout.SOUTH);
+	        name5.setHorizontalAlignment(JLabel.CENTER);
+	        price5.setHorizontalAlignment(JLabel.CENTER);
 	        
 	        
 	        JPanel chanel6 = new JPanel();
@@ -263,6 +276,8 @@ public class ChanelItems extends JFrame {
 	        chanel6.add(chanel06,BorderLayout.NORTH);
 	        chanel6.add(name6,BorderLayout.CENTER);
 	        chanel6.add(price6,BorderLayout.SOUTH);
+	        name6.setHorizontalAlignment(JLabel.CENTER);
+	        price6.setHorizontalAlignment(JLabel.CENTER);
 	        
 	        
 	        JPanel chanel7 = new JPanel();
@@ -278,6 +293,8 @@ public class ChanelItems extends JFrame {
 	        chanel7.add(chanel07,BorderLayout.NORTH);
 	        chanel7.add(name7,BorderLayout.CENTER);
 	        chanel7.add(price7,BorderLayout.SOUTH);
+	        name7.setHorizontalAlignment(JLabel.CENTER);
+	        price7.setHorizontalAlignment(JLabel.CENTER);
 	        
 	        
 	       
@@ -286,13 +303,10 @@ public class ChanelItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1800, 1000));
-		    panel01.setBackground(Color.WHITE);
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
+		    panel01.setBackground(Color.white);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        JLabel textLabel = new JLabel("      Chanel      ");
-	        textLabel.setHorizontalAlignment(JLabel.CENTER);
-	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        panel01.add(chanel1);
 	        panel01.add(chanel2);
@@ -303,25 +317,10 @@ public class ChanelItems extends JFrame {
 	        panel01.add(chanel7);
 	        
 	        
-	        
-	        
-	        
-//	        for(int i=0; i<7; i++) {
-//	        	
-//	        JButton item = new JButton(imgs[i]);
-//	        item.setBorderPainted(false);
-//	        item.setContentAreaFilled(false);
-//	        item.setFocusPainted(false);
-//	        
-//	       
-//	        
-//	        panel01.add(item);
-//	        
-//	        }
-	        
-	        
+	        panel.add(container);
 	        panel.add(textLabel);
 	        panel.add(panel01);
+	        
 	        
 	        setVisible(true);
 	        

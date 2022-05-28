@@ -171,11 +171,11 @@ public class LanvinItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1800, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
 		    panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        JLabel textLabel = new JLabel("      Lanvin      ");
+	        JLabel textLabel = new JLabel("                Lanvin                ");
 	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
