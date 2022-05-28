@@ -177,6 +177,12 @@ public class ChanelItems extends JFrame {
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        
+	      //상품 정렬
+	        JPanel panel01 = new JPanel();
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
+		    panel01.setBackground(Color.white);
+	        panel01.setLayout(new GridLayout(3,3));
+	        
 	        
 	        JPanel chanel1 = new JPanel();
 	        chanel1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
@@ -298,14 +304,6 @@ public class ChanelItems extends JFrame {
 	        
 	        
 	       
-	        
-	        
-	        
-	        //상품 정렬
-	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
-		    panel01.setBackground(Color.white);
-	        panel01.setLayout(new GridLayout(3,3));
 	        
 	        
 	        panel01.add(chanel1);

@@ -167,31 +167,189 @@ public class GucciItems extends JFrame {
 	        container.add(logoLabel, BorderLayout.NORTH);
 	        container.add(mb, BorderLayout.CENTER);
 	        
-	        panel.add(container);
 	        
-	        
-	        //상품 정렬
-	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
-		    panel01.setBackground(Color.WHITE);
-	        panel01.setLayout(new GridLayout(3,3));
 	        
 	        JLabel textLabel = new JLabel("                  Gucci                  ");
 	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        
-	        for(int i=0; i<9; i++) {
-	        	
-	        JButton item = new JButton(imgs[i]);
-	        item.setBorderPainted(false);
-	        item.setContentAreaFilled(false);
-	        item.setFocusPainted(true);
-	        item.setFocusable(true);
-	        panel01.add(item);
+	        //상품 정렬
+	        JPanel panel01 = new JPanel();
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setBackground(Color.WHITE);
+	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        }
 	        
+	        
+	        
+	        JPanel gucci1 = new JPanel();
+	        gucci1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci1.setBackground(Color.white);
+	        gucci1.setLayout(new BorderLayout());
+	        JButton gucci01 = new JButton(imgs[0]);
+	        gucci01.setBorderPainted(false);
+	        gucci01.setContentAreaFilled(false);
+	        gucci01.setFocusPainted(false);
+	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price1 = new JLabel("119,200원");
+	        gucci1.add(gucci01,BorderLayout.NORTH);
+	        gucci1.add(name1,BorderLayout.CENTER);
+	        gucci1.add(price1,BorderLayout.SOUTH);
+	        name1.setHorizontalAlignment(JLabel.CENTER);
+	        price1.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci2 = new JPanel();
+	        gucci2.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci2.setBackground(Color.white);
+	        gucci2.setLayout(new BorderLayout());
+	        JButton gucci02 = new JButton(imgs[1]);
+	        gucci02.setBorderPainted(false);
+	        gucci02.setContentAreaFilled(false);
+	        gucci02.setFocusPainted(false);
+	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price2 = new JLabel("119,200원");
+	        gucci2.add(gucci02,BorderLayout.NORTH);
+	        gucci2.add(name2,BorderLayout.CENTER);
+	        gucci2.add(price2,BorderLayout.SOUTH);
+	        name2.setHorizontalAlignment(JLabel.CENTER);
+	        price2.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci3 = new JPanel();
+	        gucci3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci3.setBackground(Color.white);
+	        gucci3.setLayout(new BorderLayout());
+	        JButton gucci03 = new JButton(imgs[2]);
+	        gucci03.setBorderPainted(false);
+	        gucci03.setContentAreaFilled(false);
+	        gucci03.setFocusPainted(false);
+	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price3 = new JLabel("119,200원");
+	        gucci3.add(gucci03,BorderLayout.NORTH);
+	        gucci3.add(name3,BorderLayout.CENTER);
+	        gucci3.add(price3,BorderLayout.SOUTH);
+	        name3.setHorizontalAlignment(JLabel.CENTER);
+	        price3.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci4 = new JPanel();
+	        gucci4.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci4.setBackground(Color.white);
+	        gucci4.setLayout(new BorderLayout());
+	        JButton gucci04 = new JButton(imgs[3]);
+	        gucci04.setBorderPainted(false);
+	        gucci04.setContentAreaFilled(false);
+	        gucci04.setFocusPainted(false);
+	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price4 = new JLabel("119,200원");
+	        gucci4.add(gucci04,BorderLayout.NORTH);
+	        gucci4.add(name4,BorderLayout.CENTER);
+	        gucci4.add(price4,BorderLayout.SOUTH);
+	        name4.setHorizontalAlignment(JLabel.CENTER);
+	        price4.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci5 = new JPanel();
+	        gucci5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci5.setBackground(Color.white);
+	        gucci5.setLayout(new BorderLayout());
+	        JButton gucci05 = new JButton(imgs[4]);
+	        gucci05.setBorderPainted(false);
+	        gucci05.setContentAreaFilled(false);
+	        gucci05.setFocusPainted(false);
+	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price5 = new JLabel("119,200원");
+	        gucci5.add(gucci05,BorderLayout.NORTH);
+	        gucci5.add(name5,BorderLayout.CENTER);
+	        gucci5.add(price5,BorderLayout.SOUTH);
+	        name5.setHorizontalAlignment(JLabel.CENTER);
+	        price5.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci6 = new JPanel();
+	        gucci6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci6.setBackground(Color.white);
+	        gucci6.setLayout(new BorderLayout());
+	        JButton gucci06 = new JButton(imgs[5]);
+	        gucci06.setBorderPainted(false);
+	        gucci06.setContentAreaFilled(false);
+	        gucci06.setFocusPainted(false);
+	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price6 = new JLabel("119,200원");
+	        gucci6.add(gucci06,BorderLayout.NORTH);
+	        gucci6.add(name6,BorderLayout.CENTER);
+	        gucci6.add(price6,BorderLayout.SOUTH);
+	        name6.setHorizontalAlignment(JLabel.CENTER);
+	        price6.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci7 = new JPanel();
+	        gucci7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci7.setBackground(Color.white);
+	        gucci7.setLayout(new BorderLayout());
+	        JButton gucci07 = new JButton(imgs[6]);
+	        gucci07.setBorderPainted(false);
+	        gucci07.setContentAreaFilled(false);
+	        gucci07.setFocusPainted(false);
+	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price7 = new JLabel("119,200원");
+	        gucci7.add(gucci07,BorderLayout.NORTH);
+	        gucci7.add(name7,BorderLayout.CENTER);
+	        gucci7.add(price7,BorderLayout.SOUTH);
+	        name7.setHorizontalAlignment(JLabel.CENTER);
+	        price7.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci8 = new JPanel();
+	        gucci8.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci8.setBackground(Color.white);
+	        gucci8.setLayout(new BorderLayout());
+	        JButton gucci08 = new JButton(imgs[7]);
+	        gucci08.setBorderPainted(false);
+	        gucci08.setContentAreaFilled(false);
+	        gucci08.setFocusPainted(false);
+	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price8 = new JLabel("119,200원");
+	        gucci8.add(gucci08,BorderLayout.NORTH);
+	        gucci8.add(name8,BorderLayout.CENTER);
+	        gucci8.add(price8,BorderLayout.SOUTH);
+	        name8.setHorizontalAlignment(JLabel.CENTER);
+	        price8.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel gucci9 = new JPanel();
+	        gucci9.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        gucci9.setBackground(Color.white);
+	        gucci9.setLayout(new BorderLayout());
+	        JButton gucci09 = new JButton(imgs[8]);
+	        gucci09.setBorderPainted(false);
+	        gucci09.setContentAreaFilled(false);
+	        gucci09.setFocusPainted(false);
+	        JLabel name9 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price9 = new JLabel("119,200원");
+	        gucci9.add(gucci09,BorderLayout.NORTH);
+	        gucci9.add(name9,BorderLayout.CENTER);
+	        gucci9.add(price9,BorderLayout.SOUTH);
+	        name9.setHorizontalAlignment(JLabel.CENTER);
+	        price9.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        
+	        panel01.add(gucci1);
+	        panel01.add(gucci2);
+	        panel01.add(gucci3);
+	        panel01.add(gucci4);
+	        panel01.add(gucci5);
+	        panel01.add(gucci6);
+	        panel01.add(gucci7);
+	        panel01.add(gucci8);
+	        panel01.add(gucci9);
+	        
+	        
+	        
+	        panel.add(container);
 	        panel.add(textLabel);
 	        panel.add(panel01);
 	        

@@ -165,30 +165,156 @@ public class JVItems extends JFrame {
 	        container.add(logoLabel, BorderLayout.NORTH);
 	        container.add(mb, BorderLayout.CENTER);
 	        
-	        panel.add(container);
 	        
 	        
-	        //상품 정렬
-	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
-		    panel01.setBackground(Color.WHITE);
-	        panel01.setLayout(new GridLayout(3,3));
 	        
 	        JLabel textLabel = new JLabel("          John Varvatos          ");
 	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        
-	        for(int i=0; i<7; i++) {
-	        	
-	        JButton item = new JButton(imgs[i]);
-	        item.setBorderPainted(false);
-	        item.setContentAreaFilled(false);
-	        item.setFocusPainted(false);
-	        panel01.add(item);
+	        //상품 정렬
+	        JPanel panel01 = new JPanel();
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setBackground(Color.WHITE);
+	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        }
 	        
+	        
+	        
+	        JPanel jv1 = new JPanel();
+	        jv1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        jv1.setBackground(Color.white);
+	        jv1.setLayout(new BorderLayout());
+	        JButton jv01 = new JButton(imgs[0]);
+	        jv01.setBorderPainted(false);
+	        jv01.setContentAreaFilled(false);
+	        jv01.setFocusPainted(false);
+	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price1 = new JLabel("119,200원");
+	        jv1.add(jv01,BorderLayout.NORTH);
+	        jv1.add(name1,BorderLayout.CENTER);
+	        jv1.add(price1,BorderLayout.SOUTH);
+	        name1.setHorizontalAlignment(JLabel.CENTER);
+	        price1.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        JPanel jv2 = new JPanel();
+	        jv2.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        jv2.setBackground(Color.white);
+	        jv2.setLayout(new BorderLayout());
+	        JButton jv02 = new JButton(imgs[1]);
+	        jv02.setBorderPainted(false);
+	        jv02.setContentAreaFilled(false);
+	        jv02.setFocusPainted(false);
+	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price2 = new JLabel("119,200원");
+	        jv2.add(jv02,BorderLayout.NORTH);
+	        jv2.add(name2,BorderLayout.CENTER);
+	        jv2.add(price2,BorderLayout.SOUTH);
+	        name2.setHorizontalAlignment(JLabel.CENTER);
+	        price2.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel jv3 = new JPanel();
+	        jv3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        jv3.setBackground(Color.white);
+	        jv3.setLayout(new BorderLayout());
+	        JButton jv03 = new JButton(imgs[2]);
+	        jv03.setBorderPainted(false);
+	        jv03.setContentAreaFilled(false);
+	        jv03.setFocusPainted(false);
+	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price3 = new JLabel("119,200원");
+	        jv3.add(jv03,BorderLayout.NORTH);
+	        jv3.add(name3,BorderLayout.CENTER);
+	        jv3.add(price3,BorderLayout.SOUTH);
+	        name3.setHorizontalAlignment(JLabel.CENTER);
+	        price3.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel jv4 = new JPanel();
+	        jv4.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        jv4.setBackground(Color.white);
+	        jv4.setLayout(new BorderLayout());
+	        JButton jv04 = new JButton(imgs[3]);
+	        jv04.setBorderPainted(false);
+	        jv04.setContentAreaFilled(false);
+	        jv04.setFocusPainted(false);
+	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price4 = new JLabel("119,200원");
+	        jv4.add(jv04,BorderLayout.NORTH);
+	        jv4.add(name4,BorderLayout.CENTER);
+	        jv4.add(price4,BorderLayout.SOUTH);
+	        name4.setHorizontalAlignment(JLabel.CENTER);
+	        price4.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel jv5 = new JPanel();
+	        jv5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        jv5.setBackground(Color.white);
+	        jv5.setLayout(new BorderLayout());
+	        JButton jv05 = new JButton(imgs[4]);
+	        jv05.setBorderPainted(false);
+	        jv05.setContentAreaFilled(false);
+	        jv05.setFocusPainted(false);
+	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price5 = new JLabel("119,200원");
+	        jv5.add(jv05,BorderLayout.NORTH);
+	        jv5.add(name5,BorderLayout.CENTER);
+	        jv5.add(price5,BorderLayout.SOUTH);
+	        name5.setHorizontalAlignment(JLabel.CENTER);
+	        price5.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel jv6 = new JPanel();
+	        jv6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        jv6.setBackground(Color.white);
+	        jv6.setLayout(new BorderLayout());
+	        JButton jv06 = new JButton(imgs[5]);
+	        jv06.setBorderPainted(false);
+	        jv06.setContentAreaFilled(false);
+	        jv06.setFocusPainted(false);
+	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price6 = new JLabel("119,200원");
+	        jv6.add(jv06,BorderLayout.NORTH);
+	        jv6.add(name6,BorderLayout.CENTER);
+	        jv6.add(price6,BorderLayout.SOUTH);
+	        name6.setHorizontalAlignment(JLabel.CENTER);
+	        price6.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel jv7 = new JPanel();
+	        jv7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        jv7.setBackground(Color.white);
+	        jv7.setLayout(new BorderLayout());
+	        JButton jv07 = new JButton(imgs[6]);
+	        jv07.setBorderPainted(false);
+	        jv07.setContentAreaFilled(false);
+	        jv07.setFocusPainted(false);
+	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price7 = new JLabel("119,200원");
+	        jv7.add(jv07,BorderLayout.NORTH);
+	        jv7.add(name7,BorderLayout.CENTER);
+	        jv7.add(price7,BorderLayout.SOUTH);
+	        name7.setHorizontalAlignment(JLabel.CENTER);
+	        price7.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        
+
+	        
+	        panel01.add(jv1);
+	        panel01.add(jv2);
+	        panel01.add(jv3);
+	        panel01.add(jv4);
+	        panel01.add(jv5);
+	        panel01.add(jv6);
+	        panel01.add(jv7);
+	        
+	        
+	        
+	        
+	        panel.add(container);
 	        panel.add(textLabel);
 	        panel.add(panel01);
 	        

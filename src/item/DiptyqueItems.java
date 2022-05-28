@@ -167,30 +167,190 @@ public class DiptyqueItems extends JFrame {
 	        container.add(logoLabel, BorderLayout.NORTH);
 	        container.add(mb, BorderLayout.CENTER);
 	        
-	        panel.add(container);
 	        
 	        
-	        //상품 정렬
-	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
-		    panel01.setBackground(Color.WHITE);
-	        panel01.setLayout(new GridLayout(3,3));
 	        
 	        JLabel textLabel = new JLabel("               Diptyque               ");
 	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
+	        //상품 정렬
+	        JPanel panel01 = new JPanel();
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setBackground(Color.WHITE);
+	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        for(int i=0; i<9; i++) {
-	        	
-	        JButton item = new JButton(imgs[i]);
-	        item.setBorderPainted(false);
-	        item.setContentAreaFilled(false);
-	        item.setFocusPainted(false);
-	        panel01.add(item);
 	        
-	        }
 	        
+	        
+	        JPanel diptyque1 = new JPanel();
+	        diptyque1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque1.setBackground(Color.white);
+	        diptyque1.setLayout(new BorderLayout());
+	        JButton diptyque01 = new JButton(imgs[0]);
+	        diptyque01.setBorderPainted(false);
+	        diptyque01.setContentAreaFilled(false);
+	        diptyque01.setFocusPainted(false);
+	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price1 = new JLabel("119,200원");
+	        diptyque1.add(diptyque01,BorderLayout.NORTH);
+	        diptyque1.add(name1,BorderLayout.CENTER);
+	        diptyque1.add(price1,BorderLayout.SOUTH);
+	        name1.setHorizontalAlignment(JLabel.CENTER);
+	        price1.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque2 = new JPanel();
+	        diptyque2.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque2.setBackground(Color.white);
+	        diptyque2.setLayout(new BorderLayout());
+	        JButton diptyque02 = new JButton(imgs[1]);
+	        diptyque02.setBorderPainted(false);
+	        diptyque02.setContentAreaFilled(false);
+	        diptyque02.setFocusPainted(false);
+	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price2 = new JLabel("119,200원");
+	        diptyque2.add(diptyque02,BorderLayout.NORTH);
+	        diptyque2.add(name2,BorderLayout.CENTER);
+	        diptyque2.add(price2,BorderLayout.SOUTH);
+	        name2.setHorizontalAlignment(JLabel.CENTER);
+	        price2.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque3 = new JPanel();
+	        diptyque3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque3.setBackground(Color.white);
+	        diptyque3.setLayout(new BorderLayout());
+	        JButton diptyque03 = new JButton(imgs[2]);
+	        diptyque03.setBorderPainted(false);
+	        diptyque03.setContentAreaFilled(false);
+	        diptyque03.setFocusPainted(false);
+	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price3 = new JLabel("119,200원");
+	        diptyque3.add(diptyque03,BorderLayout.NORTH);
+	        diptyque3.add(name3,BorderLayout.CENTER);
+	        diptyque3.add(price3,BorderLayout.SOUTH);
+	        name3.setHorizontalAlignment(JLabel.CENTER);
+	        price3.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque4 = new JPanel();
+	        diptyque4.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque4.setBackground(Color.white);
+	        diptyque4.setLayout(new BorderLayout());
+	        JButton diptyque04 = new JButton(imgs[3]);
+	        diptyque04.setBorderPainted(false);
+	        diptyque04.setContentAreaFilled(false);
+	        diptyque04.setFocusPainted(false);
+	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price4 = new JLabel("119,200원");
+	        diptyque4.add(diptyque04,BorderLayout.NORTH);
+	        diptyque4.add(name4,BorderLayout.CENTER);
+	        diptyque4.add(price4,BorderLayout.SOUTH);
+	        name4.setHorizontalAlignment(JLabel.CENTER);
+	        price4.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque5 = new JPanel();
+	        diptyque5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque5.setBackground(Color.white);
+	        diptyque5.setLayout(new BorderLayout());
+	        JButton diptyque05 = new JButton(imgs[4]);
+	        diptyque05.setBorderPainted(false);
+	        diptyque05.setContentAreaFilled(false);
+	        diptyque05.setFocusPainted(false);
+	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price5 = new JLabel("119,200원");
+	        diptyque5.add(diptyque05,BorderLayout.NORTH);
+	        diptyque5.add(name5,BorderLayout.CENTER);
+	        diptyque5.add(price5,BorderLayout.SOUTH);
+	        name5.setHorizontalAlignment(JLabel.CENTER);
+	        price5.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque6 = new JPanel();
+	        diptyque6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque6.setBackground(Color.white);
+	        diptyque6.setLayout(new BorderLayout());
+	        JButton diptyque06 = new JButton(imgs[5]);
+	        diptyque06.setBorderPainted(false);
+	        diptyque06.setContentAreaFilled(false);
+	        diptyque06.setFocusPainted(false);
+	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price6 = new JLabel("119,200원");
+	        diptyque6.add(diptyque06,BorderLayout.NORTH);
+	        diptyque6.add(name6,BorderLayout.CENTER);
+	        diptyque6.add(price6,BorderLayout.SOUTH);
+	        name6.setHorizontalAlignment(JLabel.CENTER);
+	        price6.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque7 = new JPanel();
+	        diptyque7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque7.setBackground(Color.white);
+	        diptyque7.setLayout(new BorderLayout());
+	        JButton diptyque07 = new JButton(imgs[6]);
+	        diptyque07.setBorderPainted(false);
+	        diptyque07.setContentAreaFilled(false);
+	        diptyque07.setFocusPainted(false);
+	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price7 = new JLabel("119,200원");
+	        diptyque7.add(diptyque07,BorderLayout.NORTH);
+	        diptyque7.add(name7,BorderLayout.CENTER);
+	        diptyque7.add(price7,BorderLayout.SOUTH);
+	        name7.setHorizontalAlignment(JLabel.CENTER);
+	        price7.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque8 = new JPanel();
+	        diptyque8.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque8.setBackground(Color.white);
+	        diptyque8.setLayout(new BorderLayout());
+	        JButton diptyque08 = new JButton(imgs[7]);
+	        diptyque08.setBorderPainted(false);
+	        diptyque08.setContentAreaFilled(false);
+	        diptyque08.setFocusPainted(false);
+	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price8 = new JLabel("119,200원");
+	        diptyque8.add(diptyque08,BorderLayout.NORTH);
+	        diptyque8.add(name8,BorderLayout.CENTER);
+	        diptyque8.add(price8,BorderLayout.SOUTH);
+	        name8.setHorizontalAlignment(JLabel.CENTER);
+	        price8.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        JPanel diptyque9 = new JPanel();
+	        diptyque9.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+	        diptyque9.setBackground(Color.white);
+	        diptyque9.setLayout(new BorderLayout());
+	        JButton diptyque09 = new JButton(imgs[8]);
+	        diptyque09.setBorderPainted(false);
+	        diptyque09.setContentAreaFilled(false);
+	        diptyque09.setFocusPainted(false);
+	        JLabel name9 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price9 = new JLabel("119,200원");
+	        diptyque9.add(diptyque09,BorderLayout.NORTH);
+	        diptyque9.add(name9,BorderLayout.CENTER);
+	        diptyque9.add(price9,BorderLayout.SOUTH);
+	        name9.setHorizontalAlignment(JLabel.CENTER);
+	        price9.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        
+	        
+	        panel01.add(diptyque1);
+	        panel01.add(diptyque2);
+	        panel01.add(diptyque3);
+	        panel01.add(diptyque4);
+	        panel01.add(diptyque5);
+	        panel01.add(diptyque6);
+	        panel01.add(diptyque7);
+	        panel01.add(diptyque8);
+	        panel01.add(diptyque9);
+	        
+	        
+	        
+	        
+	        panel.add(container);
 	        panel.add(textLabel);
 	        panel.add(panel01);
 	        
