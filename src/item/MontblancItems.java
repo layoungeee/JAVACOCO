@@ -8,6 +8,7 @@ import java.awt.Font;
 import java.awt.GridLayout;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -16,7 +17,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-import frame.Main;
+import frame.MainFrame;
 
 public class MontblancItems extends JFrame {
 	
@@ -36,6 +37,7 @@ public class MontblancItems extends JFrame {
 		setTitle(title);
 	    setSize(width, height);
 	    setLocationRelativeTo(null);
+	    setExtendedState(JFrame.MAXIMIZED_BOTH);
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    setLayout(new BorderLayout());  
 	    
@@ -67,10 +69,76 @@ public class MontblancItems extends JFrame {
 	        mb.setBackground(Color.WHITE);
 
 	        Font font = new Font("HY견명조", Font.BOLD, 25);
-	        Font font2 = new Font("HY견명조", Font.PLAIN, 18);
-	        JMenu menuCategory = new JMenu("category");
-	        
-	        menuCategory.setFont(font);
+	         Font font2 = new Font("HY견명조", Font.PLAIN, 18);
+	         JMenu menuCategory = new JMenu("category");
+	         JMenuItem menuItemNEW = new JMenuItem("NEW");
+	         menuItemNEW.setFont(font2);
+	         menuCategory.add(menuItemNEW);
+	         JMenuItem menuItemBEST = new JMenuItem("BEST");
+	         menuItemBEST.setFont(font2);
+	         menuCategory.add(menuItemBEST);
+	         JMenuItem menuItemMEN = new JMenuItem("MEN");
+	         menuItemMEN.setFont(font2);
+	         menuCategory.add(menuItemMEN);
+	         JMenuItem menuItemWOMEN = new JMenuItem("WOMEN");
+	         menuItemWOMEN.setFont(font2);
+	         menuCategory.add(menuItemWOMEN);
+	         
+	         JMenu menu = new JMenu("BRAND");
+	         menu.setFont(font2);
+	         
+	         JMenuItem menuItemBvlgari = new JMenuItem("Bvlgari");
+	         menuItemBvlgari.setFont(font2);
+	         menuCategory.add(menuItemBvlgari);
+	         JMenuItem menuItemchanel = new JMenuItem("Chanel");
+	         menuItemchanel.setFont(font2);
+	         menuCategory.add(menuItemchanel);
+	         JMenuItem menuItemCK = new JMenuItem("Calvin Klein");
+	         menuItemCK.setFont(font2);
+	         menuCategory.add(menuItemCK);
+	         JMenuItem menuItemDior = new JMenuItem("Dior");
+	         menuItemDior.setFont(font2);
+	         menuCategory.add(menuItemDior);
+	         JMenuItem menuItemDiptyque = new JMenuItem("Diptyque");
+	         menuItemDiptyque.setFont(font2);
+	         menuCategory.add(menuItemDiptyque);
+	         JMenuItem menuItemForment = new JMenuItem("Forment");
+	         menuItemForment.setFont(font2);
+	         menuCategory.add(menuItemForment);
+	         JMenuItem menuItemGucci = new JMenuItem("Gucci");
+	         menuItemGucci.setFont(font2);
+	         menuCategory.add(menuItemGucci);
+	         JMenuItem menuItemJV = new JMenuItem("John Varvatos");
+	         menuItemJV.setFont(font2);
+	         menuCategory.add(menuItemJV);
+	         JMenuItem menuItemLanvin = new JMenuItem("Lanvin");
+	         menuItemLanvin.setFont(font2);
+	         menuCategory.add(menuItemLanvin);
+	         JMenuItem menuItemMontblanc = new JMenuItem("Montblanc");
+	         menuItemMontblanc.setFont(font2);
+	         menuCategory.add(menuItemMontblanc);
+	         JMenuItem menuItemTomford = new JMenuItem("Tomford");
+	         menuItemTomford.setFont(font2);
+	         menuCategory.add(menuItemTomford);
+	         JMenuItem menuItemYSL = new JMenuItem("Yves Saint Laurant");
+	         menuItemYSL.setFont(font2);
+	         menuCategory.add(menuItemYSL);
+	       
+	         menuCategory.setFont(font);
+	         
+	         menuCategory.add(menu);
+	         menu.add(menuItemBvlgari);
+	         menu.add(menuItemchanel);
+	         menu.add(menuItemCK);
+	         menu.add(menuItemDior);
+	         menu.add(menuItemDiptyque);
+	         menu.add(menuItemForment);
+	         menu.add(menuItemGucci);
+	         menu.add(menuItemJV);
+	         menu.add(menuItemLanvin);
+	         menu.add(menuItemMontblanc);
+	         menu.add(menuItemTomford);
+	         menu.add(menuItemYSL);
 	        
 	            
 	        JMenu menuSearch = new JMenu("search");
@@ -105,16 +173,20 @@ public class MontblancItems extends JFrame {
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
 	        panel01.setPreferredSize(new Dimension(1800, 1000));
-		    panel01.setBackground(Color.pink);
+		    panel01.setBackground(Color.white);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        JLabel textLabel = new JLabel("Mont Blanc");
+	        JLabel textLabel = new JLabel("     Mont Blanc     ");
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        for(int i=0; i<9; i++) {
 	        	
-	        JLabel item = new JLabel(imgs[i]);
+	        JButton item = new JButton(imgs[i]);
+	        item.setBorderPainted(false);
+	        item.setContentAreaFilled(false);
+	        item.setFocusPainted(false);
 	        panel01.add(item);
+	        
 	        }
 	        panel.add(textLabel);
 	        panel.add(panel01);

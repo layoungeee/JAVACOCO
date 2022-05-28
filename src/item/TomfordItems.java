@@ -19,26 +19,27 @@ import javax.swing.JScrollPane;
 
 import frame.MainFrame;
 
-public class DiorItems extends JFrame {
+public class TomfordItems extends JFrame {
 	
 	private ImageIcon[] imgs = {
-			new ImageIcon("itemImages/dior01.jpg"),
-			new ImageIcon("itemImages/dior02.jpg"),
-			new ImageIcon("itemImages/dior03.jpg"),
-			new ImageIcon("itemImages/dior04.jpg"),
-			new ImageIcon("itemImages/dior05.jpg"),
-			new ImageIcon("itemImages/dior06.jpg"),
-			new ImageIcon("itemImages/dior07.jpg"),
-			new ImageIcon("itemImages/dior08.jpg"),
+			new ImageIcon("itemImages/tomford01.jpg"),
+			new ImageIcon("itemImages/tomford02.jpg"),
+			new ImageIcon("itemImages/tomford03.jpg"),
+			new ImageIcon("itemImages/tomford04.jpg"),
+			new ImageIcon("itemImages/tomford05.jpg"),
+			new ImageIcon("itemImages/tomford06.jpg"),
+			new ImageIcon("itemImages/tomford07.jpg"),
+			new ImageIcon("itemImages/tomford08.jpg"),
+			new ImageIcon("itemImages/tomford09.jpg"),
 			};
 	
-	public DiorItems(String title, int width, int height) {
+	public TomfordItems(String title, int width, int height) {
 		setTitle(title);
 	    setSize(width, height);
 	    setLocationRelativeTo(null);
 	    setExtendedState(JFrame.MAXIMIZED_BOTH);
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    setLayout(new BorderLayout());  
+	    setLayout(new BorderLayout());
 	    
 	    setScrollPanel();
 	    
@@ -172,19 +173,22 @@ public class DiorItems extends JFrame {
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
 	        panel01.setPreferredSize(new Dimension(1800, 1000));
-		    panel01.setBackground(Color.white);
+		    panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        JLabel textLabel = new JLabel("         Dior         ");
+	        JLabel textLabel = new JLabel("     Tomford     ");
+	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
-	        for(int i=0; i<8; i++) {
+	        
+	        for(int i=0; i<9; i++) {
 	        	
 	        JButton item = new JButton(imgs[i]);
 	        item.setBorderPainted(false);
 	        item.setContentAreaFilled(false);
 	        item.setFocusPainted(false);
 	        panel01.add(item);
+	        
 	        }
 	        
 	        panel.add(textLabel);
@@ -197,7 +201,7 @@ public class DiorItems extends JFrame {
 	
     public static void main(String[] args)
       {
-    	new DiorItems("JavaCoCo", 1000, 500);
+    	new TomfordItems("JavaCoCo", 1000, 500);
 
       }
 }

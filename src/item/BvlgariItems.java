@@ -16,29 +16,34 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
 
 import frame.MainFrame;
 
-public class DiorItems extends JFrame {
+public class BvlgariItems extends JFrame {
 	
 	private ImageIcon[] imgs = {
-			new ImageIcon("itemImages/dior01.jpg"),
-			new ImageIcon("itemImages/dior02.jpg"),
-			new ImageIcon("itemImages/dior03.jpg"),
-			new ImageIcon("itemImages/dior04.jpg"),
-			new ImageIcon("itemImages/dior05.jpg"),
-			new ImageIcon("itemImages/dior06.jpg"),
-			new ImageIcon("itemImages/dior07.jpg"),
-			new ImageIcon("itemImages/dior08.jpg"),
+			new ImageIcon("itemImages/bvlgari01.jpg"),
+			new ImageIcon("itemImages/bvlgari02.jpg"),
+			new ImageIcon("itemImages/bvlgari03.jpg"),
+			new ImageIcon("itemImages/bvlgari04.jpg"),
+			new ImageIcon("itemImages/bvlgari05.jpg"),
+			new ImageIcon("itemImages/bvlgari06.jpg"),
+			new ImageIcon("itemImages/bvlgari07.jpg"),
+			new ImageIcon("itemImages/bvlgari08.jpg"),
+			new ImageIcon("itemImages/bvlgari09.jpg"),
+			new ImageIcon("itemImages/bvlgari10.jpg")
 			};
 	
-	public DiorItems(String title, int width, int height) {
+	
+	public BvlgariItems(String title, int width, int height) {
 		setTitle(title);
 	    setSize(width, height);
 	    setLocationRelativeTo(null);
 	    setExtendedState(JFrame.MAXIMIZED_BOTH);
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    setLayout(new BorderLayout());  
+	    setLayout(new BorderLayout());
 	    
 	    setScrollPanel();
 	    
@@ -173,18 +178,21 @@ public class DiorItems extends JFrame {
 	        JPanel panel01 = new JPanel();
 	        panel01.setPreferredSize(new Dimension(1800, 1000));
 		    panel01.setBackground(Color.white);
-	        panel01.setLayout(new GridLayout(3,3));
+	        panel01.setLayout(new GridLayout(4,3));
 	        
-	        JLabel textLabel = new JLabel("         Dior         ");
+	        JLabel textLabel = new JLabel("     Bvlgari     ");
+	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
-	        for(int i=0; i<8; i++) {
+	        
+	        for(int i=0; i<10; i++) {
 	        	
 	        JButton item = new JButton(imgs[i]);
 	        item.setBorderPainted(false);
 	        item.setContentAreaFilled(false);
 	        item.setFocusPainted(false);
 	        panel01.add(item);
+	        
 	        }
 	        
 	        panel.add(textLabel);
@@ -197,7 +205,7 @@ public class DiorItems extends JFrame {
 	
     public static void main(String[] args)
       {
-    	new DiorItems("JavaCoCo", 1000, 500);
+    	new BvlgariItems("JavaCoCo", 1000, 500);
 
       }
 }

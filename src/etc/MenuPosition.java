@@ -1,4 +1,4 @@
-package frame;
+package etc;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;

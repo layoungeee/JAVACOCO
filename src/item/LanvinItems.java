@@ -19,26 +19,26 @@ import javax.swing.JScrollPane;
 
 import frame.MainFrame;
 
-public class DiorItems extends JFrame {
+public class LanvinItems extends JFrame {
 	
 	private ImageIcon[] imgs = {
-			new ImageIcon("itemImages/dior01.jpg"),
-			new ImageIcon("itemImages/dior02.jpg"),
-			new ImageIcon("itemImages/dior03.jpg"),
-			new ImageIcon("itemImages/dior04.jpg"),
-			new ImageIcon("itemImages/dior05.jpg"),
-			new ImageIcon("itemImages/dior06.jpg"),
-			new ImageIcon("itemImages/dior07.jpg"),
-			new ImageIcon("itemImages/dior08.jpg"),
+			new ImageIcon("itemImages/lanvin01.jpg"),
+			new ImageIcon("itemImages/lanvin02.jpg"),
+			new ImageIcon("itemImages/lanvin03.jpg"),
+			new ImageIcon("itemImages/lanvin04.jpg"),
+			new ImageIcon("itemImages/lanvin05.jpg"),
+			new ImageIcon("itemImages/lanvin06.jpg"),
+			new ImageIcon("itemImages/lanvin07.jpg"),
+			new ImageIcon("itemImages/lanvin08.jpg"),
 			};
 	
-	public DiorItems(String title, int width, int height) {
+	public LanvinItems(String title, int width, int height) {
 		setTitle(title);
 	    setSize(width, height);
 	    setLocationRelativeTo(null);
 	    setExtendedState(JFrame.MAXIMIZED_BOTH);
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    setLayout(new BorderLayout());  
+	    setLayout(new BorderLayout());
 	    
 	    setScrollPanel();
 	    
@@ -172,11 +172,13 @@ public class DiorItems extends JFrame {
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
 	        panel01.setPreferredSize(new Dimension(1800, 1000));
-		    panel01.setBackground(Color.white);
+		    panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
-	        JLabel textLabel = new JLabel("         Dior         ");
+	        JLabel textLabel = new JLabel("      Lanvin      ");
+	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
+	        
 	        
 	        for(int i=0; i<8; i++) {
 	        	
@@ -185,6 +187,7 @@ public class DiorItems extends JFrame {
 	        item.setContentAreaFilled(false);
 	        item.setFocusPainted(false);
 	        panel01.add(item);
+	        
 	        }
 	        
 	        panel.add(textLabel);
@@ -197,7 +200,7 @@ public class DiorItems extends JFrame {
 	
     public static void main(String[] args)
       {
-    	new DiorItems("JavaCoCo", 1000, 500);
+    	new LanvinItems("JavaCoCo", 1000, 500);
 
       }
 }
