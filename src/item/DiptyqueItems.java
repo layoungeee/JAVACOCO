@@ -48,7 +48,7 @@ public class DiptyqueItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -176,7 +176,7 @@ public class DiptyqueItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 	        panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -191,8 +191,8 @@ public class DiptyqueItems extends JFrame {
 	        diptyque01.setBorderPainted(false);
 	        diptyque01.setContentAreaFilled(false);
 	        diptyque01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[딥디크] 오드 뚜왈렛");
+	        JLabel price1 = new JLabel("128,000원");
 	        diptyque1.add(diptyque01,BorderLayout.NORTH);
 	        diptyque1.add(name1,BorderLayout.CENTER);
 	        diptyque1.add(price1,BorderLayout.SOUTH);
@@ -208,8 +208,8 @@ public class DiptyqueItems extends JFrame {
 	        diptyque02.setBorderPainted(false);
 	        diptyque02.setContentAreaFilled(false);
 	        diptyque02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[딥디크] 리미티드 에디션 오드 뚜왈렛 도손");
+	        JLabel price2 = new JLabel("210,000원");
 	        diptyque2.add(diptyque02,BorderLayout.NORTH);
 	        diptyque2.add(name2,BorderLayout.CENTER);
 	        diptyque2.add(price2,BorderLayout.SOUTH);
@@ -225,7 +225,7 @@ public class DiptyqueItems extends JFrame {
 	        diptyque03.setBorderPainted(false);
 	        diptyque03.setContentAreaFilled(false);
 	        diptyque03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel name3 = new JLabel("[딥디크] 베티베리오 오드 뚜왈렛");
 	        JLabel price3 = new JLabel("119,200원");
 	        diptyque3.add(diptyque03,BorderLayout.NORTH);
 	        diptyque3.add(name3,BorderLayout.CENTER);
@@ -242,7 +242,7 @@ public class DiptyqueItems extends JFrame {
 	        diptyque04.setBorderPainted(false);
 	        diptyque04.setContentAreaFilled(false);
 	        diptyque04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel name4 = new JLabel("[딥디크] 오 드 퍼퓸 오르페옹");
 	        JLabel price4 = new JLabel("119,200원");
 	        diptyque4.add(diptyque04,BorderLayout.NORTH);
 	        diptyque4.add(name4,BorderLayout.CENTER);
@@ -259,8 +259,8 @@ public class DiptyqueItems extends JFrame {
 	        diptyque05.setBorderPainted(false);
 	        diptyque05.setContentAreaFilled(false);
 	        diptyque05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[딥디크] 필로시코스 오 드 뚜왈렛");
+	        JLabel price5 = new JLabel("194,800원");
 	        diptyque5.add(diptyque05,BorderLayout.NORTH);
 	        diptyque5.add(name5,BorderLayout.CENTER);
 	        diptyque5.add(price5,BorderLayout.SOUTH);
@@ -276,8 +276,8 @@ public class DiptyqueItems extends JFrame {
 	        diptyque06.setBorderPainted(false);
 	        diptyque06.setContentAreaFilled(false);
 	        diptyque06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[딥디크] 오 드 뚜왈렛 오 데 썽");
+	        JLabel price6 = new JLabel("173,900원");
 	        diptyque6.add(diptyque06,BorderLayout.NORTH);
 	        diptyque6.add(name6,BorderLayout.CENTER);
 	        diptyque6.add(price6,BorderLayout.SOUTH);
@@ -293,8 +293,8 @@ public class DiptyqueItems extends JFrame {
 	        diptyque07.setBorderPainted(false);
 	        diptyque07.setContentAreaFilled(false);
 	        diptyque07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[딥디크] 오 드 뚜왈렛 오에도");
+	        JLabel price7 = new JLabel("113,900원");
 	        diptyque7.add(diptyque07,BorderLayout.NORTH);
 	        diptyque7.add(name7,BorderLayout.CENTER);
 	        diptyque7.add(price7,BorderLayout.SOUTH);
@@ -310,8 +310,8 @@ public class DiptyqueItems extends JFrame {
 	        diptyque08.setBorderPainted(false);
 	        diptyque08.setContentAreaFilled(false);
 	        diptyque08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
+	        JLabel name8 = new JLabel("[딥디크] 롬브르 단 로 오 드 뚜왈렛");
+	        JLabel price8 = new JLabel("184,800원");
 	        diptyque8.add(diptyque08,BorderLayout.NORTH);
 	        diptyque8.add(name8,BorderLayout.CENTER);
 	        diptyque8.add(price8,BorderLayout.SOUTH);
@@ -327,8 +327,8 @@ public class DiptyqueItems extends JFrame {
 	        diptyque09.setBorderPainted(false);
 	        diptyque09.setContentAreaFilled(false);
 	        diptyque09.setFocusPainted(false);
-	        JLabel name9 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price9 = new JLabel("119,200원");
+	        JLabel name9 = new JLabel("[딥디크] 도손");
+	        JLabel price9 = new JLabel("129,000원");
 	        diptyque9.add(diptyque09,BorderLayout.NORTH);
 	        diptyque9.add(name9,BorderLayout.CENTER);
 	        diptyque9.add(price9,BorderLayout.SOUTH);

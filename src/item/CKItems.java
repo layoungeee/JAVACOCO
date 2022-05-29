@@ -47,7 +47,7 @@ public class CKItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -174,7 +174,7 @@ public class CKItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 		    panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -187,8 +187,8 @@ public class CKItems extends JFrame {
 	        ck01.setBorderPainted(false);
 	        ck01.setContentAreaFilled(false);
 	        ck01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[캘빈클라인] 씨케이 올 EDT");
+	        JLabel price1 = new JLabel("68,000원");
 	        ck1.add(ck01,BorderLayout.NORTH);
 	        ck1.add(name1,BorderLayout.CENTER);
 	        ck1.add(price1,BorderLayout.SOUTH);
@@ -204,8 +204,8 @@ public class CKItems extends JFrame {
 	        ck02.setBorderPainted(false);
 	        ck02.setContentAreaFilled(false);
 	        ck02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[캘빈클라인] 이터너티 우먼 오드 퍼퓸");
+	        JLabel price2 = new JLabel("48,800원");
 	        ck2.add(ck02,BorderLayout.NORTH);
 	        ck2.add(name2,BorderLayout.CENTER);
 	        ck2.add(price2,BorderLayout.SOUTH);
@@ -221,8 +221,8 @@ public class CKItems extends JFrame {
 	        ck03.setBorderPainted(false);
 	        ck03.setContentAreaFilled(false);
 	        ck03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
+	        JLabel name3 = new JLabel("[캘빈클라인] 이터너티 포맨 오드뚜왈렛");
+	        JLabel price3 = new JLabel("45,900원");
 	        ck3.add(ck03,BorderLayout.NORTH);
 	        ck3.add(name3,BorderLayout.CENTER);
 	        ck3.add(price3,BorderLayout.SOUTH);
@@ -238,8 +238,8 @@ public class CKItems extends JFrame {
 	        ck04.setBorderPainted(false);
 	        ck04.setContentAreaFilled(false);
 	        ck04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
+	        JLabel name4 = new JLabel("[캘빈클라인] 이터니티 에어 포맨");
+	        JLabel price4 = new JLabel("63,900원");
 	        ck4.add(ck04,BorderLayout.NORTH);
 	        ck4.add(name4,BorderLayout.CENTER);
 	        ck4.add(price4,BorderLayout.SOUTH);
@@ -255,8 +255,8 @@ public class CKItems extends JFrame {
 	        ck05.setBorderPainted(false);
 	        ck05.setContentAreaFilled(false);
 	        ck05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[캘빈클라인] 디파이 EDT");
+	        JLabel price5 = new JLabel("49,800원");
 	        ck5.add(ck05,BorderLayout.NORTH);
 	        ck5.add(name5,BorderLayout.CENTER);
 	        ck5.add(price5,BorderLayout.SOUTH);
@@ -272,8 +272,8 @@ public class CKItems extends JFrame {
 	        ck06.setBorderPainted(false);
 	        ck06.setContentAreaFilled(false);
 	        ck06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[캘빈클라인] CKO 골드 EDT");
+	        JLabel price6 = new JLabel("72,100원");
 	        ck6.add(ck06,BorderLayout.NORTH);
 	        ck6.add(name6,BorderLayout.CENTER);
 	        ck6.add(price6,BorderLayout.SOUTH);
@@ -289,8 +289,8 @@ public class CKItems extends JFrame {
 	        ck07.setBorderPainted(false);
 	        ck07.setContentAreaFilled(false);
 	        ck07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[캘빈클라인] CK BE 향수 오드 뚜왈렛 EDT");
+	        JLabel price7 = new JLabel("61,000원");
 	        ck7.add(ck07,BorderLayout.NORTH);
 	        ck7.add(name7,BorderLayout.CENTER);
 	        ck7.add(price7,BorderLayout.SOUTH);
@@ -306,8 +306,8 @@ public class CKItems extends JFrame {
 	        ck08.setBorderPainted(false);
 	        ck08.setContentAreaFilled(false);
 	        ck08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
+	        JLabel name8 = new JLabel("[캘빈클라인] CK ONE 향수 오드 뚜왈렛 EDT");
+	        JLabel price8 = new JLabel("59,400원");
 	        ck8.add(ck08,BorderLayout.NORTH);
 	        ck8.add(name8,BorderLayout.CENTER);
 	        ck8.add(price8,BorderLayout.SOUTH);

@@ -48,7 +48,7 @@ public class TomfordItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -178,7 +178,7 @@ public class TomfordItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 	        panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -193,8 +193,8 @@ public class TomfordItems extends JFrame {
 	        tomford01.setBorderPainted(false);
 	        tomford01.setContentAreaFilled(false);
 	        tomford01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[톰포드] 로즈 드 시네 EAU 드 퍼퓸");
+	        JLabel price1 = new JLabel("149,000원");
 	        tomford1.add(tomford01,BorderLayout.NORTH);
 	        tomford1.add(name1,BorderLayout.CENTER);
 	        tomford1.add(price1,BorderLayout.SOUTH);
@@ -210,8 +210,8 @@ public class TomfordItems extends JFrame {
 	        tomford02.setBorderPainted(false);
 	        tomford02.setContentAreaFilled(false);
 	        tomford02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[톰포드] 로즈 디 아말피 EAU 드 퍼퓸");
+	        JLabel price2 = new JLabel("244,000원");
 	        tomford2.add(tomford02,BorderLayout.NORTH);
 	        tomford2.add(name2,BorderLayout.CENTER);
 	        tomford2.add(price2,BorderLayout.SOUTH);
@@ -227,8 +227,8 @@ public class TomfordItems extends JFrame {
 	        tomford03.setBorderPainted(false);
 	        tomford03.setContentAreaFilled(false);
 	        tomford03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
+	        JLabel name3 = new JLabel("[톰포드] 로즈 프릭 EAU 드 퍼퓸");
+	        JLabel price3 = new JLabel("310,000원");
 	        tomford3.add(tomford03,BorderLayout.NORTH);
 	        tomford3.add(name3,BorderLayout.CENTER);
 	        tomford3.add(price3,BorderLayout.SOUTH);
@@ -244,8 +244,8 @@ public class TomfordItems extends JFrame {
 	        tomford04.setBorderPainted(false);
 	        tomford04.setContentAreaFilled(false);
 	        tomford04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
+	        JLabel name4 = new JLabel("[톰포드] 튜베르즈 뉘 EAU 드 퍼퓸");
+	        JLabel price4 = new JLabel("329,000원");
 	        tomford4.add(tomford04,BorderLayout.NORTH);
 	        tomford4.add(name4,BorderLayout.CENTER);
 	        tomford4.add(price4,BorderLayout.SOUTH);
@@ -261,8 +261,8 @@ public class TomfordItems extends JFrame {
 	        tomford05.setBorderPainted(false);
 	        tomford05.setContentAreaFilled(false);
 	        tomford05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[톰포드] 로스트 체리 EAU 드 퍼퓸");
+	        JLabel price5 = new JLabel("253,000원");
 	        tomford5.add(tomford05,BorderLayout.NORTH);
 	        tomford5.add(name5,BorderLayout.CENTER);
 	        tomford5.add(price5,BorderLayout.SOUTH);
@@ -278,8 +278,8 @@ public class TomfordItems extends JFrame {
 	        tomford06.setBorderPainted(false);
 	        tomford06.setContentAreaFilled(false);
 	        tomford06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[톰포드] 비터피치 EAU 드 퍼퓸");
+	        JLabel price6 = new JLabel("160,000원");
 	        tomford6.add(tomford06,BorderLayout.NORTH);
 	        tomford6.add(name6,BorderLayout.CENTER);
 	        tomford6.add(price6,BorderLayout.SOUTH);
@@ -295,8 +295,8 @@ public class TomfordItems extends JFrame {
 	        tomford07.setBorderPainted(false);
 	        tomford07.setContentAreaFilled(false);
 	        tomford07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[톰포드] 솔레일 브루란트 EAU 드 퍼퓸");
+	        JLabel price7 = new JLabel("248,700원");
 	        tomford7.add(tomford07,BorderLayout.NORTH);
 	        tomford7.add(name7,BorderLayout.CENTER);
 	        tomford7.add(price7,BorderLayout.SOUTH);
@@ -312,8 +312,8 @@ public class TomfordItems extends JFrame {
 	        tomford08.setBorderPainted(false);
 	        tomford08.setContentAreaFilled(false);
 	        tomford08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
+	        JLabel name8 = new JLabel("[톰포드] EAU 드 솔레일 블랑");
+	        JLabel price8 = new JLabel("230,800원");
 	        tomford8.add(tomford08,BorderLayout.NORTH);
 	        tomford8.add(name8,BorderLayout.CENTER);
 	        tomford8.add(price8,BorderLayout.SOUTH);
@@ -329,8 +329,8 @@ public class TomfordItems extends JFrame {
 	        tomford09.setBorderPainted(false);
 	        tomford09.setContentAreaFilled(false);
 	        tomford09.setFocusPainted(false);
-	        JLabel name9 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price9 = new JLabel("119,200원");
+	        JLabel name9 = new JLabel("[톰포드] 화이트 슈드 EAU 드 퍼퓸");
+	        JLabel price9 = new JLabel("125,000원");
 	        tomford9.add(tomford09,BorderLayout.NORTH);
 	        tomford9.add(name9,BorderLayout.CENTER);
 	        tomford9.add(price9,BorderLayout.SOUTH);

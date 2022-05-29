@@ -47,7 +47,7 @@ public class LanvinItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -177,7 +177,7 @@ public class LanvinItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 	        panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -192,8 +192,8 @@ public class LanvinItems extends JFrame {
 	        lanvin01.setBorderPainted(false);
 	        lanvin01.setContentAreaFilled(false);
 	        lanvin01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[랑방] 모던 프린세스 블루밍");
+	        JLabel price1 = new JLabel("51,800원");
 	        lanvin1.add(lanvin01,BorderLayout.NORTH);
 	        lanvin1.add(name1,BorderLayout.CENTER);
 	        lanvin1.add(price1,BorderLayout.SOUTH);
@@ -209,8 +209,8 @@ public class LanvinItems extends JFrame {
 	        lanvin02.setBorderPainted(false);
 	        lanvin02.setContentAreaFilled(false);
 	        lanvin02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[랑방] 모던 프린세스 오드퍼퓸");
+	        JLabel price2 = new JLabel("62,900원");
 	        lanvin2.add(lanvin02,BorderLayout.NORTH);
 	        lanvin2.add(name2,BorderLayout.CENTER);
 	        lanvin2.add(price2,BorderLayout.SOUTH);
@@ -226,8 +226,8 @@ public class LanvinItems extends JFrame {
 	        lanvin03.setBorderPainted(false);
 	        lanvin03.setContentAreaFilled(false);
 	        lanvin03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
+	        JLabel name3 = new JLabel("[랑방] 메리미 우먼 오드퍼퓸");
+	        JLabel price3 = new JLabel("49,900원");
 	        lanvin3.add(lanvin03,BorderLayout.NORTH);
 	        lanvin3.add(name3,BorderLayout.CENTER);
 	        lanvin3.add(price3,BorderLayout.SOUTH);
@@ -243,8 +243,8 @@ public class LanvinItems extends JFrame {
 	        lanvin04.setBorderPainted(false);
 	        lanvin04.setContentAreaFilled(false);
 	        lanvin04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
+	        JLabel name4 = new JLabel("[랑방] 에끌라 드 아르페쥬 우먼 오드퍼퓸");
+	        JLabel price4 = new JLabel("39,500원");
 	        lanvin4.add(lanvin04,BorderLayout.NORTH);
 	        lanvin4.add(name4,BorderLayout.CENTER);
 	        lanvin4.add(price4,BorderLayout.SOUTH);
@@ -260,8 +260,8 @@ public class LanvinItems extends JFrame {
 	        lanvin05.setBorderPainted(false);
 	        lanvin05.setContentAreaFilled(false);
 	        lanvin05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[랑방] 잔느 우먼 오드퍼퓸");
+	        JLabel price5 = new JLabel("39,400원");
 	        lanvin5.add(lanvin05,BorderLayout.NORTH);
 	        lanvin5.add(name5,BorderLayout.CENTER);
 	        lanvin5.add(price5,BorderLayout.SOUTH);
@@ -277,8 +277,8 @@ public class LanvinItems extends JFrame {
 	        lanvin06.setBorderPainted(false);
 	        lanvin06.setContentAreaFilled(false);
 	        lanvin06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[랑방] 에끌라 드 아르페쥬 쉬어 오 드 뚜왈렛");
+	        JLabel price6 = new JLabel("35,100원");
 	        lanvin6.add(lanvin06,BorderLayout.NORTH);
 	        lanvin6.add(name6,BorderLayout.CENTER);
 	        lanvin6.add(price6,BorderLayout.SOUTH);
@@ -294,8 +294,8 @@ public class LanvinItems extends JFrame {
 	        lanvin07.setBorderPainted(false);
 	        lanvin07.setContentAreaFilled(false);
 	        lanvin07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[랑방] 에끌라 드 아르페쥬 뿌르옴므 오 드 뚜왈렛");
+	        JLabel price7 = new JLabel("51,800원");
 	        lanvin7.add(lanvin07,BorderLayout.NORTH);
 	        lanvin7.add(name7,BorderLayout.CENTER);
 	        lanvin7.add(price7,BorderLayout.SOUTH);
@@ -311,8 +311,8 @@ public class LanvinItems extends JFrame {
 	        lanvin08.setBorderPainted(false);
 	        lanvin08.setContentAreaFilled(false);
 	        lanvin08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
+	        JLabel name8 = new JLabel("[랑방] 루머2 로즈 우먼 오드퍼퓸 EDP");
+	        JLabel price8 = new JLabel("34,900원");
 	        lanvin8.add(lanvin08,BorderLayout.NORTH);
 	        lanvin8.add(name8,BorderLayout.CENTER);
 	        lanvin8.add(price8,BorderLayout.SOUTH);

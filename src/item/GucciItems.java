@@ -48,7 +48,7 @@ public class GucciItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -176,7 +176,7 @@ public class GucciItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 	        panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -191,8 +191,8 @@ public class GucciItems extends JFrame {
 	        gucci01.setBorderPainted(false);
 	        gucci01.setContentAreaFilled(false);
 	        gucci01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[구찌 블룸] 오 드 퍼퓸");
+	        JLabel price1 = new JLabel("143,900원");
 	        gucci1.add(gucci01,BorderLayout.NORTH);
 	        gucci1.add(name1,BorderLayout.CENTER);
 	        gucci1.add(price1,BorderLayout.SOUTH);
@@ -208,8 +208,8 @@ public class GucciItems extends JFrame {
 	        gucci02.setBorderPainted(false);
 	        gucci02.setContentAreaFilled(false);
 	        gucci02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[구찌 블룸] 암브로시아 디 피오리 오 드 퍼퓸");
+	        JLabel price2 = new JLabel("112,000원");
 	        gucci2.add(gucci02,BorderLayout.NORTH);
 	        gucci2.add(name2,BorderLayout.CENTER);
 	        gucci2.add(price2,BorderLayout.SOUTH);
@@ -225,8 +225,8 @@ public class GucciItems extends JFrame {
 	        gucci03.setBorderPainted(false);
 	        gucci03.setContentAreaFilled(false);
 	        gucci03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
+	        JLabel name3 = new JLabel("[구찌 블룸] 네타레 디 피오리 오 드 퍼퓸");
+	        JLabel price3 = new JLabel("88,900원");
 	        gucci3.add(gucci03,BorderLayout.NORTH);
 	        gucci3.add(name3,BorderLayout.CENTER);
 	        gucci3.add(price3,BorderLayout.SOUTH);
@@ -242,8 +242,8 @@ public class GucciItems extends JFrame {
 	        gucci04.setBorderPainted(false);
 	        gucci04.setContentAreaFilled(false);
 	        gucci04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
+	        JLabel name4 = new JLabel("[구찌 블룸] 아쿠아 디 피오리 오 드 뚜왈렛");
+	        JLabel price4 = new JLabel("109,000원");
 	        gucci4.add(gucci04,BorderLayout.NORTH);
 	        gucci4.add(name4,BorderLayout.CENTER);
 	        gucci4.add(price4,BorderLayout.SOUTH);
@@ -259,8 +259,8 @@ public class GucciItems extends JFrame {
 	        gucci05.setBorderPainted(false);
 	        gucci05.setContentAreaFilled(false);
 	        gucci05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[구찌 알케미스트 가든] A Midnight Stroll");
+	        JLabel price5 = new JLabel("450,000원");
 	        gucci5.add(gucci05,BorderLayout.NORTH);
 	        gucci5.add(name5,BorderLayout.CENTER);
 	        gucci5.add(price5,BorderLayout.SOUTH);
@@ -276,8 +276,8 @@ public class GucciItems extends JFrame {
 	        gucci06.setBorderPainted(false);
 	        gucci06.setContentAreaFilled(false);
 	        gucci06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[구찌 플로라] 골저스 가드니아 오 드 퍼퓸");
+	        JLabel price6 = new JLabel("145,000원");
 	        gucci6.add(gucci06,BorderLayout.NORTH);
 	        gucci6.add(name6,BorderLayout.CENTER);
 	        gucci6.add(price6,BorderLayout.SOUTH);
@@ -293,8 +293,8 @@ public class GucciItems extends JFrame {
 	        gucci07.setBorderPainted(false);
 	        gucci07.setContentAreaFilled(false);
 	        gucci07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[구찌 블룸] 프로푸모 디 피오리 오 드 퍼퓸");
+	        JLabel price7 = new JLabel("108,400원");
 	        gucci7.add(gucci07,BorderLayout.NORTH);
 	        gucci7.add(name7,BorderLayout.CENTER);
 	        gucci7.add(price7,BorderLayout.SOUTH);
@@ -310,8 +310,8 @@ public class GucciItems extends JFrame {
 	        gucci08.setBorderPainted(false);
 	        gucci08.setContentAreaFilled(false);
 	        gucci08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
+	        JLabel name8 = new JLabel("[구찌 알케미스트 가든] A Chant for the Nymph");
+	        JLabel price8 = new JLabel("390,000원");
 	        gucci8.add(gucci08,BorderLayout.NORTH);
 	        gucci8.add(name8,BorderLayout.CENTER);
 	        gucci8.add(price8,BorderLayout.SOUTH);
@@ -327,8 +327,8 @@ public class GucciItems extends JFrame {
 	        gucci09.setBorderPainted(false);
 	        gucci09.setContentAreaFilled(false);
 	        gucci09.setFocusPainted(false);
-	        JLabel name9 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price9 = new JLabel("119,200원");
+	        JLabel name9 = new JLabel("[구찌 알케미스트 가든] 1921");
+	        JLabel price9 = new JLabel("399,000원");
 	        gucci9.add(gucci09,BorderLayout.NORTH);
 	        gucci9.add(name9,BorderLayout.CENTER);
 	        gucci9.add(price9,BorderLayout.SOUTH);

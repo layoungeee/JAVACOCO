@@ -48,7 +48,7 @@ public class MontblancItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -173,7 +173,7 @@ public class MontblancItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 	        panel01.setBackground(Color.white);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -188,8 +188,8 @@ public class MontblancItems extends JFrame {
 	        montblanc01.setBorderPainted(false);
 	        montblanc01.setContentAreaFilled(false);
 	        montblanc01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[몽블랑] 익스플로러 맨 오드퍼퓸");
+	        JLabel price1 = new JLabel("53,900원");
 	        montblanc1.add(montblanc01,BorderLayout.NORTH);
 	        montblanc1.add(name1,BorderLayout.CENTER);
 	        montblanc1.add(price1,BorderLayout.SOUTH);
@@ -205,8 +205,8 @@ public class MontblancItems extends JFrame {
 	        montblanc02.setBorderPainted(false);
 	        montblanc02.setContentAreaFilled(false);
 	        montblanc02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[몽블랑] 레전드 스피릿 오드뚜왈렛 EDT ");
+	        JLabel price2 = new JLabel("58,800원");
 	        montblanc2.add(montblanc02,BorderLayout.NORTH);
 	        montblanc2.add(name2,BorderLayout.CENTER);
 	        montblanc2.add(price2,BorderLayout.SOUTH);
@@ -222,8 +222,8 @@ public class MontblancItems extends JFrame {
 	        montblanc03.setBorderPainted(false);
 	        montblanc03.setContentAreaFilled(false);
 	        montblanc03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
+	        JLabel name3 = new JLabel("[몽블랑] 스타워커 맨 오드뚜왈렛 EDT");
+	        JLabel price3 = new JLabel("44,800원");
 	        montblanc3.add(montblanc03,BorderLayout.NORTH);
 	        montblanc3.add(name3,BorderLayout.CENTER);
 	        montblanc3.add(price3,BorderLayout.SOUTH);
@@ -239,8 +239,8 @@ public class MontblancItems extends JFrame {
 	        montblanc04.setBorderPainted(false);
 	        montblanc04.setContentAreaFilled(false);
 	        montblanc04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
+	        JLabel name4 = new JLabel("[몽블랑] 익스플로러 오드퍼퓸 EDP");
+	        JLabel price4 = new JLabel("43,900원");
 	        montblanc4.add(montblanc04,BorderLayout.NORTH);
 	        montblanc4.add(name4,BorderLayout.CENTER);
 	        montblanc4.add(price4,BorderLayout.SOUTH);
@@ -256,8 +256,8 @@ public class MontblancItems extends JFrame {
 	        montblanc05.setBorderPainted(false);
 	        montblanc05.setContentAreaFilled(false);
 	        montblanc05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[몽블랑] 익스플로러 울트라 블루 오드퍼퓸");
+	        JLabel price5 = new JLabel("51,900원");
 	        montblanc5.add(montblanc05,BorderLayout.NORTH);
 	        montblanc5.add(name5,BorderLayout.CENTER);
 	        montblanc5.add(price5,BorderLayout.SOUTH);
@@ -273,8 +273,8 @@ public class MontblancItems extends JFrame {
 	        montblanc06.setBorderPainted(false);
 	        montblanc06.setContentAreaFilled(false);
 	        montblanc06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[몽블랑] 엠블럼 오드뚜왈렛 EDT");
+	        JLabel price6 = new JLabel("44,600원");
 	        montblanc6.add(montblanc06,BorderLayout.NORTH);
 	        montblanc6.add(name6,BorderLayout.CENTER);
 	        montblanc6.add(price6,BorderLayout.SOUTH);
@@ -290,8 +290,8 @@ public class MontblancItems extends JFrame {
 	        montblanc07.setBorderPainted(false);
 	        montblanc07.setContentAreaFilled(false);
 	        montblanc07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[몽블랑] 레전드 나이트 오 드 퍼퓸");
+	        JLabel price7 = new JLabel("79,900원");
 	        montblanc7.add(montblanc07,BorderLayout.NORTH);
 	        montblanc7.add(name7,BorderLayout.CENTER);
 	        montblanc7.add(price7,BorderLayout.SOUTH);
@@ -307,8 +307,8 @@ public class MontblancItems extends JFrame {
 	        montblanc08.setBorderPainted(false);
 	        montblanc08.setContentAreaFilled(false);
 	        montblanc08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
+	        JLabel name8 = new JLabel("[몽블랑] 레이디 엠블럼 오드퍼퓸 EDP");
+	        JLabel price8 = new JLabel("37,000원");
 	        montblanc8.add(montblanc08,BorderLayout.NORTH);
 	        montblanc8.add(name8,BorderLayout.CENTER);
 	        montblanc8.add(price8,BorderLayout.SOUTH);
@@ -324,8 +324,8 @@ public class MontblancItems extends JFrame {
 	        montblanc09.setBorderPainted(false);
 	        montblanc09.setContentAreaFilled(false);
 	        montblanc09.setFocusPainted(false);
-	        JLabel name9 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price9 = new JLabel("119,200원");
+	        JLabel name9 = new JLabel("[몽블랑] 시그니처 포 우먼 오드퍼퓸");
+	        JLabel price9 = new JLabel("48,500원");
 	        montblanc9.add(montblanc09,BorderLayout.NORTH);
 	        montblanc9.add(name9,BorderLayout.CENTER);
 	        montblanc9.add(price9,BorderLayout.SOUTH);

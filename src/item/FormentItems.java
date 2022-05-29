@@ -47,7 +47,7 @@ public class FormentItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -175,7 +175,7 @@ public class FormentItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 	        panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -190,8 +190,8 @@ public class FormentItems extends JFrame {
 	        forment01.setBorderPainted(false);
 	        forment01.setContentAreaFilled(false);
 	        forment01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼허그");
+	        JLabel price1 = new JLabel("55,600원");
 	        forment1.add(forment01,BorderLayout.NORTH);
 	        forment1.add(name1,BorderLayout.CENTER);
 	        forment1.add(price1,BorderLayout.SOUTH);
@@ -207,8 +207,8 @@ public class FormentItems extends JFrame {
 	        forment02.setBorderPainted(false);
 	        forment02.setContentAreaFilled(false);
 	        forment02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼허그 백야 에디션");
+	        JLabel price2 = new JLabel("78,800원");
 	        forment2.add(forment02,BorderLayout.NORTH);
 	        forment2.add(name2,BorderLayout.CENTER);
 	        forment2.add(price2,BorderLayout.SOUTH);
@@ -224,8 +224,8 @@ public class FormentItems extends JFrame {
 	        forment03.setBorderPainted(false);
 	        forment03.setContentAreaFilled(false);
 	        forment03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
+	        JLabel name3 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼메모리 벚꽃 에디션");
+	        JLabel price3 = new JLabel("68,400원");
 	        forment3.add(forment03,BorderLayout.NORTH);
 	        forment3.add(name3,BorderLayout.CENTER);
 	        forment3.add(price3,BorderLayout.SOUTH);
@@ -241,8 +241,8 @@ public class FormentItems extends JFrame {
 	        forment04.setBorderPainted(false);
 	        forment04.setContentAreaFilled(false);
 	        forment04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
+	        JLabel name4 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼 브리즈");
+	        JLabel price4 = new JLabel("39,900원");
 	        forment4.add(forment04,BorderLayout.NORTH);
 	        forment4.add(name4,BorderLayout.CENTER);
 	        forment4.add(price4,BorderLayout.SOUTH);
@@ -258,8 +258,8 @@ public class FormentItems extends JFrame {
 	        forment05.setBorderPainted(false);
 	        forment05.setContentAreaFilled(false);
 	        forment05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼 디어 나잇");
+	        JLabel price5 = new JLabel("58,100원");
 	        forment5.add(forment05,BorderLayout.NORTH);
 	        forment5.add(name5,BorderLayout.CENTER);
 	        forment5.add(price5,BorderLayout.SOUTH);
@@ -275,8 +275,8 @@ public class FormentItems extends JFrame {
 	        forment06.setBorderPainted(false);
 	        forment06.setContentAreaFilled(false);
 	        forment06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼 딜라잇부케");
+	        JLabel price6 = new JLabel("57,900원");
 	        forment6.add(forment06,BorderLayout.NORTH);
 	        forment6.add(name6,BorderLayout.CENTER);
 	        forment6.add(price6,BorderLayout.SOUTH);
@@ -292,8 +292,8 @@ public class FormentItems extends JFrame {
 	        forment07.setBorderPainted(false);
 	        forment07.setContentAreaFilled(false);
 	        forment07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼 썩세스");
+	        JLabel price7 = new JLabel("59,000원");
 	        forment7.add(forment07,BorderLayout.NORTH);
 	        forment7.add(name7,BorderLayout.CENTER);
 	        forment7.add(price7,BorderLayout.SOUTH);
@@ -309,8 +309,8 @@ public class FormentItems extends JFrame {
 	        forment08.setBorderPainted(false);
 	        forment08.setContentAreaFilled(false);
 	        forment08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
+	        JLabel name8 = new JLabel("[포맨트] 시그니처 퍼퓸 코튼키스");
+	        JLabel price8 = new JLabel("39,000원");
 	        forment8.add(forment08,BorderLayout.NORTH);
 	        forment8.add(name8,BorderLayout.CENTER);
 	        forment8.add(price8,BorderLayout.SOUTH);

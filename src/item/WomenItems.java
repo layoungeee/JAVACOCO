@@ -21,20 +21,58 @@ import javax.swing.JTextPane;
 
 import frame.MainFrame;
 
-public class BvlgariItems extends JFrame {
+public class WomenItems extends JFrame {
 	
 	private ImageIcon[] imgs = {
 			new ImageIcon("itemImages/bvlgari01.jpg"),
-			new ImageIcon("itemImages/bvlgari02.jpg"),
 			new ImageIcon("itemImages/bvlgari03.jpg"),
-			new ImageIcon("itemImages/bvlgari04.jpg"),
-			new ImageIcon("itemImages/bvlgari05.jpg"),
-			new ImageIcon("itemImages/bvlgari06.jpg"),
-			new ImageIcon("itemImages/bvlgari07.jpg")
+			new ImageIcon("itemImages/chanle01.jpg"),
+			new ImageIcon("itemImages/chanle03.jpg"),
+			new ImageIcon("itemImages/chanle04.jpg"),
+			new ImageIcon("itemImages/chanle05.jpg"),
+			new ImageIcon("itemImages/dior01.jpg"),
+			new ImageIcon("itemImages/dior02.jpg"),
+			new ImageIcon("itemImages/dior03.jpg"),
+			new ImageIcon("itemImages/dior06.jpg"),
+			new ImageIcon("itemImages/dior07.jpg"),
+			new ImageIcon("itemImages/dior08.jpg"),
+			new ImageIcon("itemImages/diptyque01.jpg"),
+			new ImageIcon("itemImages/diptyque03.jpg"),
+			new ImageIcon("itemImages/diptyque05.jpg"),
+			new ImageIcon("itemImages/diptyque07.jpg"),
+			new ImageIcon("itemImages/diptyque09.jpg"),
+			new ImageIcon("itemImages/forment04.jpg"),
+			new ImageIcon("itemImages/forment08.jpg"),
+			new ImageIcon("itemImages/gucci01.jpg"),
+			new ImageIcon("itemImages/gucci03.jpg"),
+			new ImageIcon("itemImages/gucci06.jpg"),
+			new ImageIcon("itemImages/gucci08.jpg"),
+			new ImageIcon("itemImages/jv02.jpg"),
+			new ImageIcon("itemImages/jv03.jpg"),
+			new ImageIcon("itemImages/lanvin01.jpg"),
+			new ImageIcon("itemImages/lanvin02.jpg"),
+			new ImageIcon("itemImages/lanvin03.jpg"),
+			new ImageIcon("itemImages/lanvin04.jpg"),
+			new ImageIcon("itemImages/lanvin05.jpg"),
+			new ImageIcon("itemImages/lanvin06.jpg"),
+			new ImageIcon("itemImages/lanvin07.jpg"),
+			new ImageIcon("itemImages/lanvin08.jpg"),
+			new ImageIcon("itemImages/montblanc03.jpg"),
+			new ImageIcon("itemImages/montblanc08.jpg"),
+			new ImageIcon("itemImages/tomford01.jpg"),
+			new ImageIcon("itemImages/tomford02.jpg"),
+			new ImageIcon("itemImages/tomford03.jpg"),
+			new ImageIcon("itemImages/tomford05.jpg"),
+			new ImageIcon("itemImages/tomford08.jpg"),
+			new ImageIcon("itemImages/ysl01.jpg"),
+			new ImageIcon("itemImages/ysl02.jpg"),
+			new ImageIcon("itemImages/ysl05.jpg"),
+			new ImageIcon("itemImages/ysl06.jpg"),
+			new ImageIcon("itemImages/ysl07.jpg"),
 			};
 	
 	
-	public BvlgariItems(String title, int width, int height) {
+	public WomenItems(String title, int width, int height) {
 		setTitle(title);
 	    setSize(width, height);
 	    setLocationRelativeTo(null);
@@ -49,7 +87,7 @@ public class BvlgariItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -169,16 +207,16 @@ public class BvlgariItems extends JFrame {
 	        container.add(mb, BorderLayout.CENTER);
 	        
 	        
-	        JLabel textLabel = new JLabel("               Bvlgari               ");
+	        JLabel textLabel = new JLabel("               WOMEN               ");
 	        textLabel.setHorizontalAlignment(JLabel.CENTER);
 	        textLabel.setFont(new Font(" ", ABORT, 50));
 	        
 	        
 	      //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 800));
+	        panel01.setPreferredSize(new Dimension(1400, 1000));
 		    panel01.setBackground(Color.white);
-	        panel01.setLayout(new GridLayout(3,3));
+	        panel01.setLayout(new GridLayout(16,3));
 	        
 	        
 	        JPanel bvlgari1 = new JPanel();
@@ -189,8 +227,8 @@ public class BvlgariItems extends JFrame {
 	        bvlgari01.setBorderPainted(false);
 	        bvlgari01.setContentAreaFilled(false);
 	        bvlgari01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("[불가리] 옴니아 핑크 사파이어 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("134,000원");
+	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price1 = new JLabel("119,200원");
 	        bvlgari1.add(bvlgari01,BorderLayout.NORTH);
 	        bvlgari1.add(name1,BorderLayout.CENTER);
 	        bvlgari1.add(price1,BorderLayout.SOUTH);
@@ -205,7 +243,7 @@ public class BvlgariItems extends JFrame {
 	        bvlgari02.setBorderPainted(false);
 	        bvlgari02.setContentAreaFilled(false);
 	        bvlgari02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("[불가리] 맨 우드 에센스 오 드 퍼퓸");
+	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
 	        JLabel price2 = new JLabel("119,200원");
 	        bvlgari2.add(bvlgari02,BorderLayout.NORTH);
 	        bvlgari2.add(name2,BorderLayout.CENTER);
@@ -222,8 +260,8 @@ public class BvlgariItems extends JFrame {
 	        bvlgari03.setBorderPainted(false);
 	        bvlgari03.setContentAreaFilled(false);
 	        bvlgari03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("[불가리] 옴니아 아메시스트 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("154,600원");
+	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price3 = new JLabel("119,200원");
 	        bvlgari3.add(bvlgari03,BorderLayout.NORTH);
 	        bvlgari3.add(name3,BorderLayout.CENTER);
 	        bvlgari3.add(price3,BorderLayout.SOUTH);
@@ -239,8 +277,8 @@ public class BvlgariItems extends JFrame {
 	        bvlgari04.setBorderPainted(false);
 	        bvlgari04.setContentAreaFilled(false);
 	        bvlgari04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("[불가리] 옴니아 퍼플 사파이어 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("134,000원");
+	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price4 = new JLabel("119,200원");
 	        bvlgari4.add(bvlgari04,BorderLayout.NORTH);
 	        bvlgari4.add(name4,BorderLayout.CENTER);
 	        bvlgari4.add(price4,BorderLayout.SOUTH);
@@ -256,8 +294,8 @@ public class BvlgariItems extends JFrame {
 	        bvlgari05.setBorderPainted(false);
 	        bvlgari05.setContentAreaFilled(false);
 	        bvlgari05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("[불가리] 알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("98,000원");
+	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price5 = new JLabel("119,200원");
 	        bvlgari5.add(bvlgari05,BorderLayout.NORTH);
 	        bvlgari5.add(name5,BorderLayout.CENTER);
 	        bvlgari5.add(price5,BorderLayout.SOUTH);
@@ -273,8 +311,8 @@ public class BvlgariItems extends JFrame {
 	        bvlgari06.setBorderPainted(false);
 	        bvlgari06.setContentAreaFilled(false);
 	        bvlgari06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("[불가리] MAN GLACIAL ESSENCE 오 드 퍼퓸");
-	        JLabel price6 = new JLabel("187,100원");
+	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price6 = new JLabel("119,200원");
 	        bvlgari6.add(bvlgari06,BorderLayout.NORTH);
 	        bvlgari6.add(name6,BorderLayout.CENTER);
 	        bvlgari6.add(price6,BorderLayout.SOUTH);
@@ -290,8 +328,8 @@ public class BvlgariItems extends JFrame {
 	        bvlgari07.setBorderPainted(false);
 	        bvlgari07.setContentAreaFilled(false);
 	        bvlgari07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("[불가리] 블루 옴므 오드뚜왈렛 EDT");
-	        JLabel price7 = new JLabel("140,000원");
+	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel price7 = new JLabel("119,200원");
 	        bvlgari7.add(bvlgari07,BorderLayout.NORTH);
 	        bvlgari7.add(name7,BorderLayout.CENTER);
 	        bvlgari7.add(price7,BorderLayout.SOUTH);
@@ -323,7 +361,7 @@ public class BvlgariItems extends JFrame {
 	
     public static void main(String[] args)
       {
-    	new BvlgariItems("JavaCoCo", 1000, 500);
+    	new WomenItems("JavaCoCo", 1000, 500);
 
       }
 }

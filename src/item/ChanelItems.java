@@ -52,7 +52,7 @@ public class ChanelItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -179,7 +179,7 @@ public class ChanelItems extends JFrame {
 	        
 	      //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 		    panel01.setBackground(Color.white);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -192,7 +192,7 @@ public class ChanelItems extends JFrame {
 	        chanel01.setBorderPainted(false);
 	        chanel01.setContentAreaFilled(false);
 	        chanel01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
+	        JLabel name1 = new JLabel("[샤넬] 샹스 오 땅드르 오 드 빠르펭");
 	        JLabel price1 = new JLabel("119,200원");
 	        chanel1.add(chanel01,BorderLayout.NORTH);
 	        chanel1.add(name1,BorderLayout.CENTER);
@@ -209,7 +209,7 @@ public class ChanelItems extends JFrame {
 	        chanel02.setBorderPainted(false);
 	        chanel02.setContentAreaFilled(false);
 	        chanel02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("N°5 오 드 빠르펭");
+	        JLabel name2 = new JLabel("[샤넬] N°1 DE CHANEL 레드 까멜리아 향수 리바이탈라이징 프래그런스");
 	        JLabel price2 = new JLabel("133,000원");
 	        chanel2.add(chanel02,BorderLayout.NORTH);
 	        chanel2.add(name2,BorderLayout.CENTER);
@@ -226,7 +226,7 @@ public class ChanelItems extends JFrame {
 	        chanel03.setBorderPainted(false);
 	        chanel03.setContentAreaFilled(false);
 	        chanel03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("N°1 DE CHANEL 레드 까멜리아 향수 리바이탈라이징 프래그런스");
+	        JLabel name3 = new JLabel("[샤넬] N°5 오 드 빠르펭");
 	        JLabel price3 = new JLabel("123,000원");
 	        chanel3.add(chanel03,BorderLayout.NORTH);
 	        chanel3.add(name3,BorderLayout.CENTER);
@@ -243,7 +243,7 @@ public class ChanelItems extends JFrame {
 	        chanel04.setBorderPainted(false);
 	        chanel04.setContentAreaFilled(false);
 	        chanel04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("블루드샤넬 빠르펭");
+	        JLabel name4 = new JLabel("[샤넬] 가브리엘 샤넬 에센스 오 드 빠르펭");
 	        JLabel price4 = new JLabel("113,100원");
 	        chanel4.add(chanel04,BorderLayout.NORTH);
 	        chanel4.add(name4,BorderLayout.CENTER);
@@ -260,7 +260,7 @@ public class ChanelItems extends JFrame {
 	        chanel05.setBorderPainted(false);
 	        chanel05.setContentAreaFilled(false);
 	        chanel05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("샹스 오 땅드르 오 드 빠르펭");
+	        JLabel name5 = new JLabel("[샤넬] 파리 리비에라 레 조 드 샤넬 오 드 뚜왈렛");
 	        JLabel price5 = new JLabel("98,100원");
 	        chanel5.add(chanel05,BorderLayout.NORTH);
 	        chanel5.add(name5,BorderLayout.CENTER);
@@ -277,7 +277,7 @@ public class ChanelItems extends JFrame {
 	        chanel06.setBorderPainted(false);
 	        chanel06.setContentAreaFilled(false);
 	        chanel06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("가브리엘 샤넬 에센스 오 드 빠르펭");
+	        JLabel name6 = new JLabel("[샤넬] 알뤼르 옴므 스포츠 오 드 뚜왈렛");
 	        JLabel price6 = new JLabel("109,900원");
 	        chanel6.add(chanel06,BorderLayout.NORTH);
 	        chanel6.add(name6,BorderLayout.CENTER);
@@ -294,7 +294,7 @@ public class ChanelItems extends JFrame {
 	        chanel07.setBorderPainted(false);
 	        chanel07.setContentAreaFilled(false);
 	        chanel07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("파리 리비에라 레 조 드 샤넬 오 드 뚜왈렛");
+	        JLabel name7 = new JLabel("[샤넬] 블루 드 샤넬 빠르펭");
 	        JLabel price7 = new JLabel("156,700원");
 	        chanel7.add(chanel07,BorderLayout.NORTH);
 	        chanel7.add(name7,BorderLayout.CENTER);

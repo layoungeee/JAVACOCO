@@ -46,7 +46,7 @@ public class JVItems extends JFrame {
 	
 	private void setScrollPanel() {
 	        JPanel panel = new JPanel();      
-	        panel.setPreferredSize(new Dimension(400, 1500));   // 패널에 사이즈 설정 
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
 	        panel.setBackground(Color.WHITE);
 	        panel.setLayout(new FlowLayout());
 	        
@@ -175,7 +175,7 @@ public class JVItems extends JFrame {
 	        
 	        //상품 정렬
 	        JPanel panel01 = new JPanel();
-	        panel01.setPreferredSize(new Dimension(1400, 1000));
+	        panel01.setPreferredSize(new Dimension(1400, 800));
 	        panel01.setBackground(Color.WHITE);
 	        panel01.setLayout(new GridLayout(3,3));
 	        
@@ -190,8 +190,8 @@ public class JVItems extends JFrame {
 	        jv01.setBorderPainted(false);
 	        jv01.setContentAreaFilled(false);
 	        jv01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("119,200원");
+	        JLabel name1 = new JLabel("[존바바토스] 아티 산 EDT");
+	        JLabel price1 = new JLabel("36,000원");
 	        jv1.add(jv01,BorderLayout.NORTH);
 	        jv1.add(name1,BorderLayout.CENTER);
 	        jv1.add(price1,BorderLayout.SOUTH);
@@ -206,8 +206,8 @@ public class JVItems extends JFrame {
 	        jv02.setBorderPainted(false);
 	        jv02.setContentAreaFilled(false);
 	        jv02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
+	        JLabel name2 = new JLabel("[존바바토스] 아티 산 마일드 EDT");
+	        JLabel price2 = new JLabel("37,900원");
 	        jv2.add(jv02,BorderLayout.NORTH);
 	        jv2.add(name2,BorderLayout.CENTER);
 	        jv2.add(price2,BorderLayout.SOUTH);
@@ -223,8 +223,8 @@ public class JVItems extends JFrame {
 	        jv03.setBorderPainted(false);
 	        jv03.setContentAreaFilled(false);
 	        jv03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
+	        JLabel name3 = new JLabel("[존바바토스] 아티 산 퓨어 EDT");
+	        JLabel price3 = new JLabel("31,900원");
 	        jv3.add(jv03,BorderLayout.NORTH);
 	        jv3.add(name3,BorderLayout.CENTER);
 	        jv3.add(price3,BorderLayout.SOUTH);
@@ -240,8 +240,8 @@ public class JVItems extends JFrame {
 	        jv04.setBorderPainted(false);
 	        jv04.setContentAreaFilled(false);
 	        jv04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
+	        JLabel name4 = new JLabel("[존바바토스] 아티 산 블랙 EDT");
+	        JLabel price4 = new JLabel("47,900원");
 	        jv4.add(jv04,BorderLayout.NORTH);
 	        jv4.add(name4,BorderLayout.CENTER);
 	        jv4.add(price4,BorderLayout.SOUTH);
@@ -257,8 +257,8 @@ public class JVItems extends JFrame {
 	        jv05.setBorderPainted(false);
 	        jv05.setContentAreaFilled(false);
 	        jv05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
+	        JLabel name5 = new JLabel("[존바바토스] 아티 산 아쿠아");
+	        JLabel price5 = new JLabel("31,400원");
 	        jv5.add(jv05,BorderLayout.NORTH);
 	        jv5.add(name5,BorderLayout.CENTER);
 	        jv5.add(price5,BorderLayout.SOUTH);
@@ -274,8 +274,8 @@ public class JVItems extends JFrame {
 	        jv06.setBorderPainted(false);
 	        jv06.setContentAreaFilled(false);
 	        jv06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
+	        JLabel name6 = new JLabel("[존바바토스] 닉 조나스 레드");
+	        JLabel price6 = new JLabel("90,300원");
 	        jv6.add(jv06,BorderLayout.NORTH);
 	        jv6.add(name6,BorderLayout.CENTER);
 	        jv6.add(price6,BorderLayout.SOUTH);
@@ -291,8 +291,8 @@ public class JVItems extends JFrame {
 	        jv07.setBorderPainted(false);
 	        jv07.setContentAreaFilled(false);
 	        jv07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
+	        JLabel name7 = new JLabel("[존바바토스] 닉 조나스 블루");
+	        JLabel price7 = new JLabel("90,300원");
 	        jv7.add(jv07,BorderLayout.NORTH);
 	        jv7.add(name7,BorderLayout.CENTER);
 	        jv7.add(price7,BorderLayout.SOUTH);
