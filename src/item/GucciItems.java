@@ -358,9 +358,4 @@ public class GucciItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new GucciItems("JavaCoCo", 1000, 500);
-
-      }
 }

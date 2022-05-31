@@ -339,9 +339,4 @@ public class FormentItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new FormentItems("JavaCoCo", 1000, 500);
-
-      }
 }

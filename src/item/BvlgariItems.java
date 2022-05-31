@@ -321,9 +321,5 @@ public class BvlgariItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new BvlgariItems("JavaCoCo", 1000, 500);
-
-      }
+   
 }

@@ -303,9 +303,5 @@ public class BestItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new BestItems("JavaCoCo", 1000, 500);
-
-      }
+   
 }

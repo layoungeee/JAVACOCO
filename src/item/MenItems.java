@@ -321,9 +321,5 @@ public class MenItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new MenItems("JavaCoCo", 1000, 500);
-
-      }
+    
 }

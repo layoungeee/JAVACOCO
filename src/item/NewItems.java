@@ -378,9 +378,5 @@ public class NewItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new NewItems("JavaCoCo", 1000, 500);
-
-      }
+  
 }

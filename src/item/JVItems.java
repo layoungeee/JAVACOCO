@@ -323,9 +323,5 @@ public class JVItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new JVItems("JavaCoCo", 1000, 500);
-
-      }
+    
 }

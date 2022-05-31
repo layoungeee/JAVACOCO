@@ -325,9 +325,5 @@ public class ChanelItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new ChanelItems("JavaCoCo", 1000, 500);
-
-      }
+    
 }

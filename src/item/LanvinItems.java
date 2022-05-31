@@ -342,9 +342,5 @@ public class LanvinItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new LanvinItems("JavaCoCo", 1000, 500);
-
-      }
+  
 }

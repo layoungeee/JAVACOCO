@@ -336,9 +336,5 @@ public class DiorItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new DiorItems("JavaCoCo", 1000, 500);
-
-      }
+   
 }

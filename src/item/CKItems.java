@@ -335,9 +335,5 @@ public class CKItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new CKItems("JavaCoCo", 1000, 500);
-
-      }
+    
 }

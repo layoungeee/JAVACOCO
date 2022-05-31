@@ -359,9 +359,4 @@ public class WomenItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new WomenItems("JavaCoCo", 1000, 500);
-
-      }
 }

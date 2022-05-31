@@ -344,9 +344,5 @@ public class YSLItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new YSLItems("JavaCoCo", 1000, 500);
-    	
-      }
+   
 }

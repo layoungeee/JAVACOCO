@@ -361,9 +361,5 @@ public class TomfordItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new TomfordItems("JavaCoCo", 1000, 500);
-
-      }
+  
 }

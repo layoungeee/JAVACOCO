@@ -356,9 +356,5 @@ public class MontblancItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new MontblancItems("JavaCoCo", 1000, 500);
-
-      }
+    
 }

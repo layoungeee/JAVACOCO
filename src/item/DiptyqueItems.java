@@ -359,9 +359,5 @@ public class DiptyqueItems extends JFrame {
 	}
 
 	
-    public static void main(String[] args)
-      {
-    	new DiptyqueItems("JavaCoCo", 1000, 500);
-
-      }
+    
 }
