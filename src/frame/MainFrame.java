@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -331,12 +332,21 @@ public class MainFrame extends JFrame{
          newPanel.setVisible(true);
           
          Font font3 = new Font("HY견명조", Font.PLAIN, 20);
-         JLabel newItemText = new JLabel("NEW ITEM");
-         
-        
+         JButton newItemText = new JButton("NEW ITEM");
+         newItemText.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new NewItems("JavaCoCo", 1000, 500);
+				
+			}
+		});
+         newItemText.setBorderPainted(false);
+         newItemText.setContentAreaFilled(false);
+         newItemText.setFocusPainted(false);
          newItemText.setFont(font3);
          newItemText.setLayout(new BorderLayout());
-         newItemText.setHorizontalAlignment(JLabel.CENTER);
+         newItemText.setHorizontalAlignment(JButton.CENTER);
 
 
             
