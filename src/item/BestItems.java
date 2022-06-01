@@ -41,13 +41,13 @@ public class BestItems extends JFrame {
 			new String("[캘빈클라인] 디파이 EDT"),
 	};
 	
-	private String[] price = {
-			new String("76,400원"),
-			new String("39,500원"),
-			new String("51,900원"),
-			new String("125,000원"),
-			new String("113,900원"),
-			new String("49,800원"),
+	private int[] price = {
+			76400,
+			39500,
+			51900,
+			12,000,
+			113900,
+			49800,
 	};
 	
 	
@@ -210,7 +210,7 @@ public class BestItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

@@ -75,30 +75,30 @@ public class WomenItems extends JFrame {
 			new String("[구찌 알케미스트 가든] A Chant for the Nymph"),
 	};
 	
-	private String[] price = {
-			new String("134,000원"),
-			new String("154,600원"),
-			new String("119,200원"),
-			new String("123,000원"),
-			new String("113,100원"),
-			new String("98,100원"),
-			new String("93,200원"),
-			new String("76,400원"),
-			new String("158,000원"),
-			new String("119,200원"),
-			new String("102,600원"),
-			new String("89,500원"),
-			new String("128,000원"),
-			new String("119,200원"),
-			new String("194,800원"),
-			new String("113,900원"),
-			new String("129,000원"),
-			new String("39,900원"),
-			new String("39,000원"),
-			new String("143,900원"),
-			new String("88,900원"),
-			new String("145,000원"),
-			new String("390,000원"),	//23
+	private int[] price = {
+			134000,
+			154600,
+			119200,
+			123000,
+			113100,
+			98100,
+			93200,
+			76400,
+			158000,
+			119200,
+			102600,
+			89500,
+			128000,
+			119200,
+			194800,
+			113900,
+			129000,
+			39900,
+			39000,
+			143900,
+			88900,
+			145000,
+			390000,	
 	};
 	
 	
@@ -262,7 +262,7 @@ public class WomenItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

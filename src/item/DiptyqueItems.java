@@ -45,16 +45,16 @@ public class DiptyqueItems extends JFrame {
 			new String("[딥디크] 도손"),
 	};
 	
-	private String[] price = {
-			new String("128,000원"),
-			new String("210,000원"),
-			new String("119,200원"),
-			new String("119,200원"),
-			new String("194,800원"),
-			new String("173,900원"),
-			new String("113,900원"),
-			new String("184,800원"),
-			new String("129,000원"),
+	private int[] price = {
+			128000,
+			210000,
+			119200,
+			119200,
+			194800,
+			173900,
+			113900,
+			184800,
+			129000,
 	};
 	
 	public DiptyqueItems(String title, int width, int height) {
@@ -219,7 +219,7 @@ public class DiptyqueItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

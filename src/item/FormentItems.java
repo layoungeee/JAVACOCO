@@ -43,15 +43,15 @@ public class FormentItems extends JFrame {
 			new String("[포맨트] 시그니처 퍼퓸 코튼키스"),
 	};
 	
-	private String[] price = {
-			new String("55,600원"),
-			new String("78,800원"),
-			new String("68,400원"),
-			new String("39,900원"),
-			new String("58,100원"),
-			new String("57,900원"),
-			new String("59,000원"),
-			new String("39,000원"),
+	private int[] price = {
+			55600,
+			78800,
+			68400,
+			39900,
+			58100,
+			57900,
+			59000,
+			39000,
 	};
 	
 	public FormentItems(String title, int width, int height) {
@@ -216,7 +216,7 @@ public class FormentItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

@@ -45,15 +45,15 @@ public class YSLItems extends JFrame {
 			new String("[입생로랑] 리브르 헤어 미스트"),
 	};
 	
-	private String[] price = {
-			new String("165,400원"),
-			new String("120,400원"),
-			new String("149,000원"),
-			new String("89,900원"),
-			new String("115,000원"),
-			new String("87,000원"),
-			new String("139,000원"),
-			new String("98,000원"),
+	private int[] price = {
+			165400,
+			120400,
+			149000,
+			89900,
+			115000,
+			87000,
+			139000,
+			98000,
 	};
 	
 	public YSLItems(String title, int width, int height) {
@@ -220,7 +220,7 @@ public class YSLItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

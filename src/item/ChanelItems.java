@@ -46,14 +46,14 @@ public class ChanelItems extends JFrame {
 			new String("[샤넬] 블루 드 샤넬 빠르펭"),
 	};
 	
-	private String[] price = {
-			new String("119,200원"),
-			new String("133,000원"),
-			new String("123,000원"),
-			new String("113,100원"),
-			new String("98,100원"),
-			new String("109,900원"),
-			new String("156,700원"),
+	private int[] price = {
+			119200,
+			133000,
+			123000,
+			113100,
+			98100,
+			109900,
+			156700,
 	};
 	
 	public ChanelItems(String title, int width, int height) {
@@ -215,7 +215,7 @@ public class ChanelItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

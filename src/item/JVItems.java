@@ -41,14 +41,14 @@ public class JVItems extends JFrame {
 			new String("[존바바토스] 닉 조나스 블루"),
 	};
 	
-	private String[] price = {
-			new String("36,000원"),
-			new String("37,900원"),
-			new String("31,900원"),
-			new String("47,900원"),
-			new String("31,400원"),
-			new String("90,300원"),
-			new String("90,300"),
+	private int[] price = {
+			36000,
+			37900,
+			31900,
+			47900,
+			31400,
+			90300,
+			90300,
 	};
 	
 	public JVItems(String title, int width, int height) {
@@ -214,7 +214,7 @@ public class JVItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

@@ -43,15 +43,15 @@ public class CKItems extends JFrame {
 			new String("[캘빈클라인] CK ONE 향수 오드 뚜왈렛 EDT"),
 	};
 	
-	private String[] price = {
-			new String("68,000원"),
-			new String("48,800원"),
-			new String("45,900원"),
-			new String("63,900원"),
-			new String("49,800원"),
-			new String("72,100원"),
-			new String("61,000원"),
-			new String("59,400원"),
+	private int[] price = {
+			68000,
+			48800,
+			45900,
+			63900,
+			49800,
+			72100,
+			61000,
+			59400,
 	};
 	
 	public CKItems(String title, int width, int height) {
@@ -213,7 +213,7 @@ public class CKItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

@@ -83,34 +83,34 @@ public class MenItems extends JFrame {
 			new String("[몽블랑] 시그니처 포 우먼 오드퍼퓸"),
 	};
 	
-	private String[] price = {
-			new String("63,900원"),
-			new String("49,800원"),
-			new String("59,400원"),
-			new String("140,600원"),
-			new String("99,100원"),
-			new String("119,200원"),
-			new String("173,900원"),
-			new String("184,800원"),
-			new String("55,600원"),
-			new String("78,800원"),
-			new String("68,400원"),
-			new String("58,100원"),
-			new String("57,900원"),
-			new String("59,000원"),
-			new String("450,000원"),
-			new String("108,400원"),
-			new String("399,000원"),
-			new String("31,400원"),
-			new String("90,300"),
-			new String("89,900원"),
-			new String("98,000원"),
-			new String("58,800원"),
-			new String("51,900원"),
-			new String("44,600원"),
-			new String("79,900원"),
-			new String("48,500원"),
-			new String("57,200원"),
+	private int[] price = {
+			63900,
+			49800,
+			59400,
+			140600,
+			99100,
+			119200,
+			173900,
+			184800,
+			55600,
+			78800,
+			68400,
+			58100,
+			57900,
+			59000,
+			450000,
+			108400,
+			399000,
+			31400,
+			90300,
+			89900,
+			98000,
+			58800,
+			51900,
+			44600,
+			79900,
+			48500,
+			57200,
 
 	};
 	
@@ -274,7 +274,7 @@ public class MenItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

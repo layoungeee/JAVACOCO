@@ -45,16 +45,16 @@ public class MontblancItems extends JFrame {
 			new String("[몽블랑] 시그니처 포 우먼 오드퍼퓸"),
 	};
 	
-	private String[] price = {
-			new String("53,900원"),
-			new String("58,800원"),
-			new String("44,800원"),
-			new String("43,900원"),
-			new String("51,900원"),
-			new String("44,600원"),
-			new String("79,900원"),
-			new String("37,000원"),
-			new String("48,500원"),
+	private int[] price = {
+			53900,
+			58800,
+			44800,
+			43900,
+			51900,
+			44600,
+			79900,
+			37000,
+			48500,
 	};
 	
 	public MontblancItems(String title, int width, int height) {
@@ -216,7 +216,7 @@ public class MontblancItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

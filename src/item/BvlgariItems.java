@@ -43,14 +43,14 @@ public class BvlgariItems extends JFrame {
 			new String("[불가리] 블루 옴므 오드뚜왈렛 EDT"),
 	};
 	
-	private String[] price = {
-			new String("134,000원"),
-			new String("119,200원"),
-			new String("154,600원"),
-			new String("134,000원"),
-			new String("98,000원"),
-			new String("187,100원"),
-			new String("140,000원"),
+	private int[] price = {
+			134000,
+			119200,
+			154600,
+			134000,
+			98000,
+			187100,
+			140000
 	};
 	
 	public BvlgariItems(String title, int width, int height) {
@@ -213,7 +213,7 @@ public class BvlgariItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

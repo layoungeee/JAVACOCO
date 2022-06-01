@@ -46,16 +46,16 @@ public class GucciItems extends JFrame {
 			
 	};
 	
-	private String[] price = {
-			new String("143,900원"),
-			new String("112,000원"),
-			new String("88,900원"),
-			new String("109,000원"),
-			new String("450,000원"),
-			new String("145,000원"),
-			new String("108,400원"),
-			new String("390,000원"),
-			new String("399,000원"),
+	private int[] price = {
+			143900,
+			112000,
+			88900,
+			109000,
+			450000,
+			145000,
+			108400,
+			390000,
+			399000,
 	};
 	
 	public GucciItems(String title, int width, int height) {
@@ -220,7 +220,7 @@ public class GucciItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

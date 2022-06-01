@@ -43,15 +43,15 @@ public class LanvinItems extends JFrame {
 			new String("[랑방] 루머2 로즈 우먼 오드퍼퓸 EDP"),
 	};
 	
-	private String[] price = {
-			new String("51,800원"),
-			new String("62,900원"),
-			new String("49,900원"),
-			new String("39,500원"),
-			new String("39,400원"),
-			new String("35,100원"),
-			new String("51,800"),
-			new String("34,900"),
+	private int[] price = {
+			51800,
+			62900,
+			49900,
+			39500,
+			39400,
+			35100,
+			51800,
+			34900,
 	};
 	
 	public LanvinItems(String title, int width, int height) {
@@ -218,7 +218,7 @@ public class LanvinItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

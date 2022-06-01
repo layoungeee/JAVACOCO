@@ -45,16 +45,16 @@ public class TomfordItems extends JFrame {
 			new String("[톰포드] 화이트 슈드 EAU 드 퍼퓸"),
 	};
 	
-	private String[] price = {
-			new String("149,000원"),
-			new String("244,000원"),
-			new String("310,000원"),
-			new String("329,000원"),
-			new String("253,000원"),
-			new String("160,000원"),
-			new String("248,700원"),
-			new String("230,800원"),
-			new String("125,000원"),
+	private int[] price = {
+			149000,
+			244000,
+			310000,
+			329000,
+			253000,
+			160000,
+			248700,
+			230800,
+			125000,
 	};
 	
 	public TomfordItems(String title, int width, int height) {
@@ -221,7 +221,7 @@ public class TomfordItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

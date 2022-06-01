@@ -49,17 +49,17 @@ public class NewItems extends JFrame {
 			new String("[캘빈클라인] 이터너티 포맨 오드뚜왈렛"),
 	};
 	
-	private String[] price = {
-			new String("156,700원"),
-			new String("55,600원"),
-			new String("184,800원"),
-			new String("145,000원"),
-			new String("115,000원"),
-			new String("160,000원"),
-			new String("140,000원"),
-			new String("31,400원"),
-			new String("139,000원"),
-			new String("59,400원"),
+	private int[] price = {
+			156700,
+			55600,
+			184800,
+			145000,
+			115000,
+			160000,
+			140000,
+			31400,
+			139000,
+			59400,
 	};
 	
 	
@@ -223,7 +223,7 @@ public class NewItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);

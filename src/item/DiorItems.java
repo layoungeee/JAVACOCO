@@ -43,15 +43,15 @@ public class DiorItems extends JFrame {
 			new String("[디올] 돌체비타"),
 	};
 	
-	private String[] price = {
-			new String("93,200원"),
-			new String("76,400원"),
-			new String("158,000원"),
-			new String("140,600원"),
-			new String("99,100원"),
-			new String("119,200원"),
-			new String("102,600원"),
-			new String("89,500원"),
+	private int[] price = {
+			93200,
+			76400,
+			158000,
+			140600,
+			99100,
+			119200,
+			102600,
+			89500,
 	};
 	
 	public DiorItems(String title, int width, int height) {
@@ -213,7 +213,7 @@ public class DiorItems extends JFrame {
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);
 		        JLabel itemName = new JLabel(name[i]);
-		        JLabel itemPrice = new JLabel(price[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
 		        p.add(itemImage,BorderLayout.NORTH);
 		        p.add(itemName,BorderLayout.CENTER);
 		        p.add(itemPrice,BorderLayout.SOUTH);
