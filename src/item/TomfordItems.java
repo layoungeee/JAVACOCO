@@ -33,6 +33,30 @@ public class TomfordItems extends JFrame {
 			new ImageIcon("itemImages/tomford09.jpg"),
 			};
 	
+	private String[] name = {
+			new String("[톰포드] 로즈 드 시네 EAU 드 퍼퓸"),
+			new String("[톰포드] 로즈 디 아말피 EAU 드 퍼퓸"),
+			new String("[톰포드] 로즈 프릭 EAU 드 퍼퓸"),
+			new String("[톰포드] 튜베르즈 뉘 EAU 드 퍼퓸"),
+			new String("[톰포드] 로스트 체리 EAU 드 퍼퓸"),
+			new String("[톰포드] 비터피치 EAU 드 퍼퓸"),
+			new String("[톰포드] 솔레일 브루란트 EAU 드 퍼퓸"),
+			new String("[톰포드] EAU 드 솔레일 블랑"),
+			new String("[톰포드] 화이트 슈드 EAU 드 퍼퓸"),
+	};
+	
+	private String[] price = {
+			new String("149,000원"),
+			new String("244,000원"),
+			new String("310,000원"),
+			new String("329,000원"),
+			new String("253,000원"),
+			new String("160,000원"),
+			new String("248,700원"),
+			new String("230,800원"),
+			new String("125,000원"),
+	};
+	
 	public TomfordItems(String title, int width, int height) {
 		setTitle(title);
 	    setSize(width, height);
@@ -185,169 +209,28 @@ public class TomfordItems extends JFrame {
 	        
 	        
 	        
-	        JPanel tomford1 = new JPanel();
-	        tomford1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford1.setBackground(Color.white);
-	        tomford1.setLayout(new BorderLayout());
-	        JButton tomford01 = new JButton(imgs[0]);
-	        tomford01.setBorderPainted(false);
-	        tomford01.setContentAreaFilled(false);
-	        tomford01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("[톰포드] 로즈 드 시네 EAU 드 퍼퓸");
-	        JLabel price1 = new JLabel("149,000원");
-	        tomford1.add(tomford01,BorderLayout.NORTH);
-	        tomford1.add(name1,BorderLayout.CENTER);
-	        tomford1.add(price1,BorderLayout.SOUTH);
-	        name1.setHorizontalAlignment(JLabel.CENTER);
-	        price1.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford2 = new JPanel();
-	        tomford2.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford2.setBackground(Color.white);
-	        tomford2.setLayout(new BorderLayout());
-	        JButton tomford02 = new JButton(imgs[1]);
-	        tomford02.setBorderPainted(false);
-	        tomford02.setContentAreaFilled(false);
-	        tomford02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("[톰포드] 로즈 디 아말피 EAU 드 퍼퓸");
-	        JLabel price2 = new JLabel("244,000원");
-	        tomford2.add(tomford02,BorderLayout.NORTH);
-	        tomford2.add(name2,BorderLayout.CENTER);
-	        tomford2.add(price2,BorderLayout.SOUTH);
-	        name2.setHorizontalAlignment(JLabel.CENTER);
-	        price2.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford3 = new JPanel();
-	        tomford3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford3.setBackground(Color.white);
-	        tomford3.setLayout(new BorderLayout());
-	        JButton tomford03 = new JButton(imgs[2]);
-	        tomford03.setBorderPainted(false);
-	        tomford03.setContentAreaFilled(false);
-	        tomford03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("[톰포드] 로즈 프릭 EAU 드 퍼퓸");
-	        JLabel price3 = new JLabel("310,000원");
-	        tomford3.add(tomford03,BorderLayout.NORTH);
-	        tomford3.add(name3,BorderLayout.CENTER);
-	        tomford3.add(price3,BorderLayout.SOUTH);
-	        name3.setHorizontalAlignment(JLabel.CENTER);
-	        price3.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford4 = new JPanel();
-	        tomford4.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford4.setBackground(Color.white);
-	        tomford4.setLayout(new BorderLayout());
-	        JButton tomford04 = new JButton(imgs[3]);
-	        tomford04.setBorderPainted(false);
-	        tomford04.setContentAreaFilled(false);
-	        tomford04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("[톰포드] 튜베르즈 뉘 EAU 드 퍼퓸");
-	        JLabel price4 = new JLabel("329,000원");
-	        tomford4.add(tomford04,BorderLayout.NORTH);
-	        tomford4.add(name4,BorderLayout.CENTER);
-	        tomford4.add(price4,BorderLayout.SOUTH);
-	        name4.setHorizontalAlignment(JLabel.CENTER);
-	        price4.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford5 = new JPanel();
-	        tomford5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford5.setBackground(Color.white);
-	        tomford5.setLayout(new BorderLayout());
-	        JButton tomford05 = new JButton(imgs[4]);
-	        tomford05.setBorderPainted(false);
-	        tomford05.setContentAreaFilled(false);
-	        tomford05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("[톰포드] 로스트 체리 EAU 드 퍼퓸");
-	        JLabel price5 = new JLabel("253,000원");
-	        tomford5.add(tomford05,BorderLayout.NORTH);
-	        tomford5.add(name5,BorderLayout.CENTER);
-	        tomford5.add(price5,BorderLayout.SOUTH);
-	        name5.setHorizontalAlignment(JLabel.CENTER);
-	        price5.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford6 = new JPanel();
-	        tomford6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford6.setBackground(Color.white);
-	        tomford6.setLayout(new BorderLayout());
-	        JButton tomford06 = new JButton(imgs[5]);
-	        tomford06.setBorderPainted(false);
-	        tomford06.setContentAreaFilled(false);
-	        tomford06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("[톰포드] 비터피치 EAU 드 퍼퓸");
-	        JLabel price6 = new JLabel("160,000원");
-	        tomford6.add(tomford06,BorderLayout.NORTH);
-	        tomford6.add(name6,BorderLayout.CENTER);
-	        tomford6.add(price6,BorderLayout.SOUTH);
-	        name6.setHorizontalAlignment(JLabel.CENTER);
-	        price6.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford7 = new JPanel();
-	        tomford7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford7.setBackground(Color.white);
-	        tomford7.setLayout(new BorderLayout());
-	        JButton tomford07 = new JButton(imgs[6]);
-	        tomford07.setBorderPainted(false);
-	        tomford07.setContentAreaFilled(false);
-	        tomford07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("[톰포드] 솔레일 브루란트 EAU 드 퍼퓸");
-	        JLabel price7 = new JLabel("248,700원");
-	        tomford7.add(tomford07,BorderLayout.NORTH);
-	        tomford7.add(name7,BorderLayout.CENTER);
-	        tomford7.add(price7,BorderLayout.SOUTH);
-	        name7.setHorizontalAlignment(JLabel.CENTER);
-	        price7.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford8 = new JPanel();
-	        tomford8.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford8.setBackground(Color.white);
-	        tomford8.setLayout(new BorderLayout());
-	        JButton tomford08 = new JButton(imgs[7]);
-	        tomford08.setBorderPainted(false);
-	        tomford08.setContentAreaFilled(false);
-	        tomford08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("[톰포드] EAU 드 솔레일 블랑");
-	        JLabel price8 = new JLabel("230,800원");
-	        tomford8.add(tomford08,BorderLayout.NORTH);
-	        tomford8.add(name8,BorderLayout.CENTER);
-	        tomford8.add(price8,BorderLayout.SOUTH);
-	        name8.setHorizontalAlignment(JLabel.CENTER);
-	        price8.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford9 = new JPanel();
-	        tomford9.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford9.setBackground(Color.white);
-	        tomford9.setLayout(new BorderLayout());
-	        JButton tomford09 = new JButton(imgs[8]);
-	        tomford09.setBorderPainted(false);
-	        tomford09.setContentAreaFilled(false);
-	        tomford09.setFocusPainted(false);
-	        JLabel name9 = new JLabel("[톰포드] 화이트 슈드 EAU 드 퍼퓸");
-	        JLabel price9 = new JLabel("125,000원");
-	        tomford9.add(tomford09,BorderLayout.NORTH);
-	        tomford9.add(name9,BorderLayout.CENTER);
-	        tomford9.add(price9,BorderLayout.SOUTH);
-	        name9.setHorizontalAlignment(JLabel.CENTER);
-	        price9.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        
-	        panel01.add(tomford1);
-	        panel01.add(tomford2);
-	        panel01.add(tomford3);
-	        panel01.add(tomford4);
-	        panel01.add(tomford5);
-	        panel01.add(tomford6);
-	        panel01.add(tomford7);
-	        panel01.add(tomford8);
-	        panel01.add(tomford9);
+	        for (int i = 0; i < 9; i++) {
+				
+				
+		        JPanel p = new JPanel();
+		        p.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+		        p.setBackground(Color.white);
+		        p.setLayout(new BorderLayout());
+		        JButton itemImage = new JButton(imgs[i]);
+		        itemImage.setBorderPainted(false);
+		        itemImage.setContentAreaFilled(false);
+		        itemImage.setFocusPainted(false);
+		        JLabel itemName = new JLabel(name[i]);
+		        JLabel itemPrice = new JLabel(price[i]);
+		        p.add(itemImage,BorderLayout.NORTH);
+		        p.add(itemName,BorderLayout.CENTER);
+		        p.add(itemPrice,BorderLayout.SOUTH);
+		        itemName.setHorizontalAlignment(JLabel.CENTER);
+		        itemPrice.setHorizontalAlignment(JLabel.CENTER);
+		        
+		        panel01.add(p);
+		        
+		        }
 	        
 	        
 	        

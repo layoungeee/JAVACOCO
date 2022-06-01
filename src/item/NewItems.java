@@ -36,6 +36,32 @@ public class NewItems extends JFrame {
 			new ImageIcon("itemImages/ck03.jpg")
 			};
 	
+	private String[] name = {
+			new String("[샤넬] 블루 드 샤넬 빠르펭"),
+			new String("[포맨트] 시그니처 퍼퓸 코튼허그"),
+			new String("[딥디크] 롬브르 단 로 오 드 뚜왈렛"),
+			new String("[구찌 플로라] 골저스 가드니아 오 드 퍼퓸"),
+			new String("[입생로랑] 몽 파리 헤어 미스트"),
+			new String("[톰포드] 비터피치 EAU 드 퍼퓸"),
+			new String("[불가리] 블루 옴므 오드뚜왈렛 EDT"),
+			new String("[존바바토스] 아티 산 아쿠아"),
+			new String("[입생로랑] 블랙 오피움 오 드 빠르펭"),
+			new String("[캘빈클라인] 이터너티 포맨 오드뚜왈렛"),
+	};
+	
+	private String[] price = {
+			new String("156,700원"),
+			new String("55,600원"),
+			new String("184,800원"),
+			new String("145,000원"),
+			new String("115,000원"),
+			new String("160,000원"),
+			new String("140,000원"),
+			new String("31,400원"),
+			new String("139,000원"),
+			new String("59,400원"),
+	};
+	
 	
 	public NewItems(String title, int width, int height) {
 		setTitle(title);
@@ -184,188 +210,29 @@ public class NewItems extends JFrame {
 	        panel01.setLayout(new GridLayout(4,3));
 	        
 	        
-	        JPanel chanel7 = new JPanel();
-	        chanel7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        chanel7.setBackground(Color.white);
-	        chanel7.setLayout(new BorderLayout());
-	        JButton chanel07 = new JButton(imgs[0]);
-	        chanel07.setBorderPainted(false);
-	        chanel07.setContentAreaFilled(false);
-	        chanel07.setFocusPainted(false);
-	        JLabel name1 = new JLabel("파리 리비에라 레 조 드 샤넬 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("156,700원");
-	        chanel7.add(chanel07,BorderLayout.NORTH);
-	        chanel7.add(name1,BorderLayout.CENTER);
-	        chanel7.add(price1,BorderLayout.SOUTH);
-	        name1.setHorizontalAlignment(JLabel.CENTER);
-	        price1.setHorizontalAlignment(JLabel.CENTER);
 	        
-	        JPanel forment1 = new JPanel();
-	        forment1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        forment1.setBackground(Color.white);
-	        forment1.setLayout(new BorderLayout());
-	        JButton forment01 = new JButton(imgs[1]);
-	        forment01.setBorderPainted(false);
-	        forment01.setContentAreaFilled(false);
-	        forment01.setFocusPainted(false);
-	        JLabel name2 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price2 = new JLabel("119,200원");
-	        forment1.add(forment01,BorderLayout.NORTH);
-	        forment1.add(name2,BorderLayout.CENTER);
-	        forment1.add(price2,BorderLayout.SOUTH);
-	        name2.setHorizontalAlignment(JLabel.CENTER);
-	        price2.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque8 = new JPanel();
-	        diptyque8.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque8.setBackground(Color.white);
-	        diptyque8.setLayout(new BorderLayout());
-	        JButton diptyque08 = new JButton(imgs[2]);
-	        diptyque08.setBorderPainted(false);
-	        diptyque08.setContentAreaFilled(false);
-	        diptyque08.setFocusPainted(false);
-	        JLabel name3 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
-	        diptyque8.add(diptyque08,BorderLayout.NORTH);
-	        diptyque8.add(name3,BorderLayout.CENTER);
-	        diptyque8.add(price3,BorderLayout.SOUTH);
-	        name3.setHorizontalAlignment(JLabel.CENTER);
-	        price3.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel gucci6 = new JPanel();
-	        gucci6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        gucci6.setBackground(Color.white);
-	        gucci6.setLayout(new BorderLayout());
-	        JButton gucci06 = new JButton(imgs[3]);
-	        gucci06.setBorderPainted(false);
-	        gucci06.setContentAreaFilled(false);
-	        gucci06.setFocusPainted(false);
-	        JLabel name4 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("119,200원");
-	        gucci6.add(gucci06,BorderLayout.NORTH);
-	        gucci6.add(name4,BorderLayout.CENTER);
-	        gucci6.add(price4,BorderLayout.SOUTH);
-	        name4.setHorizontalAlignment(JLabel.CENTER);
-	        price4.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel ysl5 = new JPanel();
-	        ysl5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        ysl5.setBackground(Color.white);
-	        ysl5.setLayout(new BorderLayout());
-	        JButton ysl05 = new JButton(imgs[4]);
-	        ysl05.setBorderPainted(false);
-	        ysl05.setContentAreaFilled(false);
-	        ysl05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("119,200원");
-	        ysl5.add(ysl05,BorderLayout.NORTH);
-	        ysl5.add(name5,BorderLayout.CENTER);
-	        ysl5.add(price5,BorderLayout.SOUTH);
-	        name5.setHorizontalAlignment(JLabel.CENTER);
-	        price5.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel tomford6 = new JPanel();
-	        tomford6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        tomford6.setBackground(Color.white);
-	        tomford6.setLayout(new BorderLayout());
-	        JButton tomford06 = new JButton(imgs[5]);
-	        tomford06.setBorderPainted(false);
-	        tomford06.setContentAreaFilled(false);
-	        tomford06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("119,200원");
-	        tomford6.add(tomford06,BorderLayout.NORTH);
-	        tomford6.add(name6,BorderLayout.CENTER);
-	        tomford6.add(price6,BorderLayout.SOUTH);
-	        name6.setHorizontalAlignment(JLabel.CENTER);
-	        price6.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel bvlgari7 = new JPanel();
-	        bvlgari7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari7.setBackground(Color.white);
-	        bvlgari7.setLayout(new BorderLayout());
-	        JButton bvlgari07 = new JButton(imgs[6]);
-	        bvlgari07.setBorderPainted(false);
-	        bvlgari07.setContentAreaFilled(false);
-	        bvlgari07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("119,200원");
-	        bvlgari7.add(bvlgari07,BorderLayout.NORTH);
-	        bvlgari7.add(name7,BorderLayout.CENTER);
-	        bvlgari7.add(price7,BorderLayout.SOUTH);
-	        name7.setHorizontalAlignment(JLabel.CENTER);
-	        price7.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel jv5 = new JPanel();
-	        jv5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        jv5.setBackground(Color.white);
-	        jv5.setLayout(new BorderLayout());
-	        JButton jv05 = new JButton(imgs[7]);
-	        jv05.setBorderPainted(false);
-	        jv05.setContentAreaFilled(false);
-	        jv05.setFocusPainted(false);
-	        JLabel name8 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("119,200원");
-	        jv5.add(jv05,BorderLayout.NORTH);
-	        jv5.add(name8,BorderLayout.CENTER);
-	        jv5.add(price8,BorderLayout.SOUTH);
-	        name8.setHorizontalAlignment(JLabel.CENTER);
-	        price8.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel ysl7 = new JPanel();
-	        ysl7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        ysl7.setBackground(Color.white);
-	        ysl7.setLayout(new BorderLayout());
-	        JButton ysl07 = new JButton(imgs[8]);
-	        ysl07.setBorderPainted(false);
-	        ysl07.setContentAreaFilled(false);
-	        ysl07.setFocusPainted(false);
-	        JLabel name9 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price9 = new JLabel("119,200원");
-	        ysl7.add(ysl07,BorderLayout.NORTH);
-	        ysl7.add(name9,BorderLayout.CENTER);
-	        ysl7.add(price9,BorderLayout.SOUTH);
-	        name9.setHorizontalAlignment(JLabel.CENTER);
-	        price9.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel ck3 = new JPanel();
-	        ck3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        ck3.setBackground(Color.white);
-	        ck3.setLayout(new BorderLayout());
-	        JButton ck03 = new JButton(imgs[2]);
-	        ck03.setBorderPainted(false);
-	        ck03.setContentAreaFilled(false);
-	        ck03.setFocusPainted(false);
-	        JLabel name10 = new JLabel("알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price10 = new JLabel("119,200원");
-	        ck3.add(ck03,BorderLayout.NORTH);
-	        ck3.add(name10,BorderLayout.CENTER);
-	        ck3.add(price10,BorderLayout.SOUTH);
-	        name10.setHorizontalAlignment(JLabel.CENTER);
-	        price10.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        
-
-	        
-	        panel01.add(chanel7);
-	        panel01.add(forment1);
-	        panel01.add(diptyque8);
-	        panel01.add(gucci6);
-	        panel01.add(ysl5);
-	        panel01.add(tomford6);
-	        panel01.add(bvlgari7);
-	        panel01.add(jv5);
-	        panel01.add(ysl7);
-	        panel01.add(ck3);
+	        for (int i = 0; i < 10; i++) {
+				
+				
+		        JPanel p = new JPanel();
+		        p.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+		        p.setBackground(Color.white);
+		        p.setLayout(new BorderLayout());
+		        JButton itemImage = new JButton(imgs[i]);
+		        itemImage.setBorderPainted(false);
+		        itemImage.setContentAreaFilled(false);
+		        itemImage.setFocusPainted(false);
+		        JLabel itemName = new JLabel(name[i]);
+		        JLabel itemPrice = new JLabel(price[i]);
+		        p.add(itemImage,BorderLayout.NORTH);
+		        p.add(itemName,BorderLayout.CENTER);
+		        p.add(itemPrice,BorderLayout.SOUTH);
+		        itemName.setHorizontalAlignment(JLabel.CENTER);
+		        itemPrice.setHorizontalAlignment(JLabel.CENTER);
+		        
+		        panel01.add(p);
+		        
+		        }
 	        
 	        
 	        

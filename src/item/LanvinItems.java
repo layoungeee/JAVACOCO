@@ -32,6 +32,28 @@ public class LanvinItems extends JFrame {
 			new ImageIcon("itemImages/lanvin08.jpg"),
 			};
 	
+	private String[] name = {
+			new String("[랑방] 모던 프린세스 블루밍"),
+			new String("[랑방] 모던 프린세스 오드퍼퓸"),
+			new String("[랑방] 메리미 우먼 오드퍼퓸"),
+			new String("[랑방] 에끌라 드 아르페쥬 우먼 오드퍼퓸"),
+			new String("[랑방] 잔느 우먼 오드퍼퓸"),
+			new String("[랑방] 에끌라 드 아르페쥬 쉬어 오 드 뚜왈렛"),
+			new String("[랑방] 에끌라 드 아르페쥬 뿌르옴므 오 드 뚜왈렛"),
+			new String("[랑방] 루머2 로즈 우먼 오드퍼퓸 EDP"),
+	};
+	
+	private String[] price = {
+			new String("51,800원"),
+			new String("62,900원"),
+			new String("49,900원"),
+			new String("39,500원"),
+			new String("39,400원"),
+			new String("35,100원"),
+			new String("51,800"),
+			new String("34,900"),
+	};
+	
 	public LanvinItems(String title, int width, int height) {
 		setTitle(title);
 	    setSize(width, height);
@@ -184,151 +206,28 @@ public class LanvinItems extends JFrame {
 	        
 	        
 	        
-	        JPanel lanvin1 = new JPanel();
-	        lanvin1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin1.setBackground(Color.white);
-	        lanvin1.setLayout(new BorderLayout());
-	        JButton lanvin01 = new JButton(imgs[0]);
-	        lanvin01.setBorderPainted(false);
-	        lanvin01.setContentAreaFilled(false);
-	        lanvin01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("[랑방] 모던 프린세스 블루밍");
-	        JLabel price1 = new JLabel("51,800원");
-	        lanvin1.add(lanvin01,BorderLayout.NORTH);
-	        lanvin1.add(name1,BorderLayout.CENTER);
-	        lanvin1.add(price1,BorderLayout.SOUTH);
-	        name1.setHorizontalAlignment(JLabel.CENTER);
-	        price1.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel lanvin2 = new JPanel();
-	        lanvin2.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin2.setBackground(Color.white);
-	        lanvin2.setLayout(new BorderLayout());
-	        JButton lanvin02 = new JButton(imgs[1]);
-	        lanvin02.setBorderPainted(false);
-	        lanvin02.setContentAreaFilled(false);
-	        lanvin02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("[랑방] 모던 프린세스 오드퍼퓸");
-	        JLabel price2 = new JLabel("62,900원");
-	        lanvin2.add(lanvin02,BorderLayout.NORTH);
-	        lanvin2.add(name2,BorderLayout.CENTER);
-	        lanvin2.add(price2,BorderLayout.SOUTH);
-	        name2.setHorizontalAlignment(JLabel.CENTER);
-	        price2.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel lanvin3 = new JPanel();
-	        lanvin3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin3.setBackground(Color.white);
-	        lanvin3.setLayout(new BorderLayout());
-	        JButton lanvin03 = new JButton(imgs[2]);
-	        lanvin03.setBorderPainted(false);
-	        lanvin03.setContentAreaFilled(false);
-	        lanvin03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("[랑방] 메리미 우먼 오드퍼퓸");
-	        JLabel price3 = new JLabel("49,900원");
-	        lanvin3.add(lanvin03,BorderLayout.NORTH);
-	        lanvin3.add(name3,BorderLayout.CENTER);
-	        lanvin3.add(price3,BorderLayout.SOUTH);
-	        name3.setHorizontalAlignment(JLabel.CENTER);
-	        price3.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel lanvin4 = new JPanel();
-	        lanvin4.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin4.setBackground(Color.white);
-	        lanvin4.setLayout(new BorderLayout());
-	        JButton lanvin04 = new JButton(imgs[3]);
-	        lanvin04.setBorderPainted(false);
-	        lanvin04.setContentAreaFilled(false);
-	        lanvin04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("[랑방] 에끌라 드 아르페쥬 우먼 오드퍼퓸");
-	        JLabel price4 = new JLabel("39,500원");
-	        lanvin4.add(lanvin04,BorderLayout.NORTH);
-	        lanvin4.add(name4,BorderLayout.CENTER);
-	        lanvin4.add(price4,BorderLayout.SOUTH);
-	        name4.setHorizontalAlignment(JLabel.CENTER);
-	        price4.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel lanvin5 = new JPanel();
-	        lanvin5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin5.setBackground(Color.white);
-	        lanvin5.setLayout(new BorderLayout());
-	        JButton lanvin05 = new JButton(imgs[4]);
-	        lanvin05.setBorderPainted(false);
-	        lanvin05.setContentAreaFilled(false);
-	        lanvin05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("[랑방] 잔느 우먼 오드퍼퓸");
-	        JLabel price5 = new JLabel("39,400원");
-	        lanvin5.add(lanvin05,BorderLayout.NORTH);
-	        lanvin5.add(name5,BorderLayout.CENTER);
-	        lanvin5.add(price5,BorderLayout.SOUTH);
-	        name5.setHorizontalAlignment(JLabel.CENTER);
-	        price5.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel lanvin6 = new JPanel();
-	        lanvin6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin6.setBackground(Color.white);
-	        lanvin6.setLayout(new BorderLayout());
-	        JButton lanvin06 = new JButton(imgs[5]);
-	        lanvin06.setBorderPainted(false);
-	        lanvin06.setContentAreaFilled(false);
-	        lanvin06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("[랑방] 에끌라 드 아르페쥬 쉬어 오 드 뚜왈렛");
-	        JLabel price6 = new JLabel("35,100원");
-	        lanvin6.add(lanvin06,BorderLayout.NORTH);
-	        lanvin6.add(name6,BorderLayout.CENTER);
-	        lanvin6.add(price6,BorderLayout.SOUTH);
-	        name6.setHorizontalAlignment(JLabel.CENTER);
-	        price6.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel lanvin7 = new JPanel();
-	        lanvin7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin7.setBackground(Color.white);
-	        lanvin7.setLayout(new BorderLayout());
-	        JButton lanvin07 = new JButton(imgs[6]);
-	        lanvin07.setBorderPainted(false);
-	        lanvin07.setContentAreaFilled(false);
-	        lanvin07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("[랑방] 에끌라 드 아르페쥬 뿌르옴므 오 드 뚜왈렛");
-	        JLabel price7 = new JLabel("51,800원");
-	        lanvin7.add(lanvin07,BorderLayout.NORTH);
-	        lanvin7.add(name7,BorderLayout.CENTER);
-	        lanvin7.add(price7,BorderLayout.SOUTH);
-	        name7.setHorizontalAlignment(JLabel.CENTER);
-	        price7.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel lanvin8 = new JPanel();
-	        lanvin8.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        lanvin8.setBackground(Color.white);
-	        lanvin8.setLayout(new BorderLayout());
-	        JButton lanvin08 = new JButton(imgs[7]);
-	        lanvin08.setBorderPainted(false);
-	        lanvin08.setContentAreaFilled(false);
-	        lanvin08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("[랑방] 루머2 로즈 우먼 오드퍼퓸 EDP");
-	        JLabel price8 = new JLabel("34,900원");
-	        lanvin8.add(lanvin08,BorderLayout.NORTH);
-	        lanvin8.add(name8,BorderLayout.CENTER);
-	        lanvin8.add(price8,BorderLayout.SOUTH);
-	        name8.setHorizontalAlignment(JLabel.CENTER);
-	        price8.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        
-	        panel01.add(lanvin1);
-	        panel01.add(lanvin2);
-	        panel01.add(lanvin3);
-	        panel01.add(lanvin4);
-	        panel01.add(lanvin5);
-	        panel01.add(lanvin6);
-	        panel01.add(lanvin7);
-	        panel01.add(lanvin8);
+	        for (int i = 0; i < 8; i++) {
+				
+				
+		        JPanel p = new JPanel();
+		        p.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+		        p.setBackground(Color.white);
+		        p.setLayout(new BorderLayout());
+		        JButton itemImage = new JButton(imgs[i]);
+		        itemImage.setBorderPainted(false);
+		        itemImage.setContentAreaFilled(false);
+		        itemImage.setFocusPainted(false);
+		        JLabel itemName = new JLabel(name[i]);
+		        JLabel itemPrice = new JLabel(price[i]);
+		        p.add(itemImage,BorderLayout.NORTH);
+		        p.add(itemName,BorderLayout.CENTER);
+		        p.add(itemPrice,BorderLayout.SOUTH);
+		        itemName.setHorizontalAlignment(JLabel.CENTER);
+		        itemPrice.setHorizontalAlignment(JLabel.CENTER);
+		        
+		        panel01.add(p);
+		        
+		        }
 	        
 	        
 	        

@@ -33,6 +33,30 @@ public class DiptyqueItems extends JFrame {
 			new ImageIcon("itemImages/diptyque09.jpg"),
 			};
 	
+	private String[] name = {
+			new String("[딥디크] 오드 뚜왈렛"),
+			new String("[딥디크] 리미티드 에디션 오드 뚜왈렛 도손"),
+			new String("[딥디크] 베티베리오 오드 뚜왈렛"),
+			new String("[딥디크] 오 드 퍼퓸 오르페옹렛"),
+			new String("[딥디크] 필로시코스 오 드 뚜왈렛"),
+			new String("[딥디크] 오 드 뚜왈렛 오 데 썽"),
+			new String("[딥디크] 오 드 뚜왈렛 오에도"),
+			new String("[딥디크] 롬브르 단 로 오 드 뚜왈렛"),
+			new String("[딥디크] 도손"),
+	};
+	
+	private String[] price = {
+			new String("128,000원"),
+			new String("210,000원"),
+			new String("119,200원"),
+			new String("119,200원"),
+			new String("194,800원"),
+			new String("173,900원"),
+			new String("113,900원"),
+			new String("184,800원"),
+			new String("129,000원"),
+	};
+	
 	public DiptyqueItems(String title, int width, int height) {
 		setTitle(title);
 	    setSize(width, height);
@@ -183,169 +207,28 @@ public class DiptyqueItems extends JFrame {
 	        
 	        
 	        
-	        JPanel diptyque1 = new JPanel();
-	        diptyque1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque1.setBackground(Color.white);
-	        diptyque1.setLayout(new BorderLayout());
-	        JButton diptyque01 = new JButton(imgs[0]);
-	        diptyque01.setBorderPainted(false);
-	        diptyque01.setContentAreaFilled(false);
-	        diptyque01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("[딥디크] 오드 뚜왈렛");
-	        JLabel price1 = new JLabel("128,000원");
-	        diptyque1.add(diptyque01,BorderLayout.NORTH);
-	        diptyque1.add(name1,BorderLayout.CENTER);
-	        diptyque1.add(price1,BorderLayout.SOUTH);
-	        name1.setHorizontalAlignment(JLabel.CENTER);
-	        price1.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque2 = new JPanel();
-	        diptyque2.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque2.setBackground(Color.white);
-	        diptyque2.setLayout(new BorderLayout());
-	        JButton diptyque02 = new JButton(imgs[1]);
-	        diptyque02.setBorderPainted(false);
-	        diptyque02.setContentAreaFilled(false);
-	        diptyque02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("[딥디크] 리미티드 에디션 오드 뚜왈렛 도손");
-	        JLabel price2 = new JLabel("210,000원");
-	        diptyque2.add(diptyque02,BorderLayout.NORTH);
-	        diptyque2.add(name2,BorderLayout.CENTER);
-	        diptyque2.add(price2,BorderLayout.SOUTH);
-	        name2.setHorizontalAlignment(JLabel.CENTER);
-	        price2.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque3 = new JPanel();
-	        diptyque3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque3.setBackground(Color.white);
-	        diptyque3.setLayout(new BorderLayout());
-	        JButton diptyque03 = new JButton(imgs[2]);
-	        diptyque03.setBorderPainted(false);
-	        diptyque03.setContentAreaFilled(false);
-	        diptyque03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("[딥디크] 베티베리오 오드 뚜왈렛");
-	        JLabel price3 = new JLabel("119,200원");
-	        diptyque3.add(diptyque03,BorderLayout.NORTH);
-	        diptyque3.add(name3,BorderLayout.CENTER);
-	        diptyque3.add(price3,BorderLayout.SOUTH);
-	        name3.setHorizontalAlignment(JLabel.CENTER);
-	        price3.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque4 = new JPanel();
-	        diptyque4.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque4.setBackground(Color.white);
-	        diptyque4.setLayout(new BorderLayout());
-	        JButton diptyque04 = new JButton(imgs[3]);
-	        diptyque04.setBorderPainted(false);
-	        diptyque04.setContentAreaFilled(false);
-	        diptyque04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("[딥디크] 오 드 퍼퓸 오르페옹");
-	        JLabel price4 = new JLabel("119,200원");
-	        diptyque4.add(diptyque04,BorderLayout.NORTH);
-	        diptyque4.add(name4,BorderLayout.CENTER);
-	        diptyque4.add(price4,BorderLayout.SOUTH);
-	        name4.setHorizontalAlignment(JLabel.CENTER);
-	        price4.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque5 = new JPanel();
-	        diptyque5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque5.setBackground(Color.white);
-	        diptyque5.setLayout(new BorderLayout());
-	        JButton diptyque05 = new JButton(imgs[4]);
-	        diptyque05.setBorderPainted(false);
-	        diptyque05.setContentAreaFilled(false);
-	        diptyque05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("[딥디크] 필로시코스 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("194,800원");
-	        diptyque5.add(diptyque05,BorderLayout.NORTH);
-	        diptyque5.add(name5,BorderLayout.CENTER);
-	        diptyque5.add(price5,BorderLayout.SOUTH);
-	        name5.setHorizontalAlignment(JLabel.CENTER);
-	        price5.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque6 = new JPanel();
-	        diptyque6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque6.setBackground(Color.white);
-	        diptyque6.setLayout(new BorderLayout());
-	        JButton diptyque06 = new JButton(imgs[5]);
-	        diptyque06.setBorderPainted(false);
-	        diptyque06.setContentAreaFilled(false);
-	        diptyque06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("[딥디크] 오 드 뚜왈렛 오 데 썽");
-	        JLabel price6 = new JLabel("173,900원");
-	        diptyque6.add(diptyque06,BorderLayout.NORTH);
-	        diptyque6.add(name6,BorderLayout.CENTER);
-	        diptyque6.add(price6,BorderLayout.SOUTH);
-	        name6.setHorizontalAlignment(JLabel.CENTER);
-	        price6.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque7 = new JPanel();
-	        diptyque7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque7.setBackground(Color.white);
-	        diptyque7.setLayout(new BorderLayout());
-	        JButton diptyque07 = new JButton(imgs[6]);
-	        diptyque07.setBorderPainted(false);
-	        diptyque07.setContentAreaFilled(false);
-	        diptyque07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("[딥디크] 오 드 뚜왈렛 오에도");
-	        JLabel price7 = new JLabel("113,900원");
-	        diptyque7.add(diptyque07,BorderLayout.NORTH);
-	        diptyque7.add(name7,BorderLayout.CENTER);
-	        diptyque7.add(price7,BorderLayout.SOUTH);
-	        name7.setHorizontalAlignment(JLabel.CENTER);
-	        price7.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque8 = new JPanel();
-	        diptyque8.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque8.setBackground(Color.white);
-	        diptyque8.setLayout(new BorderLayout());
-	        JButton diptyque08 = new JButton(imgs[7]);
-	        diptyque08.setBorderPainted(false);
-	        diptyque08.setContentAreaFilled(false);
-	        diptyque08.setFocusPainted(false);
-	        JLabel name8 = new JLabel("[딥디크] 롬브르 단 로 오 드 뚜왈렛");
-	        JLabel price8 = new JLabel("184,800원");
-	        diptyque8.add(diptyque08,BorderLayout.NORTH);
-	        diptyque8.add(name8,BorderLayout.CENTER);
-	        diptyque8.add(price8,BorderLayout.SOUTH);
-	        name8.setHorizontalAlignment(JLabel.CENTER);
-	        price8.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel diptyque9 = new JPanel();
-	        diptyque9.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        diptyque9.setBackground(Color.white);
-	        diptyque9.setLayout(new BorderLayout());
-	        JButton diptyque09 = new JButton(imgs[8]);
-	        diptyque09.setBorderPainted(false);
-	        diptyque09.setContentAreaFilled(false);
-	        diptyque09.setFocusPainted(false);
-	        JLabel name9 = new JLabel("[딥디크] 도손");
-	        JLabel price9 = new JLabel("129,000원");
-	        diptyque9.add(diptyque09,BorderLayout.NORTH);
-	        diptyque9.add(name9,BorderLayout.CENTER);
-	        diptyque9.add(price9,BorderLayout.SOUTH);
-	        name9.setHorizontalAlignment(JLabel.CENTER);
-	        price9.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        
-	        panel01.add(diptyque1);
-	        panel01.add(diptyque2);
-	        panel01.add(diptyque3);
-	        panel01.add(diptyque4);
-	        panel01.add(diptyque5);
-	        panel01.add(diptyque6);
-	        panel01.add(diptyque7);
-	        panel01.add(diptyque8);
-	        panel01.add(diptyque9);
+	        for (int i = 0; i < 9; i++) {
+				
+				
+		        JPanel p = new JPanel();
+		        p.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+		        p.setBackground(Color.white);
+		        p.setLayout(new BorderLayout());
+		        JButton itemImage = new JButton(imgs[i]);
+		        itemImage.setBorderPainted(false);
+		        itemImage.setContentAreaFilled(false);
+		        itemImage.setFocusPainted(false);
+		        JLabel itemName = new JLabel(name[i]);
+		        JLabel itemPrice = new JLabel(price[i]);
+		        p.add(itemImage,BorderLayout.NORTH);
+		        p.add(itemName,BorderLayout.CENTER);
+		        p.add(itemPrice,BorderLayout.SOUTH);
+		        itemName.setHorizontalAlignment(JLabel.CENTER);
+		        itemPrice.setHorizontalAlignment(JLabel.CENTER);
+		        
+		        panel01.add(p);
+		        
+		        }
 	        
 	        
 	        

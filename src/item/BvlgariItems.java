@@ -33,6 +33,25 @@ public class BvlgariItems extends JFrame {
 			new ImageIcon("itemImages/bvlgari07.jpg")
 			};
 	
+	private String[] name = {
+			new String("[불가리] 옴니아 핑크 사파이어 오 드 뚜왈렛"),
+			new String("[불가리] 맨 우드 에센스 오 드 퍼퓸"),
+			new String("[불가리] 옴니아 아메시스트 오 드 뚜왈렛"),
+			new String("[불가리] 옴니아 퍼플 사파이어 오 드 뚜왈렛"),
+			new String("[불가리] 알뤼르 옴므 스포츠 오 드 뚜왈렛"),
+			new String("[불가리] MAN GLACIAL ESSENCE 오 드 퍼퓸"),
+			new String("[불가리] 블루 옴므 오드뚜왈렛 EDT"),
+	};
+	
+	private String[] price = {
+			new String("134,000원"),
+			new String("119,200원"),
+			new String("154,600원"),
+			new String("134,000원"),
+			new String("98,000원"),
+			new String("187,100원"),
+			new String("140,000원"),
+	};
 	
 	public BvlgariItems(String title, int width, int height) {
 		setTitle(title);
@@ -181,134 +200,29 @@ public class BvlgariItems extends JFrame {
 	        panel01.setLayout(new GridLayout(3,3));
 	        
 	        
-	        JPanel bvlgari1 = new JPanel();
-	        bvlgari1.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari1.setBackground(Color.white);
-	        bvlgari1.setLayout(new BorderLayout());
-	        JButton bvlgari01 = new JButton(imgs[0]);
-	        bvlgari01.setBorderPainted(false);
-	        bvlgari01.setContentAreaFilled(false);
-	        bvlgari01.setFocusPainted(false);
-	        JLabel name1 = new JLabel("[불가리] 옴니아 핑크 사파이어 오 드 뚜왈렛");
-	        JLabel price1 = new JLabel("134,000원");
-	        bvlgari1.add(bvlgari01,BorderLayout.NORTH);
-	        bvlgari1.add(name1,BorderLayout.CENTER);
-	        bvlgari1.add(price1,BorderLayout.SOUTH);
-	        name1.setHorizontalAlignment(JLabel.CENTER);
-	        price1.setHorizontalAlignment(JLabel.CENTER);
 	        
-	        JPanel bvlgari2 = new JPanel();
-	        bvlgari2.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari2.setBackground(Color.white);
-	        bvlgari2.setLayout(new BorderLayout());
-	        JButton bvlgari02 = new JButton(imgs[1]);
-	        bvlgari02.setBorderPainted(false);
-	        bvlgari02.setContentAreaFilled(false);
-	        bvlgari02.setFocusPainted(false);
-	        JLabel name2 = new JLabel("[불가리] 맨 우드 에센스 오 드 퍼퓸");
-	        JLabel price2 = new JLabel("119,200원");
-	        bvlgari2.add(bvlgari02,BorderLayout.NORTH);
-	        bvlgari2.add(name2,BorderLayout.CENTER);
-	        bvlgari2.add(price2,BorderLayout.SOUTH);
-	        name2.setHorizontalAlignment(JLabel.CENTER);
-	        price2.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel bvlgari3 = new JPanel();
-	        bvlgari3.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari3.setBackground(Color.white);
-	        bvlgari3.setLayout(new BorderLayout());
-	        JButton bvlgari03 = new JButton(imgs[2]);
-	        bvlgari03.setBorderPainted(false);
-	        bvlgari03.setContentAreaFilled(false);
-	        bvlgari03.setFocusPainted(false);
-	        JLabel name3 = new JLabel("[불가리] 옴니아 아메시스트 오 드 뚜왈렛");
-	        JLabel price3 = new JLabel("154,600원");
-	        bvlgari3.add(bvlgari03,BorderLayout.NORTH);
-	        bvlgari3.add(name3,BorderLayout.CENTER);
-	        bvlgari3.add(price3,BorderLayout.SOUTH);
-	        name3.setHorizontalAlignment(JLabel.CENTER);
-	        price3.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel bvlgari4 = new JPanel();
-	        bvlgari4.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari4.setBackground(Color.white);
-	        bvlgari4.setLayout(new BorderLayout());
-	        JButton bvlgari04 = new JButton(imgs[3]);
-	        bvlgari04.setBorderPainted(false);
-	        bvlgari04.setContentAreaFilled(false);
-	        bvlgari04.setFocusPainted(false);
-	        JLabel name4 = new JLabel("[불가리] 옴니아 퍼플 사파이어 오 드 뚜왈렛");
-	        JLabel price4 = new JLabel("134,000원");
-	        bvlgari4.add(bvlgari04,BorderLayout.NORTH);
-	        bvlgari4.add(name4,BorderLayout.CENTER);
-	        bvlgari4.add(price4,BorderLayout.SOUTH);
-	        name4.setHorizontalAlignment(JLabel.CENTER);
-	        price4.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel bvlgari5 = new JPanel();
-	        bvlgari5.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari5.setBackground(Color.white);
-	        bvlgari5.setLayout(new BorderLayout());
-	        JButton bvlgari05 = new JButton(imgs[4]);
-	        bvlgari05.setBorderPainted(false);
-	        bvlgari05.setContentAreaFilled(false);
-	        bvlgari05.setFocusPainted(false);
-	        JLabel name5 = new JLabel("[불가리] 알뤼르 옴므 스포츠 오 드 뚜왈렛");
-	        JLabel price5 = new JLabel("98,000원");
-	        bvlgari5.add(bvlgari05,BorderLayout.NORTH);
-	        bvlgari5.add(name5,BorderLayout.CENTER);
-	        bvlgari5.add(price5,BorderLayout.SOUTH);
-	        name5.setHorizontalAlignment(JLabel.CENTER);
-	        price5.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel bvlgari6 = new JPanel();
-	        bvlgari6.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari6.setBackground(Color.white);
-	        bvlgari6.setLayout(new BorderLayout());
-	        JButton bvlgari06 = new JButton(imgs[5]);
-	        bvlgari06.setBorderPainted(false);
-	        bvlgari06.setContentAreaFilled(false);
-	        bvlgari06.setFocusPainted(false);
-	        JLabel name6 = new JLabel("[불가리] MAN GLACIAL ESSENCE 오 드 퍼퓸");
-	        JLabel price6 = new JLabel("187,100원");
-	        bvlgari6.add(bvlgari06,BorderLayout.NORTH);
-	        bvlgari6.add(name6,BorderLayout.CENTER);
-	        bvlgari6.add(price6,BorderLayout.SOUTH);
-	        name6.setHorizontalAlignment(JLabel.CENTER);
-	        price6.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        JPanel bvlgari7 = new JPanel();
-	        bvlgari7.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
-	        bvlgari7.setBackground(Color.white);
-	        bvlgari7.setLayout(new BorderLayout());
-	        JButton bvlgari07 = new JButton(imgs[6]);
-	        bvlgari07.setBorderPainted(false);
-	        bvlgari07.setContentAreaFilled(false);
-	        bvlgari07.setFocusPainted(false);
-	        JLabel name7 = new JLabel("[불가리] 블루 옴므 오드뚜왈렛 EDT");
-	        JLabel price7 = new JLabel("140,000원");
-	        bvlgari7.add(bvlgari07,BorderLayout.NORTH);
-	        bvlgari7.add(name7,BorderLayout.CENTER);
-	        bvlgari7.add(price7,BorderLayout.SOUTH);
-	        name7.setHorizontalAlignment(JLabel.CENTER);
-	        price7.setHorizontalAlignment(JLabel.CENTER);
-	        
-	        
-	        
-
-	        
-	        panel01.add(bvlgari1);
-	        panel01.add(bvlgari2);
-	        panel01.add(bvlgari3);
-	        panel01.add(bvlgari4);
-	        panel01.add(bvlgari5);
-	        panel01.add(bvlgari6);
-	        panel01.add(bvlgari7);
+	        for (int i = 0; i < 7; i++) {
+				
+				
+		        JPanel p = new JPanel();
+		        p.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+		        p.setBackground(Color.white);
+		        p.setLayout(new BorderLayout());
+		        JButton itemImage = new JButton(imgs[i]);
+		        itemImage.setBorderPainted(false);
+		        itemImage.setContentAreaFilled(false);
+		        itemImage.setFocusPainted(false);
+		        JLabel itemName = new JLabel(name[i]);
+		        JLabel itemPrice = new JLabel(price[i]);
+		        p.add(itemImage,BorderLayout.NORTH);
+		        p.add(itemName,BorderLayout.CENTER);
+		        p.add(itemPrice,BorderLayout.SOUTH);
+		        itemName.setHorizontalAlignment(JLabel.CENTER);
+		        itemPrice.setHorizontalAlignment(JLabel.CENTER);
+		        
+		        panel01.add(p);
+		        
+		        }
 	        
 	        
 	        
