@@ -2,7 +2,6 @@ package frame;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -21,9 +20,8 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTextField;
 
-import item.NewItems;
+
 import item.BestItems;
 import item.CKItems;
 import item.ChanelItems;
@@ -35,12 +33,15 @@ import item.JVItems;
 import item.LanvinItems;
 import item.MenItems;
 import item.MontblancItems;
+import item.NewItems;
 import item.TomfordItems;
 import item.WomenItems;
 import item.YSLItems;
+import frame.LoginFrame;
 
-public class LoginFrame extends JFrame{
-    public LoginFrame(String title, int width, int height) {
+
+public class JoinFrame extends JFrame{
+    public JoinFrame(String title, int width, int height) {
          setTitle(title);
          setSize(width, height);
 
@@ -323,138 +324,88 @@ public class LoginFrame extends JFrame{
           container.add(mb, BorderLayout.CENTER);
           
           
-          JPanel c = new JPanel();
-          c.setLayout(new BorderLayout(30, 20));
-          c.setBackground(Color.WHITE);
           
-          JPanel p = new JPanel();
-          p.setBackground(Color.WHITE);
-          p.setLayout(new FlowLayout());
-          JPanel cp = new JPanel();
-          cp.setBackground(Color.WHITE);
-          JPanel ep = new JPanel();
-          ep.setBackground(Color.WHITE);
-          cp.setLayout(new GridLayout(2, 2, 50, 30));
-          ep.setLayout(new GridLayout(1, 2, 20, 0));
-          
-          
-          Font font3 = new Font("함초롬돋움", Font.BOLD, 15);
-          ImageIcon ji = new ImageIcon("images/회원가입.png"); 
-          JLabel jil = new JLabel(ji);
-          JLabel join = new JLabel("  회원이 아니신가요?  ");
-          join.setFont(font3);
          
-          JButton jb = new JButton("회원가입하기");
-          jb.setFont(font3);
-          jb.setBorderPainted(true);
-          jb.setContentAreaFilled(false);
-          jb.setFocusPainted(false);
-          jb.addActionListener(new ActionListener() {
-
-      		@Override
-      		public void actionPerformed(ActionEvent e) {
-      			new JoinFrame("JavaCoCo", 1000, 500);
-      			dispose();
-      		}
-          	  
-            });
-          p.add(jil);
-          p.add(join);
-          p.add(jb);
           
-          
-          JLabel id = new JLabel("아이디");
-          cp.add(id);
-          id.setFont(font3);
-          TextField t1 = new TextField(20);
-          cp.add(t1);
-          JLabel pw = new JLabel("비밀번호");
-          pw.setFont(font3);
-          cp.add(pw);
-          TextField t2 = new TextField(20);
-          t2.setEchoChar('*');
-          cp.add(t2);
-          
-          JButton login = new JButton("로그인");
-          login.setFont(font3);
-          login.setBorderPainted(true);
-          login.setContentAreaFilled(false);
-          login.setFocusPainted(false);
-          login.setHorizontalAlignment(JLabel.CENTER);
-          login.addActionListener(new ActionListener() {
-
-      		@Override
-      		public void actionPerformed(ActionEvent e) {
-      			String id = t1.getText();
-      			String pw = t2.getText();
-      			
-      			JOptionPane.showMessageDialog(null, "로그인 완료");
-      			
-      		}
-          	  
-            });
-            
-            login.addActionListener(new ActionListener() {
-
-        		@Override
-        		public void actionPerformed(ActionEvent e) {
-        			new MainFrame("JavaCoCo", 1000, 500);
-        			dispose();
-        		}
-            	  
-              });
-         JButton manager = new JButton("관리자");
-         manager.setFont(font3);
-         manager.setBorderPainted(true);
-         manager.setContentAreaFilled(false);
-         manager.setFocusPainted(false);
-         manager.setHorizontalAlignment(JLabel.CENTER);
-         manager.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				new ManagerFrame();
-				
-			}
-        	 
-         });
-         
-         ep.add(login);
-         ep.add(manager);
-         
-         c.add(p, BorderLayout.SOUTH);
-         c.add(cp, BorderLayout.CENTER);
-         c.add(ep, BorderLayout.EAST);
+      JPanel p = new JPanel();
+      p.setLayout(new GridLayout(0,2,20, 30));
+      p.setBackground(Color.WHITE);
+      JLabel name = new JLabel("이름");
+      TextField t1 = new TextField(30);
+      JLabel id = new JLabel("아이디");
+      TextField t2 = new TextField(30);
+      JLabel pw = new JLabel("패스워드");
+      TextField t3 = new TextField(30);
+      JLabel ad = new JLabel("주소");
+      TextField t4 = new TextField(30);
+      JLabel phone = new JLabel("전화번호");
+      TextField t5 = new TextField(30);
+      
+      p.add(name);
+      p.add(t1);
+      p.add(id);
+      p.add(t2);
+      p.add(pw);
+      p.add(t3);
+      p.add(phone);
+      p.add(t4);
+      p.add(ad);
+      p.add(t5);
      
       
       
-      
-      
-     
-      
-
-   
-    
+      t3.setEchoChar('*');
+      JButton ok = new JButton("가입");
+      JButton no = new JButton("취소");
+      p.add(ok);
+      p.add(no);
       
       JPanel J = new JPanel();
       J.setBackground(Color.WHITE);
       Font f = new Font("HY견명조", Font.PLAIN, 50);
-      J.setPreferredSize(new Dimension(1100, 150));
-      JLabel Login = new JLabel("Login");
-      Login.setFont(f); 
-      J.add(Login);
+      J.setPreferredSize(new Dimension(1100, 120));
+      JLabel Join = new JLabel("Join");
       
+      Join.setFont(f); 
+      J.add(Join);
       
       panel.add(container);
       panel.add(J);
-      panel.add(c);
+      panel.add(p);
       
-     
-    }
+      ok.addActionListener(new ActionListener() {
 
-	
-      
-    
-	
+  		@Override
+  		public void actionPerformed(ActionEvent e) {
+  			String id = t1.getText();
+  			String pw = t2.getText();
+  			
+  			JOptionPane.showMessageDialog(null, "회원가입 완료");
+  			
+  		}
+      	  
+        });
+        no.addActionListener(new ActionListener() {
+
+  		@Override
+  		public void actionPerformed(ActionEvent e) {
+  			new JoinFrame("JavaCoCo", 1000, 500);
+  			dispose();
+  		}
+      	  
+        });
+        ok.addActionListener(new ActionListener() {
+
+    		@Override
+    		public void actionPerformed(ActionEvent e) {
+    			new MainFrame("JavaCoCo", 1000, 500);
+    			dispose();
+    		}
+        	  
+          });
+
+   }
+
+ 
 
 }
