@@ -339,7 +339,7 @@ public class LoginFrame extends JFrame{
           
           
           Font font3 = new Font("함초롬돋움", Font.BOLD, 15);
-          ImageIcon ji = new ImageIcon("images/회원가입.png"); 
+          ImageIcon ji = new ImageIcon("images/join.png"); 
           JLabel jil = new JLabel(ji);
           JLabel join = new JLabel("  회원이 아니신가요?  ");
           join.setFont(font3);
