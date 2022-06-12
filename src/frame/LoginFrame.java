@@ -273,8 +273,18 @@ public class LoginFrame extends JFrame{
          menu.add(menuItemYSL);
         
             
-         JMenu menuSearch = new JMenu("search");
+         JMenuItem menuSearch = new JMenuItem("search");
          menuSearch.setFont(font);
+         menuSearch.setBackground(Color.WHITE);
+         menuSearch.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new SearchFrame("JavaCoCo", 1680, 1080);
+				
+			}
+        	 
+         });
          
             
          JMenu menuMyPage = new JMenu("MyPage");
