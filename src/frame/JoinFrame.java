@@ -418,7 +418,7 @@ public class JoinFrame extends JFrame{
 	
 	  		@Override
 	  		public void actionPerformed(ActionEvent e) {
-	  			new JoinFrame("JavaCoCo", 1000, 500);
+	  			new MainFrame("JavaCoCo", 1000, 500);
 	  			dispose();
 	  		}
 	      	  
