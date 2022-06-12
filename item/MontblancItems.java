@@ -1,0 +1,248 @@
+package item;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridLayout;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
+import frame.MainFrame;
+
+public class MontblancItems extends JFrame {
+	
+	private ImageIcon[] imgs = {
+			new ImageIcon("itemImages/montblanc01.jpg"),
+			new ImageIcon("itemImages/montblanc02.jpg"),
+			new ImageIcon("itemImages/montblanc03.jpg"),
+			new ImageIcon("itemImages/montblanc04.jpg"),
+			new ImageIcon("itemImages/montblanc05.jpg"),
+			new ImageIcon("itemImages/montblanc06.jpg"),
+			new ImageIcon("itemImages/montblanc07.jpg"),
+			new ImageIcon("itemImages/montblanc08.jpg"),
+			new ImageIcon("itemImages/montblanc09.jpg"),
+			};
+	
+	private String[] name = {
+			new String("[몽블랑] 익스플로러 맨 오드퍼퓸"),
+			new String("[몽블랑] 레전드 스피릿 오드뚜왈렛 EDT"),
+			new String("[몽블랑] 스타워커 맨 오드뚜왈렛 EDT"),
+			new String("[몽블랑] 익스플로러 오드퍼퓸 EDP"),
+			new String("[몽블랑] 익스플로러 울트라 블루 오드퍼퓸"),
+			new String("[몽블랑] 엠블럼 오드뚜왈렛 EDT"),
+			new String("[몽블랑] 레전드 나이트 오 드 퍼퓸"),
+			new String("[몽블랑] 레이디 엠블럼 오드퍼퓸 EDP"),
+			new String("[몽블랑] 시그니처 포 우먼 오드퍼퓸"),
+	};
+	
+	private int[] price = {
+			53900,
+			58800,
+			44800,
+			43900,
+			51900,
+			44600,
+			79900,
+			37000,
+			48500,
+	};
+	
+	public MontblancItems(String title, int width, int height) {
+		setTitle(title);
+	    setSize(width, height);
+	    setLocationRelativeTo(null);
+	    setExtendedState(JFrame.MAXIMIZED_BOTH);
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setLayout(new BorderLayout());  
+	    
+	    setScrollPanel();
+	    
+	    setVisible(true);
+	}
+	
+	private void setScrollPanel() {
+	        JPanel panel = new JPanel();      
+	        panel.setPreferredSize(new Dimension(400, 1400));   // 패널에 사이즈 설정 
+	        panel.setBackground(Color.WHITE);
+	        panel.setLayout(new FlowLayout());
+	        
+	        JScrollPane sp = new JScrollPane(panel, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+	         
+	        add(sp);
+	        
+	        JPanel container = new JPanel();
+	        container.setLayout(new BorderLayout());
+	        container.setBackground(Color.WHITE);
+	        
+	        //로고이미지,메뉴바----------------
+	        ImageIcon logo = new ImageIcon("images/javacoco.png");
+	        JLabel logoLabel = new JLabel(logo);
+	        logoLabel.setHorizontalAlignment(JLabel.CENTER);
+	        JMenuBar mb = new JMenuBar();
+	        mb.setLayout(new FlowLayout(FlowLayout.CENTER, 235, 50));
+	        mb.setBackground(Color.WHITE);
+
+	        Font font = new Font("HY견명조", Font.BOLD, 25);
+	         Font font2 = new Font("HY견명조", Font.PLAIN, 18);
+	         JMenu menuCategory = new JMenu("category");
+	         JMenuItem menuItemNEW = new JMenuItem("NEW");
+	         menuItemNEW.setFont(font2);
+	         menuCategory.add(menuItemNEW);
+	         JMenuItem menuItemBEST = new JMenuItem("BEST");
+	         menuItemBEST.setFont(font2);
+	         menuCategory.add(menuItemBEST);
+	         JMenuItem menuItemMEN = new JMenuItem("MEN");
+	         menuItemMEN.setFont(font2);
+	         menuCategory.add(menuItemMEN);
+	         JMenuItem menuItemWOMEN = new JMenuItem("WOMEN");
+	         menuItemWOMEN.setFont(font2);
+	         menuCategory.add(menuItemWOMEN);
+	         
+	         JMenu menu = new JMenu("BRAND");
+	         menu.setFont(font2);
+	         
+	         JMenuItem menuItemBvlgari = new JMenuItem("Bvlgari");
+	         menuItemBvlgari.setFont(font2);
+	         menuCategory.add(menuItemBvlgari);
+	         JMenuItem menuItemchanel = new JMenuItem("Chanel");
+	         menuItemchanel.setFont(font2);
+	         menuCategory.add(menuItemchanel);
+	         JMenuItem menuItemCK = new JMenuItem("Calvin Klein");
+	         menuItemCK.setFont(font2);
+	         menuCategory.add(menuItemCK);
+	         JMenuItem menuItemDior = new JMenuItem("Dior");
+	         menuItemDior.setFont(font2);
+	         menuCategory.add(menuItemDior);
+	         JMenuItem menuItemDiptyque = new JMenuItem("Diptyque");
+	         menuItemDiptyque.setFont(font2);
+	         menuCategory.add(menuItemDiptyque);
+	         JMenuItem menuItemForment = new JMenuItem("Forment");
+	         menuItemForment.setFont(font2);
+	         menuCategory.add(menuItemForment);
+	         JMenuItem menuItemGucci = new JMenuItem("Gucci");
+	         menuItemGucci.setFont(font2);
+	         menuCategory.add(menuItemGucci);
+	         JMenuItem menuItemJV = new JMenuItem("John Varvatos");
+	         menuItemJV.setFont(font2);
+	         menuCategory.add(menuItemJV);
+	         JMenuItem menuItemLanvin = new JMenuItem("Lanvin");
+	         menuItemLanvin.setFont(font2);
+	         menuCategory.add(menuItemLanvin);
+	         JMenuItem menuItemMontblanc = new JMenuItem("Montblanc");
+	         menuItemMontblanc.setFont(font2);
+	         menuCategory.add(menuItemMontblanc);
+	         JMenuItem menuItemTomford = new JMenuItem("Tomford");
+	         menuItemTomford.setFont(font2);
+	         menuCategory.add(menuItemTomford);
+	         JMenuItem menuItemYSL = new JMenuItem("Yves Saint Laurant");
+	         menuItemYSL.setFont(font2);
+	         menuCategory.add(menuItemYSL);
+	       
+	         menuCategory.setFont(font);
+	         
+	         menuCategory.add(menu);
+	         menu.add(menuItemBvlgari);
+	         menu.add(menuItemchanel);
+	         menu.add(menuItemCK);
+	         menu.add(menuItemDior);
+	         menu.add(menuItemDiptyque);
+	         menu.add(menuItemForment);
+	         menu.add(menuItemGucci);
+	         menu.add(menuItemJV);
+	         menu.add(menuItemLanvin);
+	         menu.add(menuItemMontblanc);
+	         menu.add(menuItemTomford);
+	         menu.add(menuItemYSL);
+	        
+	            
+	        JMenu menuSearch = new JMenu("search");
+	        menuSearch.setFont(font);
+	            
+	        JMenu menuMyPage = new JMenu("MyPage");
+	        menuMyPage.setFont(font);
+	        JMenuItem menuItemLogIn = new JMenuItem("Log In");
+	        menuItemLogIn.setFont(font2);
+	        menuMyPage.add(menuItemLogIn);
+	        JMenuItem menuItemJoinUs = new JMenuItem("Join Us");
+	        menuItemJoinUs.setFont(font2);
+	        menuMyPage.add(menuItemJoinUs);
+	        JMenuItem menuItemMyPage = new JMenuItem("My Page");
+	        menuItemMyPage.setFont(font2);
+	        menuMyPage.add(menuItemMyPage);
+	            
+	        JMenu menuCart = new JMenu("cart");
+	        menuCart.setFont(font);
+
+	        mb.add(menuCategory);
+	        mb.add(menuSearch);
+	        mb.add(menuMyPage);
+	        mb.add(menuCart);
+	        
+	        container.add(logoLabel, BorderLayout.NORTH);
+	        container.add(mb, BorderLayout.CENTER);
+	        
+	        
+	        ImageIcon mon = new ImageIcon("brandimage/montblang.png");
+	        JLabel textLabel = new JLabel(mon);
+	        textLabel.setHorizontalAlignment(JLabel.CENTER);
+	        
+	        //상품 정렬
+	        JPanel panel01 = new JPanel();
+	        panel01.setPreferredSize(new Dimension(1400, 800));
+	        panel01.setBackground(Color.white);
+	        panel01.setLayout(new GridLayout(3,3));
+	        
+	        
+	        
+	        
+	        for (int i = 0; i < 9; i++) {
+				
+				
+		        JPanel p = new JPanel();
+		        p.setPreferredSize(new Dimension(200, 300));   // 패널에 사이즈 설정 
+		        p.setBackground(Color.white);
+		        p.setLayout(new BorderLayout());
+		        JButton itemImage = new JButton(imgs[i]);
+		        itemImage.setBorderPainted(false);
+		        itemImage.setContentAreaFilled(false);
+		        itemImage.setFocusPainted(false);
+		        JLabel itemName = new JLabel(name[i]);
+		        JLabel itemPrice = new JLabel(price[i]+"원");
+		        p.add(itemImage,BorderLayout.NORTH);
+		        p.add(itemName,BorderLayout.CENTER);
+		        p.add(itemPrice,BorderLayout.SOUTH);
+		        itemName.setHorizontalAlignment(JLabel.CENTER);
+		        itemPrice.setHorizontalAlignment(JLabel.CENTER);
+		        
+		        panel01.add(p);
+		        
+		        }
+	        
+	        
+	        
+	        
+	        panel.add(container);
+	        panel.add(textLabel);
+	        panel.add(panel01);
+	        
+	        setVisible(true);
+	        
+	}
+
+	
+    public static void main(String[] args)
+      {
+    	new MontblancItems("JavaCoCo", 1000, 500);
+
+      }
+}
