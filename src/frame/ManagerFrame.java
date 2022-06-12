@@ -67,7 +67,7 @@ public class ManagerFrame extends JFrame{
        			JOptionPane.showMessageDialog(null, "아이디 또는 비밀번호를 입력 하셔야 됩니다.", "아이디나 비번을 입력!", JOptionPane.DEFAULT_OPTION);
        			return;
        			}
-       			if(idt.equals("test") && pwt.equals("test1")) {
+       			if(idt.equals("manager") && pwt.equals("manager2022")) {
        			JOptionPane.showMessageDialog(null, "로그인 성공", "로그인 확인!", JOptionPane.DEFAULT_OPTION);
        			new MainFrame("JavaCoCo", 1000, 500);
        			dispose();
@@ -86,5 +86,3 @@ public class ManagerFrame extends JFrame{
     }
    
 }
-
-
