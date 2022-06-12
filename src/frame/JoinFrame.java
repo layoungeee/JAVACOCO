@@ -10,8 +10,10 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -40,7 +42,12 @@ import item.YSLItems;
 import frame.LoginFrame;
 
 
+ 
+
 public class JoinFrame extends JFrame{
+	 
+	
+	
     public JoinFrame(String title, int width, int height) {
          setTitle(title);
          setSize(width, height);
@@ -339,7 +346,7 @@ public class JoinFrame extends JFrame{
           
           JPanel p = new JPanel();
           Font font3 = new Font("함초롬돋움", Font.BOLD, 15);
-          p.setLayout(new GridLayout(0,2,20, 30));
+          p.setLayout(new GridLayout(0,2, 10, 20));
 	      p.setBackground(Color.WHITE);
 	      JLabel name = new JLabel("이름");
 	      name.setFont(font3);
@@ -361,6 +368,20 @@ public class JoinFrame extends JFrame{
 	      phone.setFont(font3);
 	      TextField t5 = new TextField(30);
 	      t5.setFont(font3);
+	      JLabel birth = new JLabel("생년월일");
+	      birth.setFont(font3);
+	      TextField t6 = new TextField(30);
+	      t6.setFont(font3);
+	      JLabel sex = new JLabel("성별");
+	      sex.setFont(font3);
+	      JLabel dd = new JLabel("");
+	      
+	      JCheckBox m = new JCheckBox("남자");
+	      m.setBackground(Color.WHITE);
+	      m.setFont(font3);
+	      JCheckBox w = new JCheckBox("여자");
+	      w.setBackground(Color.WHITE);
+	      w.setFont(font3);
 	      
 	      p.add(name);
 	      p.add(t1);
@@ -372,6 +393,13 @@ public class JoinFrame extends JFrame{
 	      p.add(t4);
 	      p.add(ad);
 	      p.add(t5);
+	      p.add(birth);
+	      p.add(t6);
+	      p.add(sex);
+	      p.add(m);
+	      p.add(dd);
+	      p.add(w);
+	      
      
       
       
@@ -386,7 +414,9 @@ public class JoinFrame extends JFrame{
 	      no.setBorderPainted(true);
 	      no.setContentAreaFilled(false);
 	      no.setFocusPainted(false);
+	      
 	      p.add(ok);
+	    
 	      p.add(no);
 	      
 	      JPanel J = new JPanel();
@@ -395,7 +425,8 @@ public class JoinFrame extends JFrame{
 	      J.setPreferredSize(new Dimension(1100, 120));
 	      JLabel Join = new JLabel("Join");
 	      
-	      Join.setFont(f); 
+	      
+	      Join.setFont(f);
 	      J.add(Join);
 	      
 	      panel.add(container);
@@ -434,6 +465,12 @@ public class JoinFrame extends JFrame{
 	          });
 	
 	   }
+    public static void main(String[] args)
+    {
+     new JoinFrame("회원가입", 1000, 1000);
+    }
+
+
 	
 	 
 	
