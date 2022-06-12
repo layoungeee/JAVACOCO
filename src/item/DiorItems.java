@@ -6,6 +6,8 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -18,6 +20,15 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 import frame.MainFrame;
+import itemInfo.Chanel01Info;
+import itemInfo.Chanel02Info;
+import itemInfo.Chanel03Info;
+import itemInfo.Chanel04Info;
+import itemInfo.Chanel05Info;
+import itemInfo.Chanel06Info;
+import itemInfo.Chanel07Info;
+import itemInfo.Dior02Info;
+import itemInfo.Dior03Info;
 
 public class DiorItems extends JFrame {
 	
@@ -209,6 +220,57 @@ public class DiorItems extends JFrame {
 		        p.setBackground(Color.white);
 		        p.setLayout(new BorderLayout());
 		        JButton itemImage = new JButton(imgs[i]);
+		        switch (i) {
+		        case 0: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 1: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Dior02Info("JavaCoCo", 1680, 1080);
+					}
+				});break;
+		        case 2: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Dior03Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 3: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 4: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 5: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 6: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 7: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+				}
 		        itemImage.setBorderPainted(false);
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);

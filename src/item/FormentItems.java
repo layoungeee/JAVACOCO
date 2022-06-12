@@ -6,6 +6,8 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -18,6 +20,17 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 import frame.MainFrame;
+import itemInfo.Chanel01Info;
+import itemInfo.Chanel02Info;
+import itemInfo.Chanel03Info;
+import itemInfo.Chanel04Info;
+import itemInfo.Chanel05Info;
+import itemInfo.Chanel06Info;
+import itemInfo.Chanel07Info;
+import itemInfo.Forment02Info;
+import itemInfo.Forment03Info;
+import itemInfo.Forment04Info;
+import itemInfo.Forment08Info;
 
 public class FormentItems extends JFrame {
 	
@@ -33,14 +46,14 @@ public class FormentItems extends JFrame {
 			};
 	
 	private String[] name = {
-			new String("[포맨트] 시그니처 퍼퓸 코튼허그"),
-			new String("[포맨트] 시그니처 퍼퓸 코튼허그 백야 에디션"),
-			new String("[포맨트] 시그니처 퍼퓸 코튼메모리 벚꽃 에디션"),
-			new String("[포맨트] 시그니처 퍼퓸 코튼 브리즈"),
-			new String("[포맨트] 시그니처 퍼퓸 코튼 디어 나잇"),
-			new String("[포맨트] 시그니처 퍼퓸 코튼 딜라잇부케"),
-			new String("[포맨트] 시그니처 퍼퓸 코튼 썩세스"),
-			new String("[포맨트] 시그니처 퍼퓸 코튼키스"),
+			new String("[포맨트] 퍼퓸 코튼허그"),
+			new String("[포맨트] 퍼퓸 코튼허그 백야 에디션"),
+			new String("[포맨트] 퍼퓸 코튼메모리 벚꽃 에디션"),
+			new String("[포맨트] 퍼퓸 코튼 브리즈"),
+			new String("[포맨트] 퍼퓸 코튼 디어 나잇"),
+			new String("[포맨트] 퍼퓸 코튼 딜라잇부케"),
+			new String("[포맨트] 퍼퓸 코튼 썩세스"),
+			new String("[포맨트] 퍼퓸 코튼키스"),
 	};
 	
 	private int[] price = {
@@ -212,6 +225,59 @@ public class FormentItems extends JFrame {
 		        p.setBackground(Color.white);
 		        p.setLayout(new BorderLayout());
 		        JButton itemImage = new JButton(imgs[i]);
+		        switch (i) {
+		        case 0: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 1: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Forment02Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 2: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Forment03Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 3: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Forment04Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 4: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 5: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 6: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+					}
+				});break;
+		        case 7: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Forment08Info("JavaCoCo", 1680, 1080);
+					}
+				});break;
+				}
 		        itemImage.setBorderPainted(false);
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);

@@ -8,6 +8,8 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.TextArea;
 import java.awt.TextComponent;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -23,6 +25,13 @@ import javax.swing.JTextArea;
 import javax.swing.text.JTextComponent;
 
 import frame.MainFrame;
+import itemInfo.Chanel01Info;
+import itemInfo.Chanel02Info;
+import itemInfo.Chanel03Info;
+import itemInfo.Chanel04Info;
+import itemInfo.Chanel05Info;
+import itemInfo.Chanel06Info;
+import itemInfo.Chanel07Info;
 
 public class ChanelItems extends JFrame {
 	
@@ -37,11 +46,11 @@ public class ChanelItems extends JFrame {
 			};
 
 	private String[] name = {
-			new String("[샤넬] 샹스 오 땅드르 오 드 빠르펭"),
-			new String("[샤넬] N°1 DE CHANEL 레드 까멜리아 향수 리바이탈라이징 프래그런스"),
 			new String("[샤넬] N°5 오 드 빠르펭"),
+			new String("[샤넬] N°1 DE CHANEL 레드 까멜리아"),
+			new String("[샤넬] 샹스 오 땅드르 오 드 빠르펭"),
 			new String("[샤넬] 가브리엘 샤넬 에센스 오 드 빠르펭"),
-			new String("[샤넬] 파리 리비에라 레 조 드 샤넬 오 드 뚜왈렛"),
+			new String("[샤넬] 파리 리비에라 샤넬 오 드 뚜왈렛"),
 			new String("[샤넬] 알뤼르 옴므 스포츠 오 드 뚜왈렛"),
 			new String("[샤넬] 블루 드 샤넬 빠르펭"),
 	};
@@ -54,6 +63,16 @@ public class ChanelItems extends JFrame {
 			98100,
 			109900,
 			156700,
+	};
+	private String[] info = {
+			new String("Chanel01Info"),
+			new String("Chanel02Info"),
+			new String("Chanel03Info"),
+			new String("Chanel04Info"),
+			new String("Chanel05Info"),
+			new String("Chanel06Info"),
+			new String("Chanel07Info"),
+			
 	};
 	
 	public ChanelItems(String title, int width, int height) {
@@ -211,6 +230,58 @@ public class ChanelItems extends JFrame {
 		        p.setBackground(Color.white);
 		        p.setLayout(new BorderLayout());
 		        JButton itemImage = new JButton(imgs[i]);
+		        switch (i) {
+		        case 0: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Chanel01Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 1: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Chanel02Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 2: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Chanel03Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 3: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Chanel04Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 4: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Chanel05Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 5: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Chanel06Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        case 6: itemImage.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						new Chanel07Info("JavaCoCo", 1680, 1080);
+						
+					}
+				});break;
+		        
+				}
 		        itemImage.setBorderPainted(false);
 		        itemImage.setContentAreaFilled(false);
 		        itemImage.setFocusPainted(false);

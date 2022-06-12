@@ -44,10 +44,10 @@ import item.WomenItems;
 import item.YSLItems;
 
 
-public class Chanel01Info extends JFrame{
+public class Forment02Info extends JFrame{
 	
 
-	public Chanel01Info(String title, int width, int height) {
+	public Forment02Info(String title, int width, int height) {
          setTitle(title);
          setSize(width, height);
 //         setLocation(1800, 300);
@@ -66,7 +66,7 @@ public class Chanel01Info extends JFrame{
     
     private void setScrollPanel() {
     	JPanel panel = new JPanel();      
-        panel.setPreferredSize(new Dimension(400, 1200));   
+        panel.setPreferredSize(new Dimension(400, 1300));   
         panel.setBackground(Color.white);
         panel.setLayout(new FlowLayout());
         
@@ -333,7 +333,7 @@ public class Chanel01Info extends JFrame{
          //상품정보---------------------------------------------------------------------------------
 
           
-          ImageIcon itemImage = new ImageIcon("itemImages2/chanel01.jpg");
+          ImageIcon itemImage = new ImageIcon("itemImages2/forment02.jpg");
           JLabel imageLabel = new JLabel(itemImage);
           
           
@@ -348,8 +348,8 @@ public class Chanel01Info extends JFrame{
           itemInfo.setLayout(null);
           
           Font f = new Font("굴림", Font.BOLD, 20);
-	      JLabel name = new JLabel("[샤넬] N°5 오 드 빠르펭");
-	      JLabel price = new JLabel("119,200원");
+	      JLabel name = new JLabel("[포맨트] 퍼퓸 코튼허그 백야 에디션");
+	      JLabel price = new JLabel("78,800원");
 	      SpinnerModel numberModel = new SpinnerNumberModel(1, 0, 9, 1);
 	      JSpinner spinner = new JSpinner(numberModel);
 	      
@@ -392,9 +392,9 @@ public class Chanel01Info extends JFrame{
 	      imgPanel.setLayout(new GridLayout(1,3,20,20));
 	      imgPanel.setBackground(Color.white);
 	      
-	      JLabel ch01 = new JLabel(new ImageIcon("images/ch11.jpg"));
-	      JLabel ch02 = new JLabel(new ImageIcon("images/ch12.jpg"));
-	      JLabel ch03 = new JLabel(new ImageIcon("images/ch13.jpg"));
+	      JLabel ch01 = new JLabel(new ImageIcon("images/fmt21.jpg"));
+	      JLabel ch02 = new JLabel(new ImageIcon("images/fmt22.jpg"));
+	      JLabel ch03 = new JLabel(new ImageIcon("images/fmt23.jpg"));
 	      
 	      
 	      imgPanel.add(ch01);
@@ -432,7 +432,7 @@ public class Chanel01Info extends JFrame{
 
     public static void main(String[] args)
       {
-         new Chanel01Info("JavaCoCo", 1680, 1080);
+         new Forment02Info("JavaCoCo", 1680, 1080);
 
       }
 
