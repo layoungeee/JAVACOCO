@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -42,7 +43,9 @@ import item.TomfordItems;
 import item.WomenItems;
 import item.YSLItems;
 
+
 public class Chanel01Info extends JFrame{
+	
 
 	public Chanel01Info(String title, int width, int height) {
          setTitle(title);
@@ -63,7 +66,7 @@ public class Chanel01Info extends JFrame{
     
     private void setScrollPanel() {
     	JPanel panel = new JPanel();      
-        panel.setPreferredSize(new Dimension(400, 1100));   
+        panel.setPreferredSize(new Dimension(400, 900));   
         panel.setBackground(Color.WHITE);
         panel.setLayout(new FlowLayout());
         
@@ -332,41 +335,65 @@ public class Chanel01Info extends JFrame{
           
           ImageIcon itemImage = new ImageIcon("itemImages2/chanel01.jpg");
           JLabel imageLabel = new JLabel(itemImage);
-          imageLabel.setLayout(new BorderLayout());
-          imageLabel.setHorizontalAlignment(JLabel.LEFT);
-          
           
           
           JPanel itemInfo = new JPanel();
-          itemInfo.setPreferredSize(new Dimension(400, 250));   
+          itemInfo.setPreferredSize(new Dimension(400, 400));   
           itemInfo.setBackground(Color.white);
-          itemInfo.setLayout(new GridLayout(5,1));
+          //itemInfo.setLayout(new FlowLayout());
+          itemInfo.setLayout(null);
           
           Font f = new Font("굴림", Font.BOLD, 20);
 	      JLabel name = new JLabel("[샤넬] 샹스 오 땅드르 오 드 빠르펭");
 	      JLabel price = new JLabel("119,200원");
+	      
+	      JPanel btn = new JPanel();
+	      btn.setBackground(Color.white);
 	      JButton buy = new JButton(new ImageIcon("images/buy.jpg"));
 	      buy.setBorderPainted(false);
 	      buy.setContentAreaFilled(false);
 	      buy.setFocusPainted(false);
+	      buy.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				 EventQueue.invokeLater(new Runnable() {
+			         public void run() {
+			            try {
+			               payment window = new payment();
+			               window.getFrame().setVisible(true);
+			            } catch (Exception e) {
+			               e.printStackTrace();
+			            }
+			         }
+			      });
+				
+			}
+		});
 	      JButton cart = new JButton(new ImageIcon("images/cart.jpg"));
 	      cart.setBorderPainted(false);
 	      cart.setContentAreaFilled(false);
 	      cart.setFocusPainted(false);
+	      btn.add(buy);
+	      btn.add(cart);
 	      
 	      
 	      SpinnerModel numberModel = new SpinnerNumberModel(1, 0, 9, 1);
 	      JSpinner spinner = new JSpinner(numberModel);
-	      spinner.setPreferredSize(new Dimension());
+	      
+	      name.setBounds(imageLabel.getX()-100, imageLabel.getY()+120, 500, 20);
+	      price.setBounds(name.getX()+400, name.getY()+50, 100, 20);
+	      spinner.setBounds(name.getX()+450, price.getY()+50, 50, 25);
+	      btn.setBounds(name.getX()+108, spinner.getY()+50, 500, 100);
+	     
           
 	      itemInfo.add(name);
 	      itemInfo.add(price);
 	      itemInfo.add(spinner);
-	      itemInfo.add(buy);
-	      itemInfo.add(cart);
-	      name.setHorizontalAlignment(JLabel.CENTER);
+	      itemInfo.add(btn);
+	      name.setHorizontalAlignment(JLabel.RIGHT);
 	      name.setFont(f);
-	      price.setHorizontalAlignment(JLabel.CENTER);
+	      price.setHorizontalAlignment(JLabel.RIGHT);
 	      price.setFont(f);
 	      
 	      
